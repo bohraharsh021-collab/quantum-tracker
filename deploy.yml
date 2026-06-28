@@ -1,0 +1,54 @@
+name: Build and Deploy Quantum Dashboard
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  schedule:
+    # Trigger automatically every day at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Fetch Real-Time News
+        run: node scripts/fetch-news.js
+
+      - name: Compile and Build Site
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          force_orphan: true
+
+      - name: Commit Updated News Data (Schedule Runs Only)
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/news.json
+          git diff-index --quiet HEAD || git commit -m "chore: daily auto-refresh of pre-fetched quantum news ledger [skip ci]"
+          git push origin HEAD:${{ github.ref }}
