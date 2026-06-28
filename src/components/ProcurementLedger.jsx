@@ -1,12 +1,19 @@
 import React, { useState, useMemo } from 'react';
 import { PROCUREMENT_LEDGER } from '../data/quantumData';
+import { getDynamicNewsOverrides } from '../utils/newsOverrides';
 import { Search, DollarSign, RefreshCw, ShoppingCart } from 'lucide-react';
 
-export default function ProcurementLedger() {
+export default function ProcurementLedger({ articles = [] }) {
   const [searchTerm, setSearchTerm] = useState('');
 
+  // Merge static procurement with dynamic overrides from news feeds
+  const procurementData = useMemo(() => {
+    const overrides = getDynamicNewsOverrides(articles);
+    return [...overrides.newProcurements, ...PROCUREMENT_LEDGER];
+  }, [articles]);
+
   const filteredProcurements = useMemo(() => {
-    return PROCUREMENT_LEDGER.filter(pr => {
+    return procurementData.filter(pr => {
       return (
         pr.buyer.toLowerCase().includes(searchTerm.toLowerCase()) ||
         pr.seller.toLowerCase().includes(searchTerm.toLowerCase()) ||

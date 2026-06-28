@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { getDynamicNewsOverrides } from '../utils/newsOverrides';
 import { 
   Globe, 
   Shield, 
@@ -219,58 +220,74 @@ export const SOVEREIGN_COMPARISON_DATA = [
       "Quantum Metrology & Clocks"
     ],
     bottlenecks: [
-      "Complete absence of domestic heavy hardware fabrication foundries.",
-      "Extremely limited domestic land and resource footprint for physical cryogenic labs.",
-      "High vulnerability to geopolitical disruption of critical supply chains."
+      "Lack of domestic heavy hardware fabrication foundries.",
+      "Limited domestic land for large-scale cryogenic infrastructure.",
+      "Reliance on international supply chains for high-end optical components."
     ],
     strategicPriority: "Becoming Southeast Asia's primary quantum-safe financial center and software compiler exporter.",
     readinessScore: 72
   }
 ];
 
-export default function SovereignComparison() {
+export default function SovereignComparison({ articles = [] }) {
+  const sovereignData = useMemo(() => {
+    const overrides = getDynamicNewsOverrides(articles);
+    return SOVEREIGN_COMPARISON_DATA.map(nation => {
+      if (nation.id === 'india' && overrides.indiaQubits) {
+        return {
+          ...nation,
+          qubitRange: `${overrides.indiaQubits} Qubits (Live Upgrade)`,
+          qubitMax: overrides.indiaQubits,
+          qubitDetails: `Auto-updated via news wire: QpiAI India announced a successful ${overrides.indiaQubits}-qubit processing benchmark.`
+        };
+      }
+      return nation;
+    });
+  }, [articles]);
+
   const [activeNation, setActiveNation] = useState(SOVEREIGN_COMPARISON_DATA[0].id);
   const [compareSource, setCompareSource] = useState(SOVEREIGN_COMPARISON_DATA[0].id);
   const [compareTarget, setCompareTarget] = useState(SOVEREIGN_COMPARISON_DATA[1].id);
   const [searchQuery, setSearchQuery] = useState('');
   const [viewMode, setViewMode] = useState('matrix'); // 'matrix', 'compare', 'charts', 'hubs'
+  
   const [selectedForCharts, setSelectedForCharts] = useState(
     SOVEREIGN_COMPARISON_DATA.reduce((acc, curr) => ({ ...acc, [curr.id]: true }), {})
   );
 
   const currentNationData = useMemo(() => {
-    return SOVEREIGN_COMPARISON_DATA.find(n => n.id === activeNation);
-  }, [activeNation]);
+    return sovereignData.find(n => n.id === activeNation);
+  }, [sovereignData, activeNation]);
 
   const sourceCompareData = useMemo(() => {
-    return SOVEREIGN_COMPARISON_DATA.find(n => n.id === compareSource);
-  }, [compareSource]);
+    return sovereignData.find(n => n.id === compareSource);
+  }, [sovereignData, compareSource]);
 
   const targetCompareData = useMemo(() => {
-    return SOVEREIGN_COMPARISON_DATA.find(n => n.id === compareTarget);
-  }, [compareTarget]);
+    return sovereignData.find(n => n.id === compareTarget);
+  }, [sovereignData, compareTarget]);
 
   // Compute Cockpit HUD Metrics
   const totalGlobalBudget = useMemo(() => {
-    return SOVEREIGN_COMPARISON_DATA.reduce((sum, item) => sum + item.fundingUSD, 0);
-  }, []);
+    return sovereignData.reduce((sum, item) => sum + item.fundingUSD, 0);
+  }, [sovereignData]);
 
   const maxQubitsTargeted = useMemo(() => {
-    return Math.max(...SOVEREIGN_COMPARISON_DATA.map(item => item.qubitMax));
-  }, []);
+    return Math.max(...sovereignData.map(item => item.qubitMax));
+  }, [sovereignData]);
 
   const totalResearchers = useMemo(() => {
-    return SOVEREIGN_COMPARISON_DATA.reduce((sum, item) => sum + item.workforceSize, 0);
-  }, []);
+    return sovereignData.reduce((sum, item) => sum + item.workforceSize, 0);
+  }, [sovereignData]);
 
   const indiaData = useMemo(() => {
-    return SOVEREIGN_COMPARISON_DATA.find(n => n.id === 'india');
-  }, []);
+    return sovereignData.find(n => n.id === 'india');
+  }, [sovereignData]);
 
   // Filter nations for search
   const filteredNations = useMemo(() => {
     const query = searchQuery.toLowerCase().trim();
-    return SOVEREIGN_COMPARISON_DATA.filter(n => {
+    return sovereignData.filter(n => {
       return (
         n.country.toLowerCase().includes(query) ||
         n.techFocus.some(f => f.toLowerCase().includes(query)) ||
@@ -819,7 +836,7 @@ export default function SovereignComparison() {
                 onChange={(e) => setCompareSource(e.target.value)}
                 className="bg-[#0B1320] border border-cyber-border rounded px-3 py-1.5 text-xs font-mono text-white focus:outline-none focus:border-cyber-accent"
               >
-                {SOVEREIGN_COMPARISON_DATA.map(n => (
+                {sovereignData.map(n => (
                   <option key={n.id} value={n.id}>{n.flag} {n.country}</option>
                 ))}
               </select>
@@ -834,7 +851,7 @@ export default function SovereignComparison() {
                 onChange={(e) => setCompareTarget(e.target.value)}
                 className="bg-[#0B1320] border border-cyber-border rounded px-3 py-1.5 text-xs font-mono text-white focus:outline-none focus:border-cyber-accent"
               >
-                {SOVEREIGN_COMPARISON_DATA.map(n => (
+                {sovereignData.map(n => (
                   <option key={n.id} value={n.id} disabled={n.id === compareSource}>
                     {n.flag} {n.country}
                   </option>
@@ -1018,7 +1035,7 @@ export default function SovereignComparison() {
                 Toggle Telemetry Sources:
               </span>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-                {SOVEREIGN_COMPARISON_DATA.map(n => (
+                {sovereignData.map(n => (
                   <label key={n.id} className="flex items-center gap-2 cursor-pointer select-none text-xs font-mono text-white">
                     <input
                       type="checkbox"

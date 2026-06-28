@@ -395,7 +395,7 @@ export default function App() {
       case 'directory':
         return <DirectoryEngine />;
       case 'processors':
-        return <QuantumProcessorsMatrix />;
+        return <QuantumProcessorsMatrix articles={articles} />;
       case 'taxonomy':
         return <TaxonomyMaps />;
       case 'finance':
@@ -403,7 +403,7 @@ export default function App() {
       case 'advisory':
         return <ApplicationsEncyclopedia />;
       case 'comparison':
-        return <SovereignComparison />;
+        return <SovereignComparison articles={articles} />;
       case 'strategicAdvisory':
         return <StrategicAdvisory />;
       case 'indiatracker':
@@ -411,9 +411,9 @@ export default function App() {
       case 'globalresources':
         return <GlobalResources />;
       case 'procurement':
-        return <ProcurementLedger />;
+        return <ProcurementLedger articles={articles} />;
       case 'alliances':
-        return <AlliancesNode />;
+        return <AlliancesNode articles={articles} />;
       case 'reports':
         return <ReportsPortal articles={filteredArticles} />;
       case 'map':

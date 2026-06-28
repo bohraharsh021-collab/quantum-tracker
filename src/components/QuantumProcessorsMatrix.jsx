@@ -1,16 +1,23 @@
 import React, { useState, useMemo } from 'react';
 import { PROCESSORS_MATRIX } from '../data/quantumData';
+import { getDynamicNewsOverrides } from '../utils/newsOverrides';
 import { Search, ArrowUpDown, Layers, CheckSquare, Square } from 'lucide-react';
 
-export default function QuantumProcessorsMatrix() {
+export default function QuantumProcessorsMatrix({ articles = [] }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortField, setSortField] = useState('physicalQubits');
   const [sortOrder, setSortOrder] = useState('desc');
   const [compareList, setCompareList] = useState([]);
 
+  // Combine static processors with dynamic news overrides
+  const processorsData = useMemo(() => {
+    const overrides = getDynamicNewsOverrides(articles);
+    return [...overrides.newProcessors, ...PROCESSORS_MATRIX];
+  }, [articles]);
+
   // Filter processors
   const filteredProcessors = useMemo(() => {
-    return PROCESSORS_MATRIX.filter(p => {
+    return processorsData.filter(p => {
       return (
         p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         p.manufacturer.toLowerCase().includes(searchTerm.toLowerCase()) ||

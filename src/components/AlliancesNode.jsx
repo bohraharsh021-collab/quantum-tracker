@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { ALLIANCES_NETWORK, REGIONAL_CONSORTIA } from '../data/quantumData';
+import { getDynamicNewsOverrides } from '../utils/newsOverrides';
 import { Link2, Users, Globe, Briefcase } from 'lucide-react';
 
-export default function AlliancesNode() {
+export default function AlliancesNode({ articles = [] }) {
+  // Merge static alliances with dynamic overrides from news feeds
+  const alliancesData = useMemo(() => {
+    const overrides = getDynamicNewsOverrides(articles);
+    return [...overrides.newAlliances, ...ALLIANCES_NETWORK];
+  }, [articles]);
+
   return (
     <div className="space-y-6">
       {/* Title */}
@@ -26,7 +33,7 @@ export default function AlliancesNode() {
           </div>
 
           <div className="space-y-4 max-h-[480px] overflow-y-auto pr-1">
-            {ALLIANCES_NETWORK.map(alliance => (
+            {alliancesData.map(alliance => (
               <div 
                 key={alliance.id} 
                 className="bg-[#0B1320] border border-cyber-border/80 rounded p-4 space-y-2 hover:border-cyber-blue transition-colors"
