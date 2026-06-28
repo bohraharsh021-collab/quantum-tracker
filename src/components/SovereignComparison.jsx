@@ -16,7 +16,8 @@ import {
   Info,
   Lock,
   Sparkles,
-  Layers
+  Layers,
+  Award
 } from 'lucide-react';
 
 // Complete high-fidelity comparative dataset

@@ -250,7 +250,10 @@ export default function App() {
             contentStr.includes('quantum') || 
             contentStr.includes('qubit') || 
             contentStr.includes('cryptography') || 
-            contentStr.includes('decoherence');
+            contentStr.includes('decoherence') ||
+            feed.url.includes('arxiv.org') ||
+            feed.url.includes('nature.com') ||
+            feed.url.includes('uwaterloo.ca');
 
           if (!isQuantum) continue;
 
