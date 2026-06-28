@@ -1,0 +1,1074 @@
+[
+  {
+    "id": "build-0-1782614215965-751",
+    "headline": "Non-Hermitian geometry reveals when quantum amplification depends only on start and end points",
+    "source": "Phys.org (Quantum)",
+    "timestamp": "2026-06-27T15:00:02.000Z",
+    "summary": "In quantum mechanics, the geometry of quantum states has emerged as a powerful framework for understanding phenomena ranging from electrical conductivity to superconductivity. One ...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://phys.org/news/2026-06-hermitian-geometry-reveals-quantum-amplification.html"
+  },
+  {
+    "id": "build-0-1782554729439-314",
+    "headline": "Türkiye Lays Out a National Quantum Roadmap, Naming 85 Priority Technologies Across Computing, Sensing and Communication",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-27T08:00:23.000Z",
+    "summary": "Insider Brief Türkiye has set out a detailed plan for entering the global quantum race, publishing a national roadmap that names 85 specific technologies the country intends to pur...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/27/turkiye-lays-out-a-national-quantum-roadmap-naming-85-priority-technologies-across-computing-sensing-and-communication/"
+  },
+  {
+    "id": "build-2-1782629864721-761",
+    "headline": "A Deeper Dive Into the Recent White House Executive Orders",
+    "source": "Quantum Computing Report",
+    "timestamp": "2026-06-27T04:55:13.000Z",
+    "summary": "By Doug Finke Ever since the White House released the new Executive Orders on quantum technology a few days ago, we have received numerous comments on them. If you haven’t already ...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://quantumcomputingreport.com/a-deeper-dive-into-the-recent-white-house-executive-orders/"
+  },
+  {
+    "id": "build-3-1782629864721-30",
+    "headline": "Quandela Demonstrates Photonic Quantum Reservoir Processing for Advanced Machine Learning and Single-Basis Quantum Tomography",
+    "source": "Quantum Computing Report",
+    "timestamp": "2026-06-27T03:08:16.000Z",
+    "summary": "Photonic quantum processing unit for quantum and classical machine learning tasks. A collaborative research group consisting of quantum information scientists from Quandela, the Ce...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://quantumcomputingreport.com/quandela-demonstrates-photonic-quantum-reservoir-processing-for-advanced-machine-learning-and-single-basis-quantum-tomography/"
+  },
+  {
+    "id": "build-4-1782629864721-96",
+    "headline": "Strategic Franco-Qatari Sovereign Alliance for Gulf Quantum Deployment",
+    "source": "Quantum Computing Report",
+    "timestamp": "2026-06-27T02:59:13.000Z",
+    "summary": "Photonic quantum computing developer Quandela and Qatar-based technology conglomerate Mekdam Holding Group (QSE: MKDM) have signed a comprehensive Memorandum of Understanding (MoU)...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://quantumcomputingreport.com/strategic-franco-qatari-sovereign-alliance-for-gulf-quantum-deployment/"
+  },
+  {
+    "id": "build-5-1782629864721-821",
+    "headline": "Alice & Bob Proposes Decoupled AI Topologies to Resolve Microsecond Control Loop Latencies for Superconducting Cat Qubits",
+    "source": "Quantum Computing Report",
+    "timestamp": "2026-06-27T02:46:09.000Z",
+    "summary": "Bosonic hardware developer Alice & Bob has published a computer architecture blueprint authored by senior architect Kevin D. Kissell detailing a new \"decoupled\" processing methodol...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://quantumcomputingreport.com/alice-bob-proposes-decoupled-ai-topologies-to-resolve-microsecond-control-loop-latencies-for-superconducting-cat-qubits/"
+  },
+  {
+    "id": "build-6-1782629864721-734",
+    "headline": "Pasqal Advances Full-Stack HPC-QC Integration Across Multi-Vendor Supercomputing Ecosystems",
+    "source": "Quantum Computing Report",
+    "timestamp": "2026-06-27T02:31:46.000Z",
+    "summary": "Neutral-atom quantum hardware developer Pasqal has published a comprehensive architectural roadmap detailing the deployment and operational integration of its quantum processing un...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://quantumcomputingreport.com/pasqal-advances-full-stack-hpc-qc-integration-across-multi-vendor-supercomputing-ecosystems/"
+  },
+  {
+    "id": "build-7-1782629864722-274",
+    "headline": "Quantum X Labs Combines CliniQuantum Biomedical Algorithms with Transformer-Based Error Correction Decoders",
+    "source": "Quantum Computing Report",
+    "timestamp": "2026-06-27T01:59:54.000Z",
+    "summary": "Advanced technological holding company Quantum X Labs Inc. (Nasdaq: QXL) has announced the launch of an integrated quantum software development program. The dual-pronged initiative...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://quantumcomputingreport.com/quantum-x-labs-combines-cliniquantum-biomedical-algorithms-with-transformer-based-error-correction-decoders/"
+  },
+  {
+    "id": "build-0-1782554732751-650",
+    "headline": "Clean crystal surface lets single molecules hit ultimate quantum limit",
+    "source": "Phys.org (Quantum)",
+    "timestamp": "2026-06-26T21:00:01.000Z",
+    "summary": "Scientists at the Max Planck Institute for the Science of Light (MPL) have developed a technique for interrogating molecules on surfaces with spectroscopic precision, thereby reach...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://phys.org/news/2026-06-crystal-surface-molecules-ultimate-quantum.html"
+  },
+  {
+    "id": "build-8-1782629864722-417",
+    "headline": "Taiyi Quantum Raises 300 Million Yuan ($44 Million USD) to Commercialize Ytterbium Neutral-Atom Quantum Computers",
+    "source": "Quantum Computing Report",
+    "timestamp": "2026-06-26T18:39:37.000Z",
+    "summary": "Sovereign neutral-atom hardware developer Taiyi Quantum Technology Co., Ltd. (Shanghai)—alternatively known as Taiyi Liangsheng—has closed a heavily oversubscribed 300 million yuan...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://quantumcomputingreport.com/taiyi-quantum-raises-300-million-yuan-44-million-usd-to-commercialize-ytterbium-neutral-atom-quantum-computers/"
+  },
+  {
+    "id": "build-1-1782554732751-940",
+    "headline": "Semiconductor quantum dots 'reawaken' predicted Rabi oscillations, boosting quantum control",
+    "source": "Phys.org (Quantum)",
+    "timestamp": "2026-06-26T17:00:04.000Z",
+    "summary": "Physicists at Paderborn University have, for the first time, experimentally demonstrated the so-called \"return\" of Rabi oscillations in semiconductor quantum dots. The phenomenon, ...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://phys.org/news/2026-06-semiconductor-quantum-dots-reawaken-rabi.html"
+  },
+  {
+    "id": "build-1-1782554729439-443",
+    "headline": "Top Quantum Computing Investors in 2026",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-26T13:06:27.000Z",
+    "summary": "Insider Brief Quantum computing investment has moved through several distinct phases. The hype-driven cycle of 2018-2020, when capital flowed toward anything with “quantum” in the ...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/26/top-quantum-computing-investors-in-2026/"
+  },
+  {
+    "id": "build-0-1782629865955-65",
+    "headline": "Quantum Starter References…",
+    "source": "IQT News",
+    "timestamp": "2026-06-26T13:00:01.000Z",
+    "summary": "Dr. Bob Sutor’s Sutor Group kicked off “Quantum Starter References” with resources to learn about neutral atom qubits. He offered extra credit for looking up Johannes Rydberg and l...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.insidequantumtechnology.com/news-archive/compressing-shors-algorithm-2/"
+  },
+  {
+    "id": "build-2-1782554729440-867",
+    "headline": "Former Microsoft Quantum Employee’s New Chinese-Based Startup Lands Pre-A Funding",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-26T10:18:18.000Z",
+    "summary": "Insider Brief Taiyi Quantum, based in Shanghai, announced the completion of a 300 million yuan — or about $44 million USD — Pre-A funding round, according to media and social media...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/26/former-microsoft-quantum-ctos-new-chinese-based-startup-lands-pre-a-funding/"
+  },
+  {
+    "id": "build-3-1782554729440-397",
+    "headline": "University of Maryland Grant Targets Quantum and AI Tools for Cancer Research",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-26T08:21:22.000Z",
+    "summary": "Insider Brief The University of Maryland is backing a new effort to use quantum computing and artificial intelligence to speed the search for better ways to detect and treat cancer...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/26/university-of-maryland-grant-targets-quantum-and-ai-tools-for-cancer-research/"
+  },
+  {
+    "id": "build-4-1782554729440-772",
+    "headline": "Yale Officials Say $4 Million NSF Grant Will Boost Unique Approach to Quantum Computing",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-26T07:54:49.000Z",
+    "summary": "Insider Brief PRESS RELEASE — A Yale-led project — aided by a national community of researchers — has reached the next step in its effort to develop the first large-scale, error-co...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/26/yale-officials-say-4-million-nsf-grant-will-boost-unique-approach-to-quantum-computing/"
+  },
+  {
+    "id": "build-0-1782629855808-554",
+    "headline": "A context-aware gate set tomography: Improving the self-consistent characterization of trapped-ion universal gate sets by leveraging non-Markovianity",
+    "source": "Nature: npj Quantum Information",
+    "timestamp": "2026-06-26T00:00:00.000Z",
+    "summary": "...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nature.com/articles/s41534-026-01313-z"
+  },
+  {
+    "id": "build-1-1782629855808-103",
+    "headline": "Learning pure quantum states almost without regret",
+    "source": "Nature: npj Quantum Information",
+    "timestamp": "2026-06-26T00:00:00.000Z",
+    "summary": "...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nature.com/articles/s41534-026-01305-z"
+  },
+  {
+    "id": "build-3-1782554732751-604",
+    "headline": "Scientists measure hidden quantum forces that could power a new generation of pharmaceutical drugs",
+    "source": "Phys.org (Quantum)",
+    "timestamp": "2026-06-25T20:20:10.000Z",
+    "summary": "It's one thing to design a pharmaceutical drug. It's another to know if and why it actually works; not on paper or in a computer model, but inside the chaotic world of living syste...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://phys.org/news/2026-06-scientists-hidden-quantum-power-generation.html"
+  },
+  {
+    "id": "build-4-1782554732751-196",
+    "headline": "Seven exotic quantum phases predicted in ultracold magnetic atoms, including topological superconductivity",
+    "source": "Phys.org (Quantum)",
+    "timestamp": "2026-06-25T18:20:09.000Z",
+    "summary": "Strongly interacting quantum particles are key to some of the most fascinating phenomena in modern physics—from magnetism and superconductivity to topological states. Yet the compl...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Cryptography",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://phys.org/news/2026-06-exotic-quantum-phases-ultracold-magnetic.html"
+  },
+  {
+    "id": "build-9-1782629864722-677",
+    "headline": "Qblox Finalizes Crucial U.S. National Laboratory Licensing Agreement and Expands Enterprise High-Performance Computing Footprint",
+    "source": "Quantum Computing Report",
+    "timestamp": "2026-06-25T18:19:43.000Z",
+    "summary": "In a major expansion of its North American commercial operations and enterprise positioning, quantum control electronics provider Qblox has announced two concurrent initiatives: a ...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "united states of america"
+    ],
+    "country": "United States of America",
+    "link": "https://quantumcomputingreport.com/qblox-finalizes-crucial-u-s-national-laboratory-licensing-agreement-and-expands-enterprise-high-performance-computing-footprint/"
+  },
+  {
+    "id": "build-5-1782554729440-521",
+    "headline": "Tennessee Employers Explore Quantum Opportunities Through New Pre-Apprenticeship",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-25T15:58:28.000Z",
+    "summary": "Insider Brief Press release – The Chattanooga Quantum Collaborative (CQC) has selected 18 professionals from 17 Tennessee employers to participate in the nation’s first quantum pre...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/25/tennessee-employers-join-nations-first-quantum-pre-apprenticeship-to-prepare-for-emerging-technology-opportunities/"
+  },
+  {
+    "id": "build-6-1782554729440-969",
+    "headline": "Qblox and HPE Collaborate on Hybrid Quantum-HPC Computing",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-25T15:50:12.000Z",
+    "summary": "Insider Brief Press release – Qblox, a leading provider of scalable quantum control electronics, today announced a collaboration with HPE to advance hybrid classical-quantum comput...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/25/qblox-collaborates-with-hpe-to-advance-hybrid-classical-quantum-computing/"
+  },
+  {
+    "id": "build-7-1782554729440-313",
+    "headline": "Playground Global Joins NUS Initiative Supporting Singapore’s Quantum Ecosystem",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-25T15:32:45.000Z",
+    "summary": "Insider Brief Press release – US-based venture capital (VC) firms, Playground Global and Matter Venture Partners, have partnered with NUS Enterprise, the entrepreneurial heart of t...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/25/playground-global-and-matter-venture-partners-join-us117-million-nus-vc-programme-to-tap-singapores-deep-tech-ecosystem/"
+  },
+  {
+    "id": "build-8-1782554729440-450",
+    "headline": "QuEra Unveils Gigaquop-Class Fault-Tolerant Roadmap and Invites Organizations to Co-Design Quantum Applications",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-25T15:23:54.000Z",
+    "summary": "Insider Brief Press release – QuEra Computing today detailed the next phase of its fault-tolerant roadmap, including plans for a next-generation gigaquop-class quantum computer com...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/25/quera-unveils-gigaquop-class-fault-tolerant-roadmap-and-invites-organizations-to-co-design-quantum-applications/"
+  },
+  {
+    "id": "build-5-1782554732751-370",
+    "headline": "Trios of quantum particles form checkerboard layouts when particle density hits sweet spot",
+    "source": "Phys.org (Quantum)",
+    "timestamp": "2026-06-25T14:40:03.000Z",
+    "summary": "Trions form when three particles, like quarks or electrons, come together. This formation occurs in quantum particles in nuclear physics, semiconductors and magnets, and understand...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://phys.org/news/2026-06-trios-quantum-particles-checkerboard-layouts.html"
+  },
+  {
+    "id": "build-9-1782554729441-356",
+    "headline": "Lockheed Martin Sees GPS And Quantum Navigation Working Together",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-25T11:40:41.000Z",
+    "summary": "Insider Brief Lockheed Martin is positioning quantum navigation as a backup and companion to GPS, aiming to give military users more precise location data when satellite signals ar...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/25/lockheed-martin-sees-gps-and-quantum-navigation-working-together/"
+  },
+  {
+    "id": "build-7-1782554732751-959",
+    "headline": "Quantum waves reveal one-sided motion marking elusive critical states",
+    "source": "Phys.org (Quantum)",
+    "timestamp": "2026-06-25T10:40:01.000Z",
+    "summary": "Sound waves, light waves and other types of waves, generally spread freely through space and over time. In 1958, physicist Philip W. Anderson first described a phenomenon via which...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://phys.org/news/2026-06-quantum-reveal-sided-motion-elusive.html"
+  },
+  {
+    "id": "build-3-1782629869390-280",
+    "headline": "Inside the DoW Post-Quantum Strategy: The Defense Half of Trump’s PQC Mandate",
+    "source": "Post-Quantum Security",
+    "timestamp": "2026-06-25T07:20:03.000Z",
+    "summary": "Released a day after two quantum executive orders, the Pentagon's first PQC strategy covers the National Security Systems that EO 14412 carves out. The same 2030 and 2031 dates app...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://postquantum.com/security-pqc/dow-pqc-strategy-eo-14412/"
+  },
+  {
+    "id": "build-6-1782629869390-930",
+    "headline": "Future-Proof Encryption",
+    "source": "Post-Quantum Security",
+    "timestamp": "2026-06-25T02:45:38.000Z",
+    "summary": "Every cipher once considered unbreakable has an expiry date, from DES to MD5 to SHA-1. \"Future-proof\" promises permanence that cryptography has never delivered; the honest goal is ...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Cryptography",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://postquantum.com/quantum-snake-oil/future-proof-encryption/"
+  },
+  {
+    "id": "build-8-1782629869390-717",
+    "headline": "Quantum Apocalypse",
+    "source": "Post-Quantum Security",
+    "timestamp": "2026-06-25T02:31:19.000Z",
+    "summary": "The quantum threat to cryptography is real, but \"quantum apocalypse\" wraps it in language built to sell panic. Q-Day is a migration problem with deadlines, not a sudden collapse, a...",
+    "sentiment": "negative",
+    "reliability": 4,
+    "topic": "Cryptography",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://postquantum.com/quantum-snake-oil/quantum-apocalypse/"
+  },
+  {
+    "id": "build-2-1782629855808-757",
+    "headline": "Optimal control for Rydberg multi-qubit operations",
+    "source": "Nature: npj Quantum Information",
+    "timestamp": "2026-06-25T00:00:00.000Z",
+    "summary": "...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nature.com/articles/s41534-026-01288-x"
+  },
+  {
+    "id": "build-3-1782629855808-248",
+    "headline": "Continuous-variable quantum key distribution with a leakage from digital-to-analog conversion",
+    "source": "Nature: npj Quantum Information",
+    "timestamp": "2026-06-25T00:00:00.000Z",
+    "summary": "...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Cryptography",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nature.com/articles/s41534-026-01309-9"
+  },
+  {
+    "id": "build-8-1782554732751-258",
+    "headline": "A new quantum computer sets a high watermark for accuracy. Are we on the verge of a big breakthrough?",
+    "source": "Phys.org (Quantum)",
+    "timestamp": "2026-06-24T19:20:05.000Z",
+    "summary": "In a laboratory in Broomfield, Colorado, 98 atoms are suspended in midair, held in place by electric fields and cooled to temperatures close to absolute zero....",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://phys.org/news/2026-06-quantum-high-watermark-accuracy-verge.html"
+  },
+  {
+    "id": "build-10-1782554732751-641",
+    "headline": "Turning low-value diamond dust into high-performance quantum materials",
+    "source": "Phys.org (Quantum)",
+    "timestamp": "2026-06-24T15:00:01.000Z",
+    "summary": "Diamonds have long been coveted for their beauty. Their dazzling color and clarity make them perfect candidates for luxury jewelry. However, it's their other unique characteristics...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://phys.org/news/2026-06-diamond-high-quantum-materials.html"
+  },
+  {
+    "id": "build-11-1782554732752-362",
+    "headline": "Quantum squeezing sidesteps the limits on mechanical transducers",
+    "source": "Phys.org (Quantum)",
+    "timestamp": "2026-06-24T14:40:02.000Z",
+    "summary": "From detecting the ripples of colliding black holes to imaging individual chemical bonds, mechanical transducers have repeatedly transformed our understanding of the universe. So f...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://phys.org/news/2026-06-quantum-sidesteps-limits-mechanical-transducers.html"
+  },
+  {
+    "id": "build-1-1782629865955-459",
+    "headline": "Quantum Chemicals & Quantum Life Science June 17-25",
+    "source": "IQT News",
+    "timestamp": "2026-06-24T13:15:32.000Z",
+    "summary": "Chemistry and life science innovations often require extended research and development before generating revenue. Last week this newsletter covered Venture Capital (VC) funding. Th...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.insidequantumtechnology.com/news-archive/quantum-chemicals-quantum-life-science-june-17-25/"
+  },
+  {
+    "id": "build-4-1782629855809-180",
+    "headline": "Design and optimization of adaptive diversity schemes in quantum MIMO channels",
+    "source": "Nature: npj Quantum Information",
+    "timestamp": "2026-06-24T00:00:00.000Z",
+    "summary": "...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nature.com/articles/s41534-026-01308-w"
+  },
+  {
+    "id": "build-3-1782629865955-297",
+    "headline": "OrangeQS launches MAX Partnership Program to advance quantum chip testing",
+    "source": "IQT News",
+    "timestamp": "2026-06-23T13:00:16.000Z",
+    "summary": "The program brings OrangeQS together with its partners to ensure that the next generation of test solutions supports evolving quantum chip architectures and production processes. E...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.insidequantumtechnology.com/news-archive/orangeqs-launches-max-partnership-program-to-advance-quantum-chip-testing/"
+  },
+  {
+    "id": "build-5-1782629855809-776",
+    "headline": "Fullqubit alchemist: quantum algorithm for alchemical free energy calculations",
+    "source": "Nature: npj Quantum Information",
+    "timestamp": "2026-06-23T00:00:00.000Z",
+    "summary": "...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nature.com/articles/s41534-026-01275-2"
+  },
+  {
+    "id": "build-6-1782629855809-436",
+    "headline": "Analytical computation of entanglement distribution time in first-generation quantum repeater chains",
+    "source": "Nature: npj Quantum Information",
+    "timestamp": "2026-06-20T00:00:00.000Z",
+    "summary": "...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nature.com/articles/s41534-026-01299-8"
+  },
+  {
+    "id": "build-7-1782629855809-34",
+    "headline": "Long-lived photon blockade with weak optical nonlinearity",
+    "source": "Nature: npj Quantum Information",
+    "timestamp": "2026-06-20T00:00:00.000Z",
+    "summary": "...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nature.com/articles/s41534-026-01293-0"
+  },
+  {
+    "id": "build-6-1782629865956-807",
+    "headline": "Do dragons dream of electric sheep?",
+    "source": "IQT News",
+    "timestamp": "2026-06-19T13:00:10.000Z",
+    "summary": "“Do qubits dream of electric sheep? Inside UW-Madison’s push for quantum” invokes 1968’s “Do Androids Dream of Electric Sheep?” Instead of questioning the value of life, real vs. m...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.insidequantumtechnology.com/news-archive/do-dragons-dream-of-electric-sheep/"
+  },
+  {
+    "id": "build-7-1782629865956-973",
+    "headline": "Microsoft is making significant advances in quantum computing across multiple qubit modalities",
+    "source": "IQT News",
+    "timestamp": "2026-06-18T13:00:19.000Z",
+    "summary": "Many paths to useful quantum computing Each type of qubit comes with its own benefits and challenges that scientists must balance as they design and engineer quantum computers. As ...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.insidequantumtechnology.com/news-archive/microsoft-is-making-significant-advances-in-quantum-computing-across-multiple-qubit-modalities/"
+  },
+  {
+    "id": "build-8-1782629865956-247",
+    "headline": "Quantum Chemicals & Quantum Life Science June 17-24",
+    "source": "IQT News",
+    "timestamp": "2026-06-17T14:07:05.000Z",
+    "summary": "Chemistry and life science innovations often require extended research and development before generating revenue. VC funding provides the patient, high-risk capital necessary to su...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.insidequantumtechnology.com/news-archive/quantum-chemicals-quantum-life-science-june-17-24/"
+  },
+  {
+    "id": "build-9-1782629865956-276",
+    "headline": "Here we are. Born to be qubits.",
+    "source": "IQT News",
+    "timestamp": "2026-06-17T13:00:52.000Z",
+    "summary": "Spun out of the University of Glasgow, roughly 132 km from Glenfinnan and the shores of Loch Shiel, Quantcore is the only company in the UK focused on niobium superconducting quant...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "united kingdom"
+    ],
+    "country": "United Kingdom",
+    "link": "https://www.insidequantumtechnology.com/news-archive/here-we-are-born-to-be-qubits/"
+  },
+  {
+    "id": "build-2-1782629871634-707",
+    "headline": "Can quantum computers now solve health care problems? We’ll soon find out.",
+    "source": "MIT Tech Review: Computing",
+    "timestamp": "2026-03-19T10:51:43.000Z",
+    "summary": "I’m standing in front of a quantum computer built out of atoms and light at the UK’s National Quantum Computing Centre on the outskirts of Oxford. On a laboratory table, a complex ...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "united kingdom"
+    ],
+    "country": "United Kingdom",
+    "link": "https://www.technologyreview.com/2026/03/19/1134409/a-5-million-prize-awaits-proof-that-quantum-computers-can-solve-health-care-problems/"
+  },
+  {
+    "id": "build-0-1782629859143-227",
+    "headline": "Large-scale ion-trap quantum computing systems inch closer to reality with US’ new breakthrough",
+    "source": "Fermilab: Quantum Computing",
+    "timestamp": "2026-03-02T20:50:41.000Z",
+    "summary": "Researchers at Fermilab and the MIT’s Lincoln Laboratory have successfully trapped and manipulated ions using in-vacuum cryoelectronics, allowing for reduced thermal noise and impr...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://interestingengineering.com/science/large-scale-ion-trap-quantum-computing-reality"
+  },
+  {
+    "id": "build-1-1782629859143-258",
+    "headline": "SQMS Center team from Fermilab and NYU Langone advance in NIH Quantum Computing Challenge",
+    "source": "Fermilab: Quantum Computing",
+    "timestamp": "2026-01-06T20:30:00.000Z",
+    "summary": "Magnetic resonance imaging, commonly known as MRI, is a cornerstone of modern medical diagnostics. Now, a collaboration from Fermilab and NYU Langone Health, both partners in the S...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://news.fnal.gov/2026/01/sqms-center-team-from-fermilab-and-nyu-langone-advance-in-nih-quantum-computing-challenge/"
+  },
+  {
+    "id": "build-2-1782629859143-955",
+    "headline": "Connecting qubits to photons: The future of quantum computing with Dr Silvia Zorzetti",
+    "source": "Fermilab: Quantum Computing",
+    "timestamp": "2025-12-12T18:49:46.000Z",
+    "summary": "Fermilab's Silvia Zorzetti is the principal investigator on a multi-year DOE Early Career Award focused on high-efficiency quantum transduction across microwave and optical domains...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.scientific-computing.com/article/connecting-qubits-photons-future-quantum-computing-dr-silvia-zorzetti"
+  },
+  {
+    "id": "build-3-1782629859144-242",
+    "headline": "Manarat Platform Enables Sub-100 ps Timing Alignment for Scalable Quantum Control",
+    "source": "Fermilab: Quantum Computing",
+    "timestamp": "2025-09-10T20:16:15.000Z",
+    "summary": "A new scalable control platform called Manarat has been developed to expand the capabilities of QICK, an open-source platform developed at Fermilab. Manarat will help overcome scal...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://quantumzeitgeist.com/manarat-platform-enables-sub-100-ps-timing-alignment-for-scalable-quantum-control/"
+  },
+  {
+    "id": "build-5-1782629859144-944",
+    "headline": "HRL Laboratories launches open-source solution for solid-state spin-qubits",
+    "source": "Fermilab: Quantum Computing",
+    "timestamp": "2025-07-16T22:55:33.000Z",
+    "summary": "HRL Laboratories developed an open-source extension to the Quantum Instrumentation Control Kit developed at Fermilab. QICK was designed to control electrostatically confined semico...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.hrl.com/news/2025/07/16/hrl-laboratories-launches-open-source-solution-for-solid-state-spin-qubits"
+  },
+  {
+    "id": "build-6-1782629859144-412",
+    "headline": "Diraq and Fermilab launch five-year quantum sensing collaboration to support dark matter search",
+    "source": "Fermilab: Quantum Computing",
+    "timestamp": "2025-03-31T19:58:39.000Z",
+    "summary": "Fermilab and Diraq announced a multi-institution collaboration to develop a novel quantum sensor platform for high-energy physics named Quandarum.\nThe post Diraq and Fermilab launc...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://quantumcomputingreport.com/diraq-and-fermilab-launch-five-year-quantum-sensing-collaboration-to-support-dark-matter-search/"
+  },
+  {
+    "id": "build-7-1782629859144-564",
+    "headline": "At UIC and beyond, students experiment with futures in quantum engineering",
+    "source": "Fermilab: Quantum Computing",
+    "timestamp": "2025-03-05T00:48:08.000Z",
+    "summary": "The University of Illinois-Chicago's College of Engineering is preparing students for the\nThe post At UIC and beyond, students experiment with futures in quantum engineering appear...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://today.uic.edu/at-uic-and-beyond-students-experiment-with-futures-in-quantum-engineering/"
+  },
+  {
+    "id": "build-8-1782629859144-679",
+    "headline": "Bipartisan legislation introduced: $2.5 billion for quantum research at Energy Department boosts U.S. leadership in quantum science",
+    "source": "Fermilab: Quantum Computing",
+    "timestamp": "2025-02-14T23:05:12.000Z",
+    "summary": "Recently, the bipartisan supported  DOE Quantum Leadership Act was introduced aimed at investing over $2.5 billion in quantum research and development. The bill’s introduction is c...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://quantumzeitgeist.com/bipartisan-legislation-introduced-2-5-billion-for-quantum-research-at-energy-department-boosts-u-s-leadership-in-quantum-science/"
+  },
+  {
+    "id": "build-9-1782629859145-585",
+    "headline": "QICK Box Revolutionizes Quantum Computing with Customizable Control System",
+    "source": "Fermilab: Quantum Computing",
+    "timestamp": "2025-01-07T21:44:54.000Z",
+    "summary": "Fermilab scientists hope to harness the powers of quantum computers to solve unprecedented problems. Central to this goal is the ability to communicate between the quantum and clas...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.azoquantum.com/News.aspx?newsID=10692"
+  },
+  {
+    "id": "build-0-1782629872366-364",
+    "headline": "Quantum at the Air Force Research Lab",
+    "source": "NextBigFuture: Quantum",
+    "timestamp": "2024-12-10T17:35:53.000Z",
+    "summary": "The Air Force Research Lab has more funding than DARPA (the Defense Advance Research Programs.) AFRL thinks quantum sensing and timing are applying now. Better quantum clocks are h...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nextbigfuture.com/2024/12/quantum-at-the-air-force-research-lab.html"
+  },
+  {
+    "id": "build-1-1782629872366-709",
+    "headline": "IonQ Selling Quantum Computing Services to Korea",
+    "source": "NextBigFuture: Quantum",
+    "timestamp": "2023-07-01T05:08:32.000Z",
+    "summary": "Quantum Computing company, IonQ, surged 30% in one day and is up 5X from the lows early this year, It appears IonQ will provide education and training services to South Korea’s Min...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nextbigfuture.com/2023/06/ionq-selling-quantum-computing-services-to-korea.html"
+  },
+  {
+    "id": "build-2-1782629872366-675",
+    "headline": "Coldquanta Shows Immense Scalability of ‘Cold Atom’ Processor Approach With 100 Qubit Array",
+    "source": "NextBigFuture: Quantum",
+    "timestamp": "2021-07-07T23:11:02.000Z",
+    "summary": "ColdQuanta, the leader in Cold Atom Quantum Technology, has achieved a significant milestone in the development of its Quantum Computer by trapping and addressing 100 qubits in a l...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nextbigfuture.com/2021/07/coldquanta-shows-immense-scalability-of-cold-atom-processor-approach-with-100-qubit-array.html"
+  },
+  {
+    "id": "build-3-1782629872366-428",
+    "headline": "Microsoft Will Use Quantum Tools with Classical Computing",
+    "source": "NextBigFuture: Quantum",
+    "timestamp": "2019-11-04T19:42:37.000Z",
+    "summary": "Microsoft’s topological qubit architecture is not ready. Microsofts Nadella highlighted a “quantum on classical” approach. Quantum tools will be used alongside classical computatio...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nextbigfuture.com/2019/11/microsoft-will-use-quantum-tools-with-classical-computing.html"
+  },
+  {
+    "id": "build-4-1782629872366-812",
+    "headline": "Quantum Computing and AI Models Larger Proteins to Find New Drugs",
+    "source": "NextBigFuture: Quantum",
+    "timestamp": "2019-07-13T22:54:38.000Z",
+    "summary": "ProteinQure uses quantum computing, molecular simulations and reinforcement learning to engineer new drugs. They combine state-of-the-art structure-based algorithms, including mole...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nextbigfuture.com/2019/07/quantum-computing-and-ai-models-larger-proteins-to-find-new-drugs.html"
+  },
+  {
+    "id": "build-5-1782629872367-228",
+    "headline": "Hybrid Quantum-Classical System from D-Wave and Where Quantum Computing Could Be Used",
+    "source": "NextBigFuture: Quantum",
+    "timestamp": "2019-06-29T00:40:00.000Z",
+    "summary": "D-Wave Systems announced the availability of D-Wave Hybrid™, a simple open-source hybrid workflow platform for building and running quantum-classical hybrid applications. D-Wave Hy...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nextbigfuture.com/2019/06/hybrid-quantum-classical-system-from-d-wave-and-where-quantum-computing-could-be-used.html"
+  },
+  {
+    "id": "build-6-1782629872367-867",
+    "headline": "Teleportation of Quantum Information In Diamond Is Big for Quantum Communication",
+    "source": "NextBigFuture: Quantum",
+    "timestamp": "2019-06-29T00:06:50.000Z",
+    "summary": "Teleportation of Quantum Information In Diamond Is Big for Quantum Communication...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nextbigfuture.com/2019/06/teleportation-of-quantum-information-in-diamond-is-big-for-quantum-communication.html"
+  },
+  {
+    "id": "build-7-1782629872367-37",
+    "headline": "Canada has future tech leadership with quantum computers, AI, nanotechnology, fusion and molten salt",
+    "source": "NextBigFuture: Quantum",
+    "timestamp": "2018-08-29T21:24:29.000Z",
+    "summary": "In 2018, Canada is ranked tenth in the world in nominal GDP. It is a rich developed country. Despite having an economy that is 11 times smaller than the USA or 7 times smaller than...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "united states of america"
+    ],
+    "country": "United States of America",
+    "link": "https://www.nextbigfuture.com/2018/08/canada-has-future-tech-leadership-with-quantum-computers-ai-nanotechnology-fusion-and-molten-salt.html"
+  },
+  {
+    "id": "build-8-1782629872367-377",
+    "headline": "Dwave Quadrant quantum enhanced deep learning can learn with a lot less data",
+    "source": "NextBigFuture: Quantum",
+    "timestamp": "2018-05-09T16:33:44.000Z",
+    "summary": "D-Wave Systems Inc., the world’s leader in quantum computing systems and software, today announced the launch of its Quadrant business unit, formed to provide machine learning serv...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://www.nextbigfuture.com/2018/05/dwave-quadrant-quantum-enhanced-deep-learning-can-learn-with-a-lot-less-data.html"
+  },
+  {
+    "id": "build-9-1782629872367-817",
+    "headline": "IBM explains why the time for quantum computers is now",
+    "source": "NextBigFuture: Quantum",
+    "timestamp": "2017-12-08T06:21:22.000Z",
+    "summary": "Dr. Dario Gil is a leading technologist and senior executive at IBM. As Vice President of Science and Solutions of IBM Research, Dr. Gil directs a global organization of some 1,500...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "united states of america"
+    ],
+    "country": "United States of America",
+    "link": "https://www.nextbigfuture.com/2017/12/ibm-explains-why-the-time-for-quantum-computers-is-now.html"
+  },
+  {
+    "id": "build-10-1782629872367-144",
+    "headline": "IBM has 50 qubit prototype chip which should be close to Quantum Supremacy",
+    "source": "NextBigFuture: Quantum",
+    "timestamp": "2017-11-10T15:48:24.000Z",
+    "summary": "Quantum Supremacy is when quantum computers become faster than classical computers. Once Quantum Computers surpass classical computers they will continue to improve at a far more r...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "united states of america"
+    ],
+    "country": "United States of America",
+    "link": "https://www.nextbigfuture.com/2017/11/ibm-has-50-qubit-prototype-chip-which-should-be-close-to-quantum-supremacy.html"
+  }
+]
