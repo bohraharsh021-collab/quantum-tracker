@@ -6,8 +6,8 @@ on:
       - main
       - master
   schedule:
-    # Trigger automatically every day at midnight UTC
-    - cron: '0 0 * * *'
+    # Trigger automatically every 4 hours for continuous monitoring
+    - cron: '0 */4 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 permissions:
@@ -17,6 +17,7 @@ jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       - name: Checkout Repository
