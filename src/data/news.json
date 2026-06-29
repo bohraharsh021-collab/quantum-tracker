@@ -1,5 +1,21 @@
 [
   {
+    "id": "build-0-1782768153994-307",
+    "headline": "NIST Taps SRI to Establish The Quantum Manufacturing Engineering Center (QMEC)",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-29T21:16:17.000Z",
+    "summary": "Insider Brief PRESS RELEASE — SRI, leading nonprofit R&D institution, today announced that the U.S. Department of Commerce’s National Institute of Standards and Technology (NIST) h...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/29/nist-taps-sri-to-establish-the-quantum-manufacturing-engineering-center-qmec/"
+  },
+  {
     "id": "build-0-1782756390111-738",
     "headline": "Ask an AI expert: What exactly is the full stack?",
     "source": "Google AI Blog",
