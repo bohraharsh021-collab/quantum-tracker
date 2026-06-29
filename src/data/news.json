@@ -1,5 +1,197 @@
 [
   {
+    "id": "build-0-1782707034224-193",
+    "headline": "Quantum typicality survives non-Abelian gauge constraints: exact analytical prediction confirmed in $SU(2)$ lattice gauge theory",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-29T04:00:00.000Z",
+    "summary": "arXiv:2606.27402v1 Announce Type: new \nAbstract: Arguments for emergent spacetime require that quantum typicality, the generic absence of inter-subsystem correlations, persists on ...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.27402"
+  },
+  {
+    "id": "build-1-1782707034224-663",
+    "headline": "Reservoir-independent lossless charging and protected storage of an open quantum battery",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-29T04:00:00.000Z",
+    "summary": "arXiv:2606.27403v1 Announce Type: new \nAbstract: A quantum battery charged through a lossy intermediate state faces a structural trade-off between charging speed and dissipation. W...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.27403"
+  },
+  {
+    "id": "build-2-1782707034224-440",
+    "headline": "Compression-Driven Anomaly Detection in Brain MRI Using an Interpretable Quantum Autoencoder",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-29T04:00:00.000Z",
+    "summary": "arXiv:2606.27411v1 Announce Type: new \nAbstract: We study a quantum autoencoder (QAE) for compression-driven anomaly detection in brain MRI data. The approach leverages angle encod...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.27411"
+  },
+  {
+    "id": "build-3-1782707034224-728",
+    "headline": "Engineering of non-Hermitian interactions in digital qudit quantum simulators",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-29T04:00:00.000Z",
+    "summary": "arXiv:2606.27424v1 Announce Type: new \nAbstract: Non-Hermitian Hamiltonians are a fascinating class of many-body models that describe the effective dynamics of quantum systems inte...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.27424"
+  },
+  {
+    "id": "build-4-1782707034224-295",
+    "headline": "Multi-parameter two-photon polarimetry at the quantum limit",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-29T04:00:00.000Z",
+    "summary": "arXiv:2606.27428v1 Announce Type: new \nAbstract: Photonic quantum metrology has demonstrated advantages in precision and resource efficiency for a wide range of applications, with ...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.27428"
+  },
+  {
+    "id": "build-5-1782707034224-392",
+    "headline": "I-QMapper: Error-Aware Layout Optimization and Device Diagnostics for NISQ Hardware",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-29T04:00:00.000Z",
+    "summary": "arXiv:2606.27508v1 Announce Type: new \nAbstract: Achieving high-fidelity execution on noisy intermediate-scale quantum (NISQ) hardware requires careful selection of physical qubit ...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.27508"
+  },
+  {
+    "id": "build-6-1782707034224-193",
+    "headline": "Photon avalanche triggered by a single photon in a bistable nonlinear optical cavity",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-29T04:00:00.000Z",
+    "summary": "arXiv:2606.27555v1 Announce Type: new \nAbstract: We theoretically investigate the response of a coherently-driven nonlinear optical cavity to an additional incident single photon. ...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.27555"
+  },
+  {
+    "id": "build-7-1782707034224-442",
+    "headline": "Vector Representation of Exact Soliton Dynamics in Multi-component Nonlinear Schr\\\"odinger Systems",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-29T04:00:00.000Z",
+    "summary": "arXiv:2606.27569v1 Announce Type: new \nAbstract: Multicomponent nonlinear Schr\\\"odinger equations constitute fundamental models for coherent matter waves in multicomponent Bose--Ei...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.27569"
+  },
+  {
+    "id": "build-8-1782707034224-884",
+    "headline": "su(1,1) Symmetry and Exact Solutions of the Dunkl-Klein-Gordon Equation in Higher Dimensions",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-29T04:00:00.000Z",
+    "summary": "arXiv:2606.27589v1 Announce Type: new \nAbstract: We investigate the $d$-dimensional Dunkl--Klein--Gordon equation for a scalar particle within an algebraic framework. By employing ...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.27589"
+  },
+  {
+    "id": "build-9-1782707034224-41",
+    "headline": "Scalable Acceleration of Many-Body Quantum Dynamics via Time-Rescaling",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-29T04:00:00.000Z",
+    "summary": "arXiv:2606.27630v1 Announce Type: new \nAbstract: Fast quantum control is essential to overcome decoherence in contemporary quantum platforms, yet achieving this in many-body system...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.27630"
+  },
+  {
+    "id": "build-10-1782707034224-66",
+    "headline": "Enhancing Quantum Metrology with High-order Fisher Information and Experiments",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-29T04:00:00.000Z",
+    "summary": "arXiv:2606.27633v1 Announce Type: new \nAbstract: Fisher information plays a central role in statistics and quantum metrology, providing the basis for the celebrated Cram\\'{e}r-Rao ...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.27633"
+  },
+  {
+    "id": "build-11-1782707034224-457",
+    "headline": "Memory and thermal amplification in spin--cavity squared commutators",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-29T04:00:00.000Z",
+    "summary": "arXiv:2606.27648v1 Announce Type: new \nAbstract: Squared commutators in the Holstein--Primakoff limit of a spin--cavity system provide a compact way to separate propagation from co...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.27648"
+  },
+  {
     "id": "build-0-1782614215965-751",
     "headline": "Non-Hermitian geometry reveals when quantum amplification depends only on start and end points",
     "source": "Phys.org (Quantum)",
