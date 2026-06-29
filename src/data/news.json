@@ -1,5 +1,53 @@
 [
   {
+    "id": "build-0-1782756390111-738",
+    "headline": "Ask an AI expert: What exactly is the full stack?",
+    "source": "Google AI Blog",
+    "timestamp": "2026-06-29T16:00:00.000Z",
+    "summary": "A Google expert explains what it means to take a full-stack approach to AI and why it’s been the foundation of our AI work for so long....",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "united states of america"
+    ],
+    "country": "United States of America",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/full-stack-ai-explainer/"
+  },
+  {
+    "id": "build-0-1782756384774-505",
+    "headline": "WiMi Explores Neural Networks for Twin-Field Quantum Key Distribution Optimization",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-29T15:56:19.000Z",
+    "summary": "Insider Brief Press release – WiMi Hologram Cloud Inc. (NASDAQ: WiMi) (“WiMi” or the “Company”), a leading global Hologram Augmented Reality (“AR”) Technology provider, announced t...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Cryptography",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/29/wimi-neural-networks-dual-field-quantum-key-distribution-optimization/"
+  },
+  {
+    "id": "build-2-1782756384774-954",
+    "headline": "Pasqal Appoints Stéphane Rougeot as Chief Financial Officer",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-29T13:57:03.000Z",
+    "summary": "Insider Brief Press release – Pasqal, a global leader in neutral-atom quantum computing, today announced the appointment of Stéphane Rougeot as Chief Financial Officer (CFO). Rouge...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/29/pasqal-appoints-stephane-rougeot-chief-financial-officer/"
+  },
+  {
     "id": "build-0-1782736096662-634",
     "headline": "Texas A&M Researchers Develop Quantum Technique for Drug Discovery",
     "source": "The Quantum Insider",
