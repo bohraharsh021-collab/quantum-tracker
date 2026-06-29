@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { PROCESSORS_MATRIX } from '../data/quantumData';
 import { getDynamicNewsOverrides } from '../utils/newsOverrides';
 import { Search, ArrowUpDown, Layers, CheckSquare, Square } from 'lucide-react';
@@ -38,26 +38,28 @@ export default function QuantumProcessorsMatrix({ articles = [] }) {
     });
   }, [filteredProcessors, sortField, sortOrder]);
 
-  const handleSort = (field) => {
+  const handleSort = useCallback((field) => {
     if (sortField === field) {
-      setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+      setSortOrder(prevOrder => prevOrder === 'asc' ? 'desc' : 'asc');
     } else {
       setSortField(field);
       setSortOrder('desc');
     }
-  };
+  }, [sortField]);
 
-  const toggleCompare = (proc) => {
-    if (compareList.some(item => item.name === proc.name)) {
-      setCompareList(compareList.filter(item => item.name !== proc.name));
-    } else {
-      if (compareList.length >= 3) {
-        alert("Maximum of 3 processors can be compared side-by-side.");
-        return;
+  const toggleCompare = useCallback((proc) => {
+    setCompareList(prevList => {
+      if (prevList.some(item => item.name === proc.name)) {
+        return prevList.filter(item => item.name !== proc.name);
+      } else {
+        if (prevList.length >= 3) {
+          alert("Maximum of 3 processors can be compared side-by-side.");
+          return prevList;
+        }
+        return [...prevList, proc];
       }
-      setCompareList([...compareList, proc]);
-    }
-  };
+    });
+  }, []);
 
   return (
     <div className="space-y-6">

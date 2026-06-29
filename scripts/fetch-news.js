@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 const parser = new Parser({
-  timeout: 8000,
+  timeout: 60000,
   headers: {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'application/rss+xml, application/rdf+xml, application/xml;q=0.9, text/xml;q=0.8'
@@ -27,7 +27,21 @@ const FEEDS = [
   { name: 'Phys.org: Quantum Physics', url: 'https://phys.org/rss-feed/physics-news/quantum-physics/', category: 'science' },
   { name: 'ScienceDaily: Quantum', url: 'https://www.sciencedaily.com/rss/matter_energy/quantum_computers.xml', category: 'science' },
   { name: 'MIT Tech Review: Computing', url: 'https://www.technologyreview.com/topic/computing/feed', category: 'science' },
-  { name: 'NextBigFuture: Quantum', url: 'https://www.nextbigfuture.com/tag/quantum-computing/feed', category: 'science' }
+  { name: 'NextBigFuture: Quantum', url: 'https://www.nextbigfuture.com/tag/quantum-computing/feed', category: 'science' },
+
+  // Category 4: Government & Policy
+  { name: 'NIST Quantum', url: 'https://www.nist.gov/blogs/taking-measure/rss.xml', category: 'government' },
+  { name: 'EU Digital Strategy', url: 'https://digital-strategy.ec.europa.eu/en/rss.xml', category: 'government' },
+  { name: 'India DST News', url: 'https://dst.gov.in/rss.xml', category: 'government' },
+  { name: 'UK NQCC News', url: 'https://www.nqcc.ac.uk/feed/', category: 'government' },
+  { name: 'India Science Wire', url: 'https://vigyanprasar.gov.in/isw/rss-feed.xml', category: 'government' },
+
+  // Category 5: Company & Startup
+  { name: 'IBM Quantum Blog', url: 'https://www.ibm.com/quantum/blog/rss', category: 'company' },
+  { name: 'Google AI Blog', url: 'https://blog.google/technology/ai/rss/', category: 'company' },
+  { name: 'IonQ Blog', url: 'https://ionq.com/resources/rss.xml', category: 'startup' },
+  { name: 'Rigetti Computing', url: 'https://www.rigetti.com/blog-feed.xml', category: 'startup' },
+  { name: 'QpiAI News', url: 'https://www.qpiai.tech/blog-feed.xml', category: 'startup' }
 ];
 
 const POSITIVE_LEXICON = {
@@ -75,7 +89,7 @@ async function fetchNews() {
       const feedData = await parser.parseURL(feed.url);
       const items = feedData.items || [];
 
-      for (let i = 0; i < Math.min(items.length, 12); i++) {
+      for (let i = 0; i < Math.min(items.length, 20); i++) {
         const item = items[i];
         const title = item.title || '';
         const link = item.link || '';
@@ -87,14 +101,13 @@ async function fetchNews() {
 
         // Check if content matches quantum computing topic parameters
         const contentStr = (title + ' ' + cleanDesc).toLowerCase();
+        const bypassCategories = ['academic', 'government', 'company', 'startup'];
         const isQuantum = 
+          bypassCategories.includes(feed.category) ||
           contentStr.includes('quantum') || 
           contentStr.includes('qubit') || 
           contentStr.includes('cryptography') || 
-          contentStr.includes('decoherence') ||
-          feed.url.includes('arxiv.org') ||
-          feed.url.includes('nature.com') ||
-          feed.url.includes('uwaterloo.ca');
+          contentStr.includes('decoherence');
 
         if (!isQuantum) continue;
 
@@ -124,11 +137,21 @@ async function fetchNews() {
           country = 'United Kingdom';
         }
 
+        let timestamp = new Date().toISOString();
+        try {
+          if (pubDate) {
+            const parsedDate = new Date(pubDate);
+            if (!isNaN(parsedDate.getTime())) {
+              timestamp = parsedDate.toISOString();
+            }
+          }
+        } catch (e) {}
+
         compiledArticles.push({
           id: `build-${i}-${Date.now()}-${Math.floor(Math.random() * 1000)}`,
           headline: title,
           source: feed.name,
-          timestamp: new Date(pubDate).toISOString(),
+          timestamp,
           summary: cleanDesc,
           sentiment,
           reliability: 4,
@@ -165,8 +188,8 @@ async function fetchNews() {
   // Sort by newest first
   combinedArticles.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
 
-  // Keep a rolling history of up to 100 articles
-  const MAX_HISTORY = 100;
+  // Keep a rolling history of up to 1000 articles
+  const MAX_HISTORY = 1000;
   if (combinedArticles.length > MAX_HISTORY) {
     combinedArticles = combinedArticles.slice(0, MAX_HISTORY);
   }

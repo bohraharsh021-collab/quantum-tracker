@@ -1,22 +1,18 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { getDynamicNewsOverrides } from '../utils/newsOverrides';
 import { 
   Globe, 
-  Shield, 
   Cpu, 
   Users, 
   AlertTriangle, 
   TrendingUp, 
   Search, 
   Building2, 
-  ExternalLink,
   Zap,
-  ArrowRight,
   GitCompare,
   CheckCircle2,
   Info,
   Lock,
-  Sparkles,
   Layers,
   Award
 } from 'lucide-react';
@@ -252,7 +248,7 @@ export default function SovereignComparison({ articles = [] }) {
   const [viewMode, setViewMode] = useState('matrix'); // 'matrix', 'compare', 'charts', 'hubs'
   
   const [selectedForCharts, setSelectedForCharts] = useState(
-    SOVEREIGN_COMPARISON_DATA.reduce((acc, curr) => ({ ...acc, [curr.id]: true }), {})
+    () => SOVEREIGN_COMPARISON_DATA.reduce((acc, curr) => ({ ...acc, [curr.id]: true }), {})
   );
 
   const currentNationData = useMemo(() => {
@@ -297,12 +293,12 @@ export default function SovereignComparison({ articles = [] }) {
   }, [searchQuery]);
 
   // Checkbox toggle for charts overlay
-  const handleChartToggle = (id) => {
+  const handleChartToggle = useCallback((id) => {
     setSelectedForCharts(prev => ({
       ...prev,
       [id]: !prev[id]
     }));
-  };
+  }, []);
 
   // Max funding / qubit limits for CSS charts scaling
   const maxFundingVal = useMemo(() => {

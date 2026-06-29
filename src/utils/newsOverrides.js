@@ -190,9 +190,9 @@ export function getDynamicNewsOverrides(articles = []) {
         ) {
           overrides.newAlliances.push({
             id: `dyn-al-${index}`,
-            partnerA,
-            partnerB,
-            focus: summary.substring(0, 80) || "Collaborative R&D on secure cryptography algorithms and processor hardware.",
+            partyA: partnerA,
+            partyB: partnerB,
+            scope: summary.substring(0, 80) || "Collaborative R&D on secure cryptography algorithms and processor hardware.",
             date: dateStr,
             type: "R&D Consortium"
           });

@@ -22,6 +22,7 @@ import AlliancesNode from './components/AlliancesNode';
 import ReportsPortal from './components/ReportsPortal';
 import WorldMapLeaflet from './components/WorldMapLeaflet';
 import StrategicAdvisory from './components/StrategicAdvisory';
+import Settings from './components/Settings';
 
 // Import Icons
 import { 
@@ -42,26 +43,40 @@ import {
   AlertOctagon, 
   Award,
   Globe,
-  Compass,
   GitCompare,
-  TrendingUp
+  TrendingUp,
+  Settings2
 } from 'lucide-react';
 
 const FEEDS = [
+  // Academic & Research (4)
   { name: 'arXiv (quant-ph)', url: 'https://export.arxiv.org/rss/quant-ph', category: 'academic' },
   { name: 'Nature: Quantum Information', url: 'https://www.nature.com/npjqi.rss', category: 'academic' },
   { name: 'IQC Waterloo', url: 'https://uwaterloo.ca/institute-for-quantum-computing/feed', category: 'academic' },
   { name: 'Fermilab: Quantum Computing', url: 'https://news.fnal.gov/tag/quantum-computing/feed/', category: 'academic' },
-  
+  // Industry News (4)
   { name: 'The Quantum Insider', url: 'https://thequantuminsider.com/feed/', category: 'industry' },
   { name: 'Quantum Computing Report', url: 'https://quantumcomputingreport.com/feed/', category: 'industry' },
   { name: 'IQT News', url: 'https://www.insidequantumtechnology.com/feed/', category: 'industry' },
   { name: 'Post-Quantum Security', url: 'https://postquantum.com/feed/', category: 'industry' },
-  
+  // Science & Media (4)
   { name: 'Phys.org: Quantum Physics', url: 'https://phys.org/rss-feed/physics-news/quantum-physics/', category: 'science' },
   { name: 'ScienceDaily: Quantum', url: 'https://www.sciencedaily.com/rss/matter_energy/quantum_computers.xml', category: 'science' },
   { name: 'MIT Tech Review: Computing', url: 'https://www.technologyreview.com/topic/computing/feed', category: 'science' },
-  { name: 'NextBigFuture: Quantum', url: 'https://www.nextbigfuture.com/tag/quantum-computing/feed', category: 'science' }
+  { name: 'NextBigFuture: Quantum', url: 'https://www.nextbigfuture.com/tag/quantum-computing/feed', category: 'science' },
+  // Government & Policy (5)
+  { name: 'NIST Quantum', url: 'https://www.nist.gov/blogs/taking-measure/rss.xml', category: 'government' },
+  { name: 'EU Digital Strategy', url: 'https://digital-strategy.ec.europa.eu/en/rss.xml', category: 'government' },
+  { name: 'India DST News', url: 'https://dst.gov.in/rss.xml', category: 'government' },
+  { name: 'UK NQCC News', url: 'https://www.nqcc.ac.uk/feed/', category: 'government' },
+  { name: 'India Science Wire', url: 'https://vigyanprasar.gov.in/isw/rss-feed.xml', category: 'government' },
+  // Company Blogs (2)
+  { name: 'IBM Quantum Blog', url: 'https://www.ibm.com/quantum/blog/rss', category: 'company' },
+  { name: 'Google AI Blog', url: 'https://blog.google/technology/ai/rss/', category: 'company' },
+  // Startup Blogs (3)
+  { name: 'IonQ Blog', url: 'https://ionq.com/resources/rss.xml', category: 'startup' },
+  { name: 'Rigetti Computing', url: 'https://www.rigetti.com/blog-feed.xml', category: 'startup' },
+  { name: 'QpiAI News', url: 'https://www.qpiai.tech/blog-feed.xml', category: 'startup' }
 ];
 
 const POSITIVE_LEXICON = {
@@ -118,22 +133,14 @@ export default function App() {
     country: null
   });
 
-  // Load Initial Mock Data
+  const soundEnabledRef = useRef(soundEnabled);
   useEffect(() => {
-    const merged = [...preFetchedNews];
-    MOCK_ARTICLES.forEach(item => {
-      if (!merged.some(m => m.headline === item.headline)) {
-        merged.push(item);
-      }
-    });
-    setArticles(merged);
-    // Run an initial fetch
-    triggerFetchFeed();
-  }, []);
+    soundEnabledRef.current = soundEnabled;
+  }, [soundEnabled]);
 
   // Web Audio Alarm Synthesizer
-  const playSynthesizedAlertSound = (severity) => {
-    if (!soundEnabled) return;
+  const playSynthesizedAlertSound = useCallback((severity) => {
+    if (!soundEnabledRef.current) return;
     try {
       const AudioContext = window.AudioContext || window.webkitAudioContext;
       if (!AudioContext) return;
@@ -177,21 +184,10 @@ export default function App() {
     } catch (e) {
       console.warn("Audio Context playback warning.", e);
     }
-  };
-
-  // Background refresh cycle hook
-  useEffect(() => {
-    if (refreshInterval <= 0) return;
-    const intervalMs = refreshInterval * 1000;
-    const timer = setInterval(() => {
-      console.log("Background polling cycle triggered...");
-      triggerFetchFeed();
-    }, intervalMs);
-    return () => clearInterval(timer);
-  }, [refreshInterval]);
+  }, []);
 
   // Fetch feeds via CORS Proxy in parallel
-  const triggerFetchFeed = async () => {
+  const triggerFetchFeed = useCallback(async () => {
     setLoading(true);
     
     const fetchPromises = FEEDS.map(async (feed) => {
@@ -199,9 +195,9 @@ export default function App() {
       try {
         const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(feed.url)}`;
         
-        // Timeout signal of 8 seconds
+        // Timeout signal of 30 seconds (extended for slow gov/institutional sites)
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 8000);
+        const timeoutId = setTimeout(() => controller.abort(), 30000);
         
         const response = await fetch(proxyUrl, { signal: controller.signal });
         clearTimeout(timeoutId);
@@ -223,7 +219,7 @@ export default function App() {
           isAtom = true;
         }
 
-        for (let i = 0; i < Math.min(items.length, 5); i++) {
+        for (let i = 0; i < Math.min(items.length, 10); i++) {
           const item = items[i];
           let title = '', link = '', pubDateStr = '', description = '';
           
@@ -253,7 +249,10 @@ export default function App() {
             contentStr.includes('decoherence') ||
             feed.url.includes('arxiv.org') ||
             feed.url.includes('nature.com') ||
-            feed.url.includes('uwaterloo.ca');
+            feed.url.includes('uwaterloo.ca') ||
+            feed.category === 'government' ||
+            feed.category === 'company' ||
+            feed.category === 'startup';
 
           if (!isQuantum) continue;
 
@@ -281,11 +280,22 @@ export default function App() {
             country = 'China';
           }
 
+          // Safe Date conversion to prevent RangeError exceptions
+          let finalTimestamp = new Date().toISOString();
+          try {
+            if (pubDateStr) {
+              const parsedDate = new Date(pubDateStr);
+              if (!isNaN(parsedDate.getTime())) {
+                finalTimestamp = parsedDate.toISOString();
+              }
+            }
+          } catch (e) {}
+
           const art = {
             id: 'feed-' + i + '-' + Date.now() + '-' + Math.random().toString(36).substr(2, 5),
             headline: title,
             source: feed.name,
-            timestamp: pubDateStr ? new Date(pubDateStr).toISOString() : new Date().toISOString(),
+            timestamp: finalTimestamp,
             summary: cleanDesc,
             sentiment,
             reliability: 4,
@@ -332,7 +342,31 @@ export default function App() {
       });
     }
     setLoading(false);
-  };
+  }, [playSynthesizedAlertSound]);
+
+  // Load Initial Mock Data
+  useEffect(() => {
+    const merged = [...preFetchedNews];
+    MOCK_ARTICLES.forEach(item => {
+      if (!merged.some(m => m.headline === item.headline)) {
+        merged.push(item);
+      }
+    });
+    setArticles(merged);
+    // Run an initial fetch
+    triggerFetchFeed();
+  }, [triggerFetchFeed]);
+
+  // Background refresh cycle hook
+  useEffect(() => {
+    if (refreshInterval <= 0) return;
+    const intervalMs = refreshInterval * 1000;
+    const timer = setInterval(() => {
+      console.log("Background polling cycle triggered...");
+      triggerFetchFeed();
+    }, intervalMs);
+    return () => clearInterval(timer);
+  }, [refreshInterval, triggerFetchFeed]);
 
   // Filtered Articles Selector - Memoized for performance
   const filteredArticles = useMemo(() => {
@@ -418,6 +452,8 @@ export default function App() {
         return <ReportsPortal articles={filteredArticles} />;
       case 'map':
         return <WorldMapLeaflet onCountrySelect={handleCountryFilter} />;
+      case 'settings':
+        return <Settings refreshInterval={refreshInterval} setRefreshInterval={setRefreshInterval} articles={articles} feeds={FEEDS} onRefresh={triggerFetchFeed} loading={loading} />;
       default:
         return <DashboardHub articles={articles} onSwitchTab={setActiveTab} />;
     }
@@ -506,7 +542,8 @@ export default function App() {
               { id: 'globalresources', name: 'Global Resources', icon: <Globe size={14} /> },
               { id: 'procurement', name: 'Procurement Ledger', icon: <FileText size={14} /> },
               { id: 'alliances', name: 'Alliances & Consortia', icon: <Handshake size={14} /> },
-              { id: 'reports', name: 'Reports Dossier', icon: <FileText size={14} /> }
+              { id: 'reports', name: 'Reports Dossier', icon: <FileText size={14} /> },
+              { id: 'settings', name: 'Settings', icon: <Settings2 size={14} /> }
             ].map(item => (
               <button
                 key={item.id}

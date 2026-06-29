@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { PROCUREMENT_LEDGER } from '../data/quantumData';
 import { getDynamicNewsOverrides } from '../utils/newsOverrides';
-import { Search, DollarSign, RefreshCw, ShoppingCart } from 'lucide-react';
+import { Search, DollarSign } from 'lucide-react';
 
 export default function ProcurementLedger({ articles = [] }) {
   const [searchTerm, setSearchTerm] = useState('');
