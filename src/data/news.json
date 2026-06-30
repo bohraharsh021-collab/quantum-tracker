@@ -1,5 +1,373 @@
 [
   {
+    "id": "build-0-1782805858125-964",
+    "headline": "South Korea Commits 200 Trillion Won to R&D, Quantum Listed as Strategic Tech",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-30T07:26:37.000Z",
+    "summary": "Insider Brief South Korea will make quantum technologies one of the country’s core national research priorities under a five-year science and technology plan that commits more than...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/30/south-korea-commits-200-trillion-won-to-rd-quantum-listed-as-strategic-tech/"
+  },
+  {
+    "id": "build-1-1782805858125-16",
+    "headline": "SEEQC Files Registration Statement for Proposed Initial Public Offering",
+    "source": "The Quantum Insider",
+    "timestamp": "2026-06-30T07:17:27.000Z",
+    "summary": "Insider Brief PRESS RELEASE — SeeQC, Inc. (“SEEQC” or the “Company”), a quantum computing infrastructure company, today announced that it has publicly filed a registration statemen...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://thequantuminsider.com/2026/06/30/seeqc-files-registration-statement-for-proposed-initial-public-offering/"
+  },
+  {
+    "id": "build-0-1782805862888-440",
+    "headline": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
+    "source": "Google AI Blog",
+    "timestamp": "2026-06-30T06:00:00.000Z",
+    "summary": "Google UK shares its latest Economic Impact Report and how to enable more people to unlock the benefits of AI-powered technologies....",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "united states of america"
+    ],
+    "country": "United States of America",
+    "link": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/"
+  },
+  {
+    "id": "build-0-1782805856358-826",
+    "headline": "Beyond Worst-Case Branching: Quantum Tree Search via Amplitude Amplification",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28452v1 Announce Type: new \nAbstract: In this work, we investigate quantum tree search via amplitude amplification. Amplitude amplification generalizes Grover's algorith...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28452"
+  },
+  {
+    "id": "build-1-1782805856358-734",
+    "headline": "Quantum Fourier Generative Models Trainable at Large Scale",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28483v1 Announce Type: new \nAbstract: We propose an algorithmic framework for building and training quantum generative models corresponding to multivariate probability d...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28483"
+  },
+  {
+    "id": "build-2-1782805856359-319",
+    "headline": "The subthreshold issue of fusion-based quantum computing",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28490v1 Announce Type: new \nAbstract: Fusion-based quantum architectures are the leading approach to photonic quantum computing. However, the sub-threshold regime, where...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28490"
+  },
+  {
+    "id": "build-3-1782805856359-454",
+    "headline": "Dissipative Effects in Transmission Line Analogues of Hawking Radiation",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28505v1 Announce Type: new \nAbstract: Hawking radiation is a fundamental result of quantum field theory in curved spacetime, yet its direct observation remains beyond cu...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28505"
+  },
+  {
+    "id": "build-4-1782805856359-360",
+    "headline": "Borrowed Identities: Malleable Distillation Factories and a Unified Numerical Search",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28518v1 Announce Type: new \nAbstract: Magic-state distillation is one of the leading overheads in fault-tolerant quantum computation. Existing methods for finding distil...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28518"
+  },
+  {
+    "id": "build-5-1782805856359-614",
+    "headline": "High yield creation of germanium vacancy centers in diamond by focused ion beam implantation and high temperature annealing",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28528v1 Announce Type: new \nAbstract: Negatively charged germanium vacancy centers (GeV) in diamond are a promising platform for quantum computing and quantum communicat...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28528"
+  },
+  {
+    "id": "build-6-1782805856359-125",
+    "headline": "Dynamical decoupling of a quantum dot spin in a micropillar cavity for spin-multiphoton entanglement",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28535v1 Announce Type: new \nAbstract: Graph states of mutually entangled photons are key resources for quantum computation and communication and can be generated by leve...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Cryptography",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28535"
+  },
+  {
+    "id": "build-7-1782805856359-822",
+    "headline": "Pauli-Sparse regularised Counterdiabatic Shortcuts for Linear-Ramp QAOA",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28536v1 Announce Type: new \nAbstract: Combinatorial optimization is a leading target for quantum algorithms, but finite-depth QAOA can suffer from strong diabatic errors...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28536"
+  },
+  {
+    "id": "build-8-1782805856359-533",
+    "headline": "Enhancing Initial-State Sensitivity through Time-Dependent Hamiltonian Readout in Ising Spin Chains",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28552v1 Announce Type: new \nAbstract: Local observables can lose sensitivity to an initial state during strongly interacting many-body evolution even though the global d...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28552"
+  },
+  {
+    "id": "build-9-1782805856359-403",
+    "headline": "The Prepare and Broadcast Scenario",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28632v1 Announce Type: new \nAbstract: We introduce the dimension-restricted prepare and broadcast (PAB) scenario, which generalizes standard prepare-and-measure framewor...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28632"
+  },
+  {
+    "id": "build-10-1782805856359-264",
+    "headline": "The Schr\\\"{o}dinger equation in the complex plane and quantum entanglement",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28640v1 Announce Type: new \nAbstract: We formulate a continuity equation for the Schr\\\"odinger equation in the complex space. We define a complex momentum by normalizing...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28640"
+  },
+  {
+    "id": "build-11-1782805856359-40",
+    "headline": "Exploring the Effects of Entanglement on Quantum Machine Learning of Pathogen Epitope-Receptor Binding",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28655v1 Announce Type: new \nAbstract: Parameterized quantum circuits (PQCs) provide a flexible substrate for hybrid quantum machine learning (QML), but their practical v...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28655"
+  },
+  {
+    "id": "build-12-1782805856360-288",
+    "headline": "Emergence of Thermodynamics from Equilibration in Isolated Quantum Systems",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28660v1 Announce Type: new \nAbstract: Understanding how macroscopic thermodynamic behavior emerges from microscopic quantum dynamics remains an open problem. While equil...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28660"
+  },
+  {
+    "id": "build-13-1782805856360-123",
+    "headline": "Temporal Dynamical Quantum Phase Transition in Dicke Model with Trapped Ions",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28664v1 Announce Type: new \nAbstract: Temporal non-analyticities in the rate function of the Loschmidt echo manifests a class of dynamical quantum phase transitions (DQP...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28664"
+  },
+  {
+    "id": "build-14-1782805856360-0",
+    "headline": "A QUBO Formulation for Nowhere-Zero $k$-Flows",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28687v1 Announce Type: new \nAbstract: We consider the encoding of graph problems as Quadratic Unconstrained Binary Optimization (QUBO) problems, which are solvable by ei...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28687"
+  },
+  {
+    "id": "build-15-1782805856360-725",
+    "headline": "High-Fidelity Hole Spin Qubits Reveal Quadrupolar Nuclear-Bath Dynamics in Isotopically Purified Planar Germanium",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28695v1 Announce Type: new \nAbstract: Planar Germanium has emerged as a promising platform to build spin-based large scale quantum computers. By exploiting the anisotrop...",
+    "sentiment": "positive",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28695"
+  },
+  {
+    "id": "build-16-1782805856360-625",
+    "headline": "Detecting entanglement of non-Gaussian continuous-variable states from single-copy homodyne measurements",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28698v1 Announce Type: new \nAbstract: The entanglement of Gaussian continuous-variable (CV) states is fully determined by the state's second moments. In contrast, some e...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28698"
+  },
+  {
+    "id": "build-17-1782805856360-236",
+    "headline": "Quantum Counterparty Credit Risk: A Study of Path-Dependent Derivatives",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28701v1 Announce Type: new \nAbstract: Estimating potential future exposure (PFE) for path-dependent derivatives, such as FX Target Redemption Forwards (TARFs), represent...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28701"
+  },
+  {
+    "id": "build-18-1782805856360-488",
+    "headline": "Dissipative phase decision without ground-state preparation",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28750v1 Announce Type: new \nAbstract: We propose a dynamical approach to identifying ground-state quantum phases through short-time dissipative cooling. Rather than dete...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28750"
+  },
+  {
+    "id": "build-19-1782805856360-295",
+    "headline": "Linear and nonlinear optical torque in multi-level atomic systems driven by counter-rotating orbital angular momentum fields",
+    "source": "arXiv (quant-ph)",
+    "timestamp": "2026-06-30T04:00:00.000Z",
+    "summary": "arXiv:2606.28766v1 Announce Type: new \nAbstract: We investigate the generation of optical torque in coherently prepared multi-level atomic media driven by a vector vortex beam comp...",
+    "sentiment": "mixed",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://arxiv.org/abs/2606.28766"
+  },
+  {
     "id": "build-0-1782788127348-203",
     "headline": "Microsoft’s Majorana Qubit: What the Experts Actually Think",
     "source": "Post-Quantum Security",
