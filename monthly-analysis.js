@@ -4,8 +4,11 @@ import path from 'path';
 const dbPath = path.resolve('src/data/telemetryDb.json');
 const webhookUrl = process.env.DISCORD_WEBHOOK_URL || 'https://discord.com/api/webhooks/1521482588806578196/-l6KOkfUBVcAh0xtLDqg0geSz7QyaTxKCHlphhoEKlr84YDqmVqB-ILYXmoFlsDUO_Fa';
 
+// Custom watchlist companies
+const WATCHLIST = ['IBM', 'Google Quantum AI', 'D-Wave Systems', 'Xanadu', 'QNu Labs', 'QpiAI'];
+
 async function runAnalysis() {
-  console.log('Initiating Monthly Telemetry Data Analysis...');
+  console.log('Initiating Monthly Telemetry Data Analysis with Watchlist & Impact Scopes...');
   
   if (!fs.existsSync(dbPath)) {
     console.error('Telemetry database not found at src/data/telemetryDb.json!');
@@ -25,16 +28,26 @@ async function runAnalysis() {
   const targetSet = recentArticles.length > 0 ? recentArticles : articles.slice(0, 100);
   const timePeriodLabel = recentArticles.length > 0 ? 'Last 30 Days' : 'Historical Sample (Top 100)';
   
-  // 1. Group by Country
+  // Groupings
   const countries = {};
-  // 2. Group by Tech Platform
   const technologies = {};
-  // 3. Group by Organization Mentions
   const organizations = {};
-  // 4. Group by Org Type
-  const orgTypes = {};
+  
+  // 1. Impact Categories Counters
+  const impactCategories = {
+    'Scientific Breakthrough': 0,
+    'Commercial Impact': 0,
+    'Policy & Infrastructure': 0
+  };
+
+  // 2. Watchlist tracking
+  const watchlistStats = {};
+  WATCHLIST.forEach(org => {
+    watchlistStats[org] = { count: 0, highlights: [] };
+  });
 
   targetSet.forEach(art => {
+    // Basic counts
     const c = art.country || 'Global';
     countries[c] = (countries[c] || 0) + 1;
 
@@ -44,8 +57,35 @@ async function runAnalysis() {
     const o = art.organization || 'Global Ecosystem';
     organizations[o] = (organizations[o] || 0) + 1;
 
-    const ot = art.organizationType || 'Startup';
-    orgTypes[ot] = (orgTypes[ot] || 0) + 1;
+    // Impact Tagging Analysis
+    const content = `${art.title || ''} ${art.summary || ''}`.toLowerCase();
+    
+    let isSci = content.includes('qubit') || content.includes('processor') || content.includes('fidelity') || 
+                content.includes('coherence') || content.includes('error correction') || content.includes('algorithm') || 
+                content.includes('nature') || content.includes('physics') || content.includes('optics');
+                
+    let isComm = content.includes('raise') || content.includes('funding') || content.includes('million') || 
+                 content.includes('crore') || content.includes('investment') || content.includes('deal') || 
+                 content.includes('procure') || content.includes('contract') || content.includes('partnership') || 
+                 content.includes('collaborate');
+                 
+    let isPolicy = content.includes('policy') || content.includes('act') || content.includes('government') || 
+                   content.includes('dst') || content.includes('nqm') || content.includes('ministry') || 
+                   content.includes('consortium') || content.includes('treaty');
+
+    if (isSci) impactCategories['Scientific Breakthrough']++;
+    if (isComm) impactCategories['Commercial Impact']++;
+    if (isPolicy) impactCategories['Policy & Infrastructure']++;
+
+    // Watchlist matching
+    WATCHLIST.forEach(watchedOrg => {
+      if (content.includes(watchedOrg.toLowerCase()) || (art.organization && art.organization.toLowerCase() === watchedOrg.toLowerCase())) {
+        watchlistStats[watchedOrg].count++;
+        if (watchlistStats[watchedOrg].highlights.length < 2) {
+          watchlistStats[watchedOrg].highlights.push(art.title);
+        }
+      }
+    });
   });
 
   // Helper to build ASCII Bar Chart
@@ -63,9 +103,22 @@ async function runAnalysis() {
 
   const countryChart = generateASCIIBarChart(countries);
   const techChart = generateASCIIBarChart(technologies);
-  const orgChart = generateASCIIBarChart(organizations, 6);
+  const impactChart = generateASCIIBarChart(impactCategories);
 
-  // Compile Report Content
+  // Format Watchlist Display
+  let watchlistText = '';
+  Object.entries(watchlistStats).forEach(([org, stats]) => {
+    const barLength = Math.min(10, stats.count);
+    const bar = '█'.repeat(barLength).padEnd(10, '░');
+    watchlistText += `${org.padEnd(20)} ${bar} (${stats.count} mentions)\n`;
+    if (stats.highlights.length > 0) {
+      stats.highlights.forEach(h => {
+        watchlistText += `  ↳ Hype: "${h.substring(0, 70)}..."\n`;
+      });
+    }
+    watchlistText += '\n';
+  });
+
   const monthName = now.toLocaleString('default', { month: 'long' });
   const yearName = now.getFullYear();
 
@@ -83,9 +136,12 @@ async function runAnalysis() {
     `🔬 HARDWARE PLATFORM SHARE\n` +
     `------------------------------------------------------------------\n` +
     `${techChart}\n\n` +
-    `🏢 TOP ACTIVE ORGANIZATIONS\n` +
+    `🎯 CATEGORY IMPACT BREAKDOWN\n` +
     `------------------------------------------------------------------\n` +
-    `${orgChart}\n` +
+    `${impactChart}\n\n` +
+    `👀 WATCHLIST OBSERVER\n` +
+    `------------------------------------------------------------------\n` +
+    `${watchlistText}` +
     `\`\`\``;
 
   // Send payload to Discord Webhook
