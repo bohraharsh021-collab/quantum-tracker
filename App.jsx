@@ -206,7 +206,7 @@ export default function App() {
       const title = item.headline || item.title;
       if (!merged.some(m => m.title === title)) {
         merged.push({
-          uuid: item.id || crypto.randomUUID(),
+          uuid: item.id || ('mock-' + Math.random().toString(36).substring(2, 9)),
           title,
           summary: item.summary,
           source: item.source,
