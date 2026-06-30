@@ -1,0 +1,72 @@
+{
+  "lastRun": "2026-06-30T10:15:18.117Z",
+  "feedStats": {
+    "total": 21,
+    "success": 6,
+    "failed": 15,
+    "failedFeedsList": [
+      {
+        "name": "India PIB Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "India DST Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "ISRO Press Releases Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "USA NSF Physics Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "USA DOE News Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "UK NQCC News Feed",
+        "error": "Status code 403"
+      },
+      {
+        "name": "Canada NRC Feed",
+        "error": "Status code 403"
+      },
+      {
+        "name": "IBM Quantum Blog Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "IonQ Blog Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Rigetti Blog Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "D-Wave Press Releases Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "QuEra News Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "QpiAI News Blog Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Waterloo IQC Blog Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Quantum Computing Report Feed",
+        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f"
+      }
+    ],
+    "duplicatesRemoved": 0
+  },
+  "dbSize": 118
+}

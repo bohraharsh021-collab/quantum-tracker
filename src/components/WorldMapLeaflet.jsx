@@ -13,10 +13,43 @@ const getCoordinates = (node) => {
   };
 };
 
-export default function WorldMapLeaflet({ onCountrySelect }) {
+export default function WorldMapLeaflet({ articles = [], onCountrySelect }) {
   const containerRef = useRef(null);
   const mapRef = useRef(null);
   const [selectedNode, setSelectedNode] = useState(null);
+
+  // Filter articles that relate directly to the clicked hub
+  const nodeNews = React.useMemo(() => {
+    if (!selectedNode || !articles) return [];
+    
+    // Map of hub ID to keyword search terms
+    const hubKeywords = {
+      'hub-bengaluru': ['iisc', 'qpiai', 'bengaluru', 'qnu', 'karnataka'],
+      'hub-mumbai': ['tifr', 'mumbai', 'tata institute'],
+      'hub-chennai': ['iit madras', 'iitm', 'chennai'],
+      'hub-yorktown': ['ibm', 'yorktown', 'heron', 'condor'],
+      'hub-santa-barbara': ['google', 'santa barbara', 'sycamore'],
+      'hub-college-park': ['ionq', 'college park', 'maryland'],
+      'hub-delft': ['qutech', 'delft', 'netherlands', 'spin qubit'],
+      'hub-munich': ['munich', 'germany', 'max planck'],
+      'hub-hefei': ['hefei', 'ustc', 'origin quantum', 'jiuzhang', 'wukong', 'china'],
+      'hub-singapore': ['cqt', 'singapore', 'nus']
+    };
+
+    const keywords = hubKeywords[selectedNode.id] || [];
+    
+    return articles.filter(art => {
+      const headline = (art.headline || '').toLowerCase();
+      const summary = (art.summary || '').toLowerCase();
+      const artKeywords = Array.isArray(art.keywords) ? art.keywords.map(k => k.toLowerCase()) : [];
+      
+      return keywords.some(keyword => {
+        return headline.includes(keyword) || 
+               summary.includes(keyword) || 
+               artKeywords.some(ak => ak.includes(keyword));
+      });
+    }).slice(0, 3);
+  }, [selectedNode, articles]);
   
   const onCountrySelectRef = useRef(onCountrySelect);
 
@@ -174,6 +207,42 @@ export default function WorldMapLeaflet({ onCountrySelect }) {
                     <span>Technical Focus:</span>
                   </div>
                   <p className="text-cyber-muted font-mono">{selectedNode.focus}</p>
+                </div>
+
+                {/* Live News Telemetry for Node */}
+                <div className="space-y-2">
+                  <div className="text-[10px] font-mono text-cyber-accent uppercase tracking-wider font-bold border-b border-cyber-border/30 pb-1">
+                    Live Node Feeds ({nodeNews.length})
+                  </div>
+                  {nodeNews.length > 0 ? (
+                    <div className="space-y-2 overflow-y-auto max-h-[140px] pr-1">
+                      {nodeNews.map((art, idx) => (
+                        <a 
+                          key={idx}
+                          href={art.link || '#'}
+                          target={art.link ? "_blank" : undefined}
+                          rel="noopener noreferrer"
+                          className="block bg-[#0B1320] hover:bg-cyber-blue/10 border border-cyber-border/30 rounded p-2 hover:border-cyber-blue/50 transition-all group"
+                        >
+                          <div className="flex justify-between items-center text-[9px] font-mono text-cyber-muted mb-1">
+                            <span className="truncate max-w-[80px] text-cyber-blue font-bold">
+                              {art.source || 'News Wire'}
+                            </span>
+                            <span>
+                              {art.timestamp ? new Date(art.timestamp).toLocaleDateString(undefined, {month: 'short', day: 'numeric'}) : 'Recent'}
+                            </span>
+                          </div>
+                          <h4 className="text-[11px] text-white font-mono leading-tight font-semibold group-hover:text-cyber-accent transition-colors line-clamp-2">
+                            {art.headline}
+                          </h4>
+                        </a>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="text-[10px] text-cyber-muted font-mono italic py-2 text-center bg-[#0B1320] border border-cyber-border/30 rounded">
+                      No recent news telemetry for this hub.
+                    </div>
+                  )}
                 </div>
 
                 <div className="text-[10px] font-mono text-cyber-blue space-y-1">

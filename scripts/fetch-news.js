@@ -1,6 +1,7 @@
 import Parser from 'rss-parser';
 import fs from 'fs';
 import path from 'path';
+import crypto from 'crypto';
 
 const parser = new Parser({
   timeout: 60000,
@@ -10,204 +11,397 @@ const parser = new Parser({
   }
 });
 
-const FEEDS = [
-  // Category 1: Academic & Pre-Print
-  { name: 'arXiv (quant-ph)', url: 'https://export.arxiv.org/rss/quant-ph', category: 'academic' },
-  { name: 'Nature: npj Quantum Information', url: 'https://www.nature.com/npjqi.rss', category: 'academic' },
-  { name: 'IQC Waterloo', url: 'https://uwaterloo.ca/institute-for-quantum-computing/feed', category: 'academic' },
-  { name: 'Fermilab: Quantum Computing', url: 'https://news.fnal.gov/tag/quantum-computing/feed/', category: 'academic' },
-  
-  // Category 2: Industry & Market Intelligence
-  { name: 'The Quantum Insider', url: 'https://thequantuminsider.com/feed/', category: 'industry' },
-  { name: 'Quantum Computing Report', url: 'https://quantumcomputingreport.com/feed/', category: 'industry' },
-  { name: 'IQT News', url: 'https://www.insidequantumtechnology.com/feed/', category: 'industry' },
-  { name: 'Post-Quantum Security', url: 'https://postquantum.com/feed/', category: 'industry' },
-  
-  // Category 3: General Science & Engineering
-  { name: 'Phys.org: Quantum Physics', url: 'https://phys.org/rss-feed/physics-news/quantum-physics/', category: 'science' },
-  { name: 'ScienceDaily: Quantum', url: 'https://www.sciencedaily.com/rss/matter_energy/quantum_computers.xml', category: 'science' },
-  { name: 'MIT Tech Review: Computing', url: 'https://www.technologyreview.com/topic/computing/feed', category: 'science' },
-  { name: 'NextBigFuture: Quantum', url: 'https://www.nextbigfuture.com/tag/quantum-computing/feed', category: 'science' },
-
-  // Category 4: Government & Policy
-  { name: 'NIST Quantum', url: 'https://www.nist.gov/blogs/taking-measure/rss.xml', category: 'government' },
-  { name: 'EU Digital Strategy', url: 'https://digital-strategy.ec.europa.eu/en/rss.xml', category: 'government' },
-  { name: 'India DST News', url: 'https://dst.gov.in/rss.xml', category: 'government' },
-  { name: 'UK NQCC News', url: 'https://www.nqcc.ac.uk/feed/', category: 'government' },
-  { name: 'India Science Wire', url: 'https://vigyanprasar.gov.in/isw/rss-feed.xml', category: 'government' },
-
-  // Category 5: Company & Startup
-  { name: 'IBM Quantum Blog', url: 'https://www.ibm.com/quantum/blog/rss', category: 'company' },
-  { name: 'Google AI Blog', url: 'https://blog.google/technology/ai/rss/', category: 'company' },
-  { name: 'IonQ Blog', url: 'https://ionq.com/resources/rss.xml', category: 'startup' },
-  { name: 'Rigetti Computing', url: 'https://www.rigetti.com/blog-feed.xml', category: 'startup' },
-  { name: 'QpiAI News', url: 'https://www.qpiai.tech/blog-feed.xml', category: 'startup' }
-];
-
-const POSITIVE_LEXICON = {
-  'breakthrough': 2.5, 'milestone': 2.0, 'supremacy': 2.0, 'advantage': 2.0,
-  'record-breaking': 2.5, 'record': 1.5, 'success': 1.5, 'successful': 1.5,
-  'successfully': 1.5, 'progress': 1.5, 'advance': 1.5, 'advanced': 1.5,
-  'advancement': 1.5, 'scalable': 2.0, 'scaling': 1.5, 'pioneer': 1.5,
-  'pioneering': 1.5, 'solve': 1.5, 'solved': 1.5, 'solving': 1.5,
-  'revolution': 2.0, 'revolutionary': 2.0, 'innovative': 1.5, 'innovation': 1.5,
-  'efficient': 1.5, 'efficiency': 1.5, 'optimized': 1.5, 'optimization': 1.5,
-  'improve': 1.5, 'improved': 1.5, 'improvement': 1.5, 'enhance': 1.5,
-  'enhanced': 1.5, 'enhancement': 1.5, 'exceed': 1.5, 'exceeded': 1.5,
-  'funding': 1.5, 'invest': 1.5, 'investment': 1.5, 'commercial': 1.5,
-  'commercialize': 1.5, 'commercialization': 1.5, 'partner': 1.5, 'partnership': 1.5,
-  'collaboration': 1.5, 'collaborate': 1.5, 'launch': 1.5, 'launched': 1.5,
-  'unveil': 1.5, 'unveiled': 1.5, 'demonstrate': 1.5, 'demonstrated': 1.5,
-  'demonstration': 1.5, 'robust': 1.5, 'fidelity': 2.0, 'high-fidelity': 2.5,
-  'landmark': 2.0, 'gain': 1.0, 'growth': 1.0, 'boost': 1.0, 'accelerate': 1.5,
-  'accelerated': 1.5
+// Entity Normalization mappings
+const ORG_NORMALIZATION = {
+  'ibm quantum': 'IBM',
+  'ibm research': 'IBM',
+  'ibm': 'IBM',
+  'google quantum ai': 'Google Quantum AI',
+  'google ai': 'Google Quantum AI',
+  'google': 'Google Quantum AI',
+  'microsoft quantum': 'Microsoft Quantum',
+  'microsoft': 'Microsoft Quantum',
+  'quantinuum': 'Quantinuum',
+  'ionq': 'IonQ',
+  'rigetti': 'Rigetti Computing',
+  'd-wave': 'D-Wave Systems',
+  'dwave': 'D-Wave Systems',
+  'psiquantum': 'PsiQuantum',
+  'quera': 'QuEra Computing',
+  'atom computing': 'Atom Computing',
+  'infleqtion': 'Infleqtion',
+  'xanadu': 'Xanadu',
+  'iqm': 'IQM Quantum',
+  'orca computing': 'ORCA Computing',
+  'orca': 'ORCA Computing',
+  'alice & bob': 'Alice & Bob',
+  'alice and bob': 'Alice & Bob',
+  'oxford quantum circuits': 'Oxford Quantum Circuits',
+  'oqc': 'Oxford Quantum Circuits',
+  'pasqal': 'Pasqal',
+  'q-ctrl': 'Q-CTRL',
+  'qctrl': 'Q-CTRL',
+  'riverlane': 'Riverlane',
+  'seeqc': 'SeeQC',
+  'classiq': 'Classiq',
+  'zapata': 'Zapata AI',
+  'quantum brilliance': 'Quantum Brilliance',
+  'iisc': 'IISc Bangalore',
+  'tifr': 'TIFR Mumbai',
+  'iit madras': 'IIT Madras',
+  'iitm': 'IIT Madras',
+  'iit bombay': 'IIT Bombay',
+  'iit kanpur': 'IIT Kanpur',
+  'mit': 'MIT',
+  'harvard': 'Harvard University',
+  'stanford': 'Stanford University',
+  'oxford university': 'Oxford University',
+  'cambridge university': 'Cambridge University',
+  'eth zurich': 'ETH Zurich',
+  'epfl': 'EPFL',
+  'waterloo': 'University of Waterloo',
+  'qutech': 'QuTech Delft',
+  'nus': 'National University of Singapore',
+  'university of sydney': 'University of Sydney',
+  'qnu labs': 'QNu Labs',
+  'qnu': 'QNu Labs',
+  'c-cdac': 'C-DAC',
+  'cdac': 'C-DAC'
 };
 
-const NEGATIVE_LEXICON = {
-  'decoherence': 2.0, 'noise': 1.5, 'error': 1.5, 'errors': 1.5,
-  'setback': 2.5, 'delay': 2.0, 'delayed': 2.0, 'struggle': 1.5,
-  'struggling': 1.5, 'limit': 1.5, 'limitation': 1.5, 'limitations': 1.5,
-  'bottleneck': 2.0, 'fail': 2.0, 'failure': 2.5, 'failed': 2.0,
-  'loss': 1.5, 'lose': 1.5, 'threat': 2.0, 'risk': 1.5, 'risks': 1.5,
-  'bug': 1.5, 'bugs': 1.5, 'flaw': 1.5, 'flaws': 1.5, 'drawback': 1.5,
-  'drawbacks': 1.5, 'expensive': 1.5, 'costly': 1.5, 'slow': 1.0,
-  'slower': 1.0, 'unstable': 2.0, 'instability': 2.0, 'challenge': 1.0,
-  'challenges': 1.0, 'challenging': 1.0, 'obstacle': 1.5, 'obstacles': 1.5,
-  'skeptical': 2.0, 'skepticism': 2.5, 'hype': 2.0, 'overhyped': 2.5,
-  'exaggeration': 2.0, 'warning': 2.0, 'caution': 1.5, 'dispute': 1.5,
-  'disputed': 1.5, 'concern': 1.5, 'concerns': 1.5, 'critical': 1.0,
-  'vulnerability': 2.0, 'vulnerabilities': 2.0
+const ORG_TYPES = {
+  'IBM': 'Corporation',
+  'Google Quantum AI': 'Corporation',
+  'Microsoft Quantum': 'Corporation',
+  'D-Wave Systems': 'Corporation',
+  'Quantinuum': 'Startup',
+  'IonQ': 'Startup',
+  'Rigetti Computing': 'Startup',
+  'PsiQuantum': 'Startup',
+  'QuEra Computing': 'Startup',
+  'Atom Computing': 'Startup',
+  'Infleqtion': 'Startup',
+  'Xanadu': 'Startup',
+  'IQM Quantum': 'Startup',
+  'ORCA Computing': 'Startup',
+  'Alice & Bob': 'Startup',
+  'Oxford Quantum Circuits': 'Startup',
+  'Pasqal': 'Startup',
+  'Q-CTRL': 'Startup',
+  'Riverlane': 'Startup',
+  'SeeQC': 'Startup',
+  'Classiq': 'Startup',
+  'Zapata AI': 'Startup',
+  'Quantum Brilliance': 'Startup',
+  'QNu Labs': 'Startup',
+  'QpiAI': 'Startup',
+  'IISc Bangalore': 'Academia',
+  'TIFR Mumbai': 'Academia',
+  'IIT Madras': 'Academia',
+  'IIT Bombay': 'Academia',
+  'IIT Kanpur': 'Academia',
+  'MIT': 'Academia',
+  'Harvard University': 'Academia',
+  'Stanford University': 'Academia',
+  'Oxford University': 'Academia',
+  'Cambridge University': 'Academia',
+  'ETH Zurich': 'Academia',
+  'EPFL': 'Academia',
+  'University of Waterloo': 'Academia',
+  'QuTech Delft': 'Academia',
+  'National University of Singapore': 'Academia',
+  'University of Sydney': 'Academia',
+  'Press Information Bureau': 'Government',
+  'Department of Science & Technology': 'Government',
+  'ISRO': 'Government',
+  'DRDO': 'Government',
+  'C-DAC': 'Government',
+  'NIST': 'Government',
+  'National Science Foundation': 'Government',
+  'Department of Energy': 'Government',
+  'UK NQCC': 'Government',
+  'European Commission': 'Government'
 };
 
-async function fetchNews() {
-  console.log('Build-time News Fetching Initiated...');
-  const compiledArticles = [];
+// Simple text similarity check (Levenshtein distance)
+function getSimilarity(s1, s2) {
+  let longer = s1.toLowerCase();
+  let shorter = s2.toLowerCase();
+  if (s1.length < s2.length) {
+    longer = s2.toLowerCase();
+    shorter = s1.toLowerCase();
+  }
+  let longerLength = longer.length;
+  if (longerLength === 0) {
+    return 1.0;
+  }
+  return (longerLength - editDistance(longer, shorter)) / parseFloat(longerLength);
+}
 
-  for (const feed of FEEDS) {
+function editDistance(s1, s2) {
+  let costs = [];
+  for (let i = 0; i <= s1.length; i++) {
+    let lastValue = i;
+    for (let j = 0; j <= s2.length; j++) {
+      if (i === 0) {
+        costs[j] = j;
+      } else {
+        if (j > 0) {
+          let newValue = costs[j - 1];
+          if (s1.charAt(i - 1) !== s2.charAt(j - 1)) {
+            newValue = Math.min(Math.min(newValue, lastValue), costs[j]) + 1;
+          }
+          costs[j - 1] = lastValue;
+          lastValue = newValue;
+        }
+      }
+    }
+    if (i > 0) {
+      costs[s2.length] = lastValue;
+    }
+  }
+  return costs[s2.length];
+}
+
+async function runPipeline() {
+  console.log('Initiating ETL Scraper Pipeline v4.0...');
+  
+  const configPath = path.resolve('src/data/feedsConfig.json');
+  const dbPath = path.resolve('src/data/telemetryDb.json');
+  
+  if (!fs.existsSync(configPath)) {
+    console.error('Missing src/data/feedsConfig.json configuration!');
+    process.exit(1);
+  }
+  
+  const feeds = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+  const activeFeeds = feeds.filter(f => f.status === 'active');
+  console.log(`Loaded ${activeFeeds.length} active feeds from configuration.`);
+
+  let existingArticles = [];
+  try {
+    if (fs.existsSync(dbPath)) {
+      existingArticles = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
+    }
+  } catch (err) {
+    console.log('Failed to parse telemetryDb.json, starting fresh.');
+  }
+
+  const fetchedArticles = [];
+  const feedStats = {
+    total: activeFeeds.length,
+    success: 0,
+    failed: 0,
+    failedFeedsList: [],
+    duplicatesRemoved: 0
+  };
+
+  for (const feed of activeFeeds) {
     try {
-      console.log(`Fetching: ${feed.name}`);
-      const feedData = await parser.parseURL(feed.url);
-      const items = feedData.items || [];
+      console.log(`Ingesting feed: ${feed.name}`);
+      const parsedFeed = await parser.parseURL(feed.url);
+      const items = parsedFeed.items || [];
+      feedStats.success++;
 
-      for (let i = 0; i < Math.min(items.length, 20); i++) {
-        const item = items[i];
-        const title = item.title || '';
+      for (const item of items) {
+        const title = (item.title || '').trim();
+        const summaryText = (item.contentSnippet || item.summary || item.content || '').trim();
+        const cleanDesc = summaryText.replace(/<\/?[^>]+(>|$)/g, "").substring(0, 240) + '...';
         const link = item.link || '';
-        const pubDate = item.pubDate || item.isoDate || new Date().toISOString();
-        const contentSnippet = item.contentSnippet || item.summary || '';
-
-        // Clean content description snippet
-        const cleanDesc = contentSnippet.replace(/<\/?[^>]+(>|$)/g, "").substring(0, 180) + '...';
-
-        // Check if content matches quantum computing topic parameters
+        const pubDateStr = item.pubDate || item.isoDate || new Date().toISOString();
+        
         const contentStr = (title + ' ' + cleanDesc).toLowerCase();
-        const bypassCategories = ['academic', 'government', 'company', 'startup'];
-        const isQuantum = 
-          bypassCategories.includes(feed.category) ||
-          contentStr.includes('quantum') || 
-          contentStr.includes('qubit') || 
-          contentStr.includes('cryptography') || 
-          contentStr.includes('decoherence');
+        
+        // Entity: Organization & Type
+        let detectedOrg = feed.organization || 'Global Ecosystem';
+        for (const [key, normalizedName] of Object.entries(ORG_NORMALIZATION)) {
+          if (contentStr.includes(key)) {
+            detectedOrg = normalizedName;
+            break;
+          }
+        }
+        const detectedOrgType = ORG_TYPES[detectedOrg] || 'Startup';
 
-        if (!isQuantum) continue;
-
-        // Score Sentiment
-        let score = 0;
-        Object.entries(POSITIVE_LEXICON).forEach(([word, weight]) => {
-          if (contentStr.includes(word)) score += weight;
-        });
-        Object.entries(NEGATIVE_LEXICON).forEach(([word, weight]) => {
-          if (contentStr.includes(word)) score -= weight;
-        });
-
-        let sentiment = 'neutral';
-        if (score > 1.5) sentiment = 'positive';
-        else if (score < -1.5) sentiment = 'negative';
-        else if (Math.abs(score) > 0.5) sentiment = 'mixed';
-
-        // Country detection
-        let country = 'Global';
-        if (contentStr.includes('india') || contentStr.includes('bangalore') || contentStr.includes('mumbai') || contentStr.includes('chennai')) {
-          country = 'India';
-        } else if (contentStr.includes('google') || contentStr.includes('ibm') || contentStr.includes('usa') || contentStr.includes('america')) {
-          country = 'United States of America';
-        } else if (contentStr.includes('china') || contentStr.includes('ustc') || contentStr.includes('hefei')) {
-          country = 'China';
-        } else if (contentStr.includes('uk') || contentStr.includes('london') || contentStr.includes('oxford')) {
-          country = 'United Kingdom';
+        // Entity: Country
+        let detectedCountry = feed.country || 'Global';
+        if (contentStr.includes('india') || contentStr.includes('bangalore') || contentStr.includes('mumbai') || contentStr.includes('iisc') || contentStr.includes('nqm')) {
+          detectedCountry = 'India';
+        } else if (contentStr.includes('google') || contentStr.includes('ibm') || contentStr.includes('usa') || contentStr.includes('nist') || contentStr.includes('america')) {
+          detectedCountry = 'United States of America';
+        } else if (contentStr.includes('china') || contentStr.includes('hefei') || contentStr.includes('ustc') || contentStr.includes('wukong')) {
+          detectedCountry = 'China';
+        } else if (contentStr.includes('uk') || contentStr.includes('london') || contentStr.includes('oxford') || contentStr.includes('quantinuum')) {
+          detectedCountry = 'United Kingdom';
+        } else if (contentStr.includes('canada') || contentStr.includes('waterloo') || contentStr.includes('xanadu') || contentStr.includes('d-wave')) {
+          detectedCountry = 'Canada';
+        } else if (contentStr.includes('singapore') || contentStr.includes('cqt') || contentStr.includes('nus')) {
+          detectedCountry = 'Singapore';
+        } else if (contentStr.includes('japan') || contentStr.includes('riken') || contentStr.includes('toshiba')) {
+          detectedCountry = 'Japan';
+        } else if (contentStr.includes('germany') || contentStr.includes('munich') || contentStr.includes('delta nl')) {
+          detectedCountry = 'Germany';
         }
 
-        let timestamp = new Date().toISOString();
+        // Entity: Technology & Qubit Method
+        let tech = 'Hardware Platforms';
+        let qubitMethod = 'Other';
+        if (contentStr.includes('superconducting') || contentStr.includes('transmon') || contentStr.includes('qubit') || contentStr.includes('heron') || contentStr.includes('condor')) {
+          tech = 'Superconducting';
+          qubitMethod = 'Superconducting Transmons';
+        } else if (contentStr.includes('trapped ion') || contentStr.includes('ion trap') || contentStr.includes('quantinuum') || contentStr.includes('ionq')) {
+          tech = 'Trapped Ion';
+          qubitMethod = 'Trapped Ions';
+        } else if (contentStr.includes('neutral atom') || contentStr.includes('rydberg') || contentStr.includes('quera')) {
+          tech = 'Neutral Atom';
+          qubitMethod = 'Neutral Atoms / Rydberg Arrays';
+        } else if (contentStr.includes('photonic') || contentStr.includes('photon') || contentStr.includes('xanadu')) {
+          tech = 'Photonic';
+          qubitMethod = 'Photonic / Linear Optical';
+        } else if (contentStr.includes('spin qubit') || contentStr.includes('silicon spin') || contentStr.includes('silicon dot')) {
+          tech = 'Silicon Spin';
+          qubitMethod = 'Silicon Spin Qubits';
+        } else if (contentStr.includes('topological') || contentStr.includes('majorana')) {
+          tech = 'Topological';
+          qubitMethod = 'Topological Qubits';
+        } else if (contentStr.includes('diamond') || contentStr.includes('nv center') || contentStr.includes('nitrogen vacancy')) {
+          tech = 'NV Diamond';
+          qubitMethod = 'Nitrogen-Vacancy Diamond';
+        } else if (contentStr.includes('annealing') || contentStr.includes('annealer') || contentStr.includes('d-wave')) {
+          tech = 'Quantum Annealing';
+          qubitMethod = 'Quantum Annealing';
+        }
+
+        // Processor
+        let processor = 'None';
+        const procMatch = contentStr.match(/(condor|heron|osprey|eagle|sycamore|ankaa|forte|indigen|jiuzhang|aquila|borealis|wukong)/i);
+        if (procMatch) {
+          processor = procMatch[1].charAt(0).toUpperCase() + procMatch[1].slice(1).toLowerCase();
+        }
+
+        // Applications
+        let application = 'General Quantum';
+        if (contentStr.includes('crypto') || contentStr.includes('key distribution') || contentStr.includes('qkd') || contentStr.includes('post-quantum')) {
+          application = 'Post-Quantum Cryptography & QKD';
+        } else if (contentStr.includes('drug') || contentStr.includes('molecular') || contentStr.includes('chemical') || contentStr.includes('protein')) {
+          application = 'Molecular Drug Discovery';
+        } else if (contentStr.includes('portfolio') || contentStr.includes('arbitrage') || contentStr.includes('finance') || contentStr.includes('trading')) {
+          application = 'Portfolio & Arbitrage Optimization';
+        } else if (contentStr.includes('battery') || contentStr.includes('electrolyte') || contentStr.includes('alloy') || contentStr.includes('composite')) {
+          application = 'Battery & Materials Design';
+        } else if (contentStr.includes('grid') || contentStr.includes('load balance') || contentStr.includes('power routing')) {
+          application = 'Smart Grid Optimization';
+        } else if (contentStr.includes('machine learning') || contentStr.includes('qml') || contentStr.includes('neural network')) {
+          application = 'Quantum Machine Learning (QML)';
+        }
+
+        // Procurement, Funding, Partnerships
+        const isProcurement = contentStr.includes('procure') || contentStr.includes('contract') || contentStr.includes('purchase') || contentStr.includes('deal') || contentStr.includes('order') || contentStr.includes('buy') || contentStr.includes('award');
+        const isFunding = contentStr.includes('raise') || contentStr.includes('funding') || contentStr.includes('million') || contentStr.includes('crore') || contentStr.includes('seed') || contentStr.includes('series') || contentStr.includes('vc') || contentStr.includes('investment');
+        const isPartnership = contentStr.includes('partner') || contentStr.includes('collaborate') || contentStr.includes('alliance') || contentStr.includes('mou') || contentStr.includes('sign') || contentStr.includes('pact');
+
+        // Safe ISO Date string
+        let pubDateISO = new Date().toISOString();
         try {
-          if (pubDate) {
-            const parsedDate = new Date(pubDate);
-            if (!isNaN(parsedDate.getTime())) {
-              timestamp = parsedDate.toISOString();
+          if (pubDateStr) {
+            const d = new Date(pubDateStr);
+            if (!isNaN(d.getTime())) {
+              pubDateISO = d.toISOString();
             }
           }
         } catch (e) {}
 
-        compiledArticles.push({
-          id: `build-${i}-${Date.now()}-${Math.floor(Math.random() * 1000)}`,
-          headline: title,
-          source: feed.name,
-          timestamp,
+        const article = {
+          uuid: crypto.randomUUID(),
+          title,
           summary: cleanDesc,
-          sentiment,
-          reliability: 4,
-          topic: contentStr.includes('crypto') || contentStr.includes('key') ? 'Cryptography' : 'Hardware',
-          keywords: ['quantum', country.toLowerCase()],
-          country,
-          link
-        });
+          source: feed.name,
+          rssFeed: feed.url,
+          category: feed.category,
+          country: detectedCountry,
+          organization: detectedOrg,
+          organizationType: detectedOrgType,
+          technology: tech,
+          processor,
+          qubitMethod,
+          application,
+          procurement: isProcurement,
+          funding: isFunding,
+          partnership: isPartnership,
+          pubDate: pubDateISO,
+          tags: ['quantum', detectedCountry.toLowerCase(), tech.toLowerCase()],
+          url: link
+        };
+
+        fetchedArticles.push(article);
       }
     } catch (err) {
-      console.error(`Failed to parse feed ${feed.name}:`, err.message);
+      console.error(`Feed ingestion failed for ${feed.name}:`, err.message);
+      feedStats.failed++;
+      feedStats.failedFeedsList.push({ name: feed.name, error: err.message });
     }
   }
 
-  // Merge with existing news.json to accumulate history over time
-  const outputPath = path.resolve('src/data/news.json');
-  let combinedArticles = [];
-  try {
-    if (fs.existsSync(outputPath)) {
-      const raw = fs.readFileSync(outputPath, 'utf8');
-      combinedArticles = JSON.parse(raw);
-    }
-  } catch (err) {
-    console.log("No existing news.json found or failed to parse, starting fresh.");
-  }
+  // Merge, Deduplicate and Normalize
+  const uniqueArticles = [...existingArticles];
+  
+  fetchedArticles.forEach(newArt => {
+    // Check direct duplication (identical URL or exact title match)
+    const isDuplicate = uniqueArticles.some(oldArt => {
+      if (oldArt.url === newArt.url || oldArt.title === newArt.title) return true;
+      // Levenshtein similarity check (> 0.85 indicates a likely copy/re-syndication)
+      if (getSimilarity(oldArt.title, newArt.title) > 0.85) return true;
+      return false;
+    });
 
-  // Add new articles if they are not already in news.json (deduplicated by headline)
-  compiledArticles.forEach(newItem => {
-    if (!combinedArticles.some(oldItem => oldItem.headline === newItem.headline)) {
-      combinedArticles.push(newItem);
+    if (!isDuplicate) {
+      uniqueArticles.push(newArt);
+    } else {
+      feedStats.duplicatesRemoved++;
     }
   });
 
   // Sort by newest first
-  combinedArticles.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+  uniqueArticles.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
-  // Keep a rolling history of up to 1000 articles
-  const MAX_HISTORY = 1000;
-  if (combinedArticles.length > MAX_HISTORY) {
-    combinedArticles = combinedArticles.slice(0, MAX_HISTORY);
+  // Cap at 10,000 rolling history entries (removing only the oldest)
+  const MAX_CAP = 10000;
+  let finalArticles = uniqueArticles;
+  if (uniqueArticles.length > MAX_CAP) {
+    finalArticles = uniqueArticles.slice(0, MAX_CAP);
   }
 
-  const tempPath = outputPath + '.tmp';
+  // Write telemetry database atomic
+  const tempPath = dbPath + '.tmp';
   try {
-    fs.writeFileSync(tempPath, JSON.stringify(combinedArticles, null, 2));
-    fs.renameSync(tempPath, outputPath);
-    console.log(`Successfully compiled and wrote ${combinedArticles.length} articles (including history) to: ${outputPath}`);
+    fs.writeFileSync(tempPath, JSON.stringify(finalArticles, null, 2));
+    fs.renameSync(tempPath, dbPath);
+    console.log(`\nETL Sync Complete.`);
+    console.log(`Success Feeds: ${feedStats.success}/${feedStats.total}`);
+    console.log(`Failed Feeds: ${feedStats.failed}`);
+    console.log(`Duplicates Filtered: ${feedStats.duplicatesRemoved}`);
+    console.log(`Total Database Size: ${finalArticles.length} / 10,000 articles.`);
   } catch (err) {
-    console.error("Write error occurred during atomic file lock:", err);
+    console.error('Failed to write Telemetry database:', err);
     if (fs.existsSync(tempPath)) fs.unlinkSync(tempPath);
+  }
+
+  // Write a simple JSON log file for QAValidationRoom to display Scraper logs
+  const qaLogPath = path.resolve('src/data/qaLogs.json');
+  const qaLogData = {
+    lastRun: new Date().toISOString(),
+    feedStats,
+    dbSize: finalArticles.length
+  };
+  try {
+    fs.writeFileSync(qaLogPath, JSON.stringify(qaLogData, null, 2));
+  } catch (e) {
+    console.warn("Failed to write QA validation log file:", e.message);
   }
 }
 
-fetchNews().then(() => {
+runPipeline().then(() => {
   process.exit(0);
 }).catch(err => {
-  console.error("News Fetching script crash:", err);
+  console.error("Fatal Scraper pipeline crash:", err);
   process.exit(1);
 });

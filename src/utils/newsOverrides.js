@@ -11,7 +11,8 @@ export function getDynamicNewsOverrides(articles = []) {
     indiaStatus: null,
     newProcessors: [],
     newProcurements: [],
-    newAlliances: []
+    newAlliances: [],
+    newVCFunding: []
   };
 
   if (!articles || articles.length === 0) return overrides;
@@ -197,6 +198,81 @@ export function getDynamicNewsOverrides(articles = []) {
             type: "R&D Consortium"
           });
         }
+      }
+    }
+
+    // ==========================================
+    // 5. SCAN FOR VC FUNDING ROUNDS (newVCFunding)
+    // ==========================================
+    if (
+      content.includes('raise') || 
+      content.includes('funding') || 
+      content.includes('secure') || 
+      content.includes('invest') || 
+      content.includes('capital') || 
+      content.includes('round') ||
+      content.includes('valuation')
+    ) {
+      const valueMatch = content.match(/\$\s*(\d+(\.\d+)?)\s*(million|m)/i) || 
+                         content.match(/₹\s*(\d+(\.\d+)?)\s*(crore|cr)/i);
+      
+      if (valueMatch) {
+        let numericValue = parseFloat(valueMatch[1]);
+        if (content.includes('crore') || content.includes('cr')) {
+          numericValue = numericValue * 0.12; // convert crore INR to million USD
+        }
+
+        // Determine startup
+        let startup = "Quantum Startup";
+        let country = "United States of America"; // default
+        
+        if (content.includes('qpiai')) { startup = "QpiAI"; country = "India"; }
+        else if (content.includes('qnu')) { startup = "QNu Labs"; country = "India"; }
+        else if (content.includes('pasqal')) { startup = "Pasqal"; country = "France"; }
+        else if (content.includes('xanadu')) { startup = "Xanadu"; country = "Canada"; }
+        else if (content.includes('d-wave')) { startup = "D-Wave"; country = "Canada"; }
+        else if (content.includes('psiquantum')) { startup = "PsiQuantum"; country = "United States of America"; }
+        else if (content.includes('motion')) { startup = "Quantum Motion"; country = "United Kingdom"; }
+        else if (content.includes('oqc') || content.includes('oxford quantum')) { startup = "Oxford Quantum Circuits"; country = "United Kingdom"; }
+        else if (content.includes('classiq')) { startup = "Classiq"; country = "Israel"; }
+        else if (content.includes('q-ctrl')) { startup = "Q-Ctrl"; country = "Australia"; }
+        else {
+          // Fallback startup name extraction
+          const matchStartup = headline.match(/([a-zA-Z0-9\-]+)\s+(raises|secures|announces|gets)/i);
+          if (matchStartup && !['quantum', 'startup', 'company', 'firm', 'new'].includes(matchStartup[1].toLowerCase())) {
+            startup = matchStartup[1].trim();
+            startup = startup.charAt(0).toUpperCase() + startup.slice(1);
+          }
+        }
+
+        // Determine round
+        let round = "Venture Round";
+        if (content.includes('series a')) round = "Series A";
+        else if (content.includes('series b')) round = "Series B";
+        else if (content.includes('series c')) round = "Series C";
+        else if (content.includes('series d')) round = "Series D";
+        else if (content.includes('seed')) round = "Seed";
+        else if (content.includes('pre-series a')) round = "Pre-Series A";
+
+        // Determine investors
+        let leadInvestors = "Undisclosed Venture Capitalists";
+        const investorMatch = content.match(/led\s+by\s+([a-zA-Z0-9\s,&]+)/i);
+        if (investorMatch) {
+          const rawInv = investorMatch[1].split(' in ')[0].split(' to ')[0].trim();
+          if (rawInv.length > 3 && rawInv.length < 50) {
+            leadInvestors = rawInv;
+          }
+        }
+
+        overrides.newVCFunding.push({
+          id: `dyn-vc-${index}`,
+          startup,
+          country,
+          round,
+          amount: parseFloat(numericValue.toFixed(2)),
+          date: dateStr,
+          leadInvestors
+        });
       }
     }
   });
