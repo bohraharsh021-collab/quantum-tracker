@@ -6,8 +6,8 @@ on:
       - main
       - master
   schedule:
-    # Trigger automatically every 4 hours for continuous monitoring
-    - cron: '0 */4 * * *'
+    # Trigger automatically at 5:30 AM IST (12:00 AM UTC)
+    - cron: '0 0 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 permissions:
@@ -50,6 +50,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/news.json
-          git diff-index --quiet HEAD || git commit -m "chore: daily auto-refresh of pre-fetched quantum news ledger [skip ci]"
+          git add src/data/telemetryDb.json src/data/qaLogs.json
+          git diff-index --quiet HEAD || git commit -m "chore: daily auto-refresh of pre-fetched quantum news telemetry [skip ci]"
           git push origin HEAD:${{ github.ref }}
