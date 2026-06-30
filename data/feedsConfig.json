@@ -1,0 +1,212 @@
+[
+  {
+    "name": "India PIB Feed",
+    "category": "government",
+    "country": "India",
+    "organization": "Press Information Bureau",
+    "priority": "high",
+    "url": "https://pib.gov.in/RssDocument.aspx",
+    "status": "active",
+    "notes": "Tracks Indian Cabinet & NQM updates"
+  },
+  {
+    "name": "India DST Feed",
+    "category": "government",
+    "country": "India",
+    "organization": "Department of Science & Technology",
+    "priority": "high",
+    "url": "https://dst.gov.in/rss.xml",
+    "status": "active",
+    "notes": "National Quantum Mission (NQM) host agency"
+  },
+  {
+    "name": "ISRO Press Releases Feed",
+    "category": "government",
+    "country": "India",
+    "organization": "ISRO",
+    "priority": "high",
+    "url": "https://www.isro.gov.in/rss/press_release.xml",
+    "status": "active",
+    "notes": "Tracks satellite-to-ground quantum communications links"
+  },
+  {
+    "name": "USA NIST Feed",
+    "category": "government",
+    "country": "United States of America",
+    "organization": "NIST",
+    "priority": "high",
+    "url": "https://www.nist.gov/blogs/taking-measure/rss.xml",
+    "status": "active",
+    "notes": "Post-quantum cryptography standards updates"
+  },
+  {
+    "name": "USA NSF Physics Feed",
+    "category": "government",
+    "country": "United States of America",
+    "organization": "National Science Foundation",
+    "priority": "medium",
+    "url": "https://www.nsf.gov/rss/rss_www_nsf_gov_mps_phy.xml",
+    "status": "active",
+    "notes": "Tracks federal physics and quantum research grants"
+  },
+  {
+    "name": "USA DOE News Feed",
+    "category": "government",
+    "country": "United States of America",
+    "organization": "Department of Energy",
+    "priority": "high",
+    "url": "https://www.energy.gov/rss/news.xml",
+    "status": "active",
+    "notes": "Tracks national lab research initiatives"
+  },
+  {
+    "name": "UK NQCC News Feed",
+    "category": "government",
+    "country": "United Kingdom",
+    "organization": "UK NQCC",
+    "priority": "high",
+    "url": "https://www.nqcc.ac.uk/feed/",
+    "status": "active",
+    "notes": "Tracks UK national quantum strategy projects"
+  },
+  {
+    "name": "Canada NRC Feed",
+    "category": "government",
+    "country": "Canada",
+    "organization": "National Research Council",
+    "priority": "medium",
+    "url": "https://nrc.canada.ca/en/rss.xml",
+    "status": "active",
+    "notes": "Tracks Canadian sovereign quantum computing hubs"
+  },
+  {
+    "name": "EU Commission Digital Feed",
+    "category": "government",
+    "country": "European Union",
+    "organization": "European Commission",
+    "priority": "high",
+    "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+    "status": "active",
+    "notes": "Tracks EuroQCI and Horizon Europe digital blocks"
+  },
+  {
+    "name": "IBM Quantum Blog Feed",
+    "category": "company",
+    "country": "United States of America",
+    "organization": "IBM",
+    "priority": "high",
+    "url": "https://www.ibm.com/quantum/blog/rss",
+    "status": "active",
+    "notes": "Superconducting processors & Qiskit developments"
+  },
+  {
+    "name": "Google AI Blog Feed",
+    "category": "company",
+    "country": "United States of America",
+    "organization": "Google Quantum AI",
+    "priority": "high",
+    "url": "https://blog.google/technology/ai/rss/",
+    "status": "active",
+    "notes": "Sycamore processor and error-correction updates"
+  },
+  {
+    "name": "IonQ Blog Feed",
+    "category": "startup",
+    "country": "United States of America",
+    "organization": "IonQ",
+    "priority": "high",
+    "url": "https://ionq.com/resources/rss.xml",
+    "status": "active",
+    "notes": "Trapped-ion hardware and cloud access announcements"
+  },
+  {
+    "name": "Rigetti Blog Feed",
+    "category": "startup",
+    "country": "United States of America",
+    "organization": "Rigetti Computing",
+    "priority": "high",
+    "url": "https://www.rigetti.com/blog-feed.xml",
+    "status": "active",
+    "notes": "Superconducting multi-chip architectures"
+  },
+  {
+    "name": "D-Wave Press Releases Feed",
+    "category": "company",
+    "country": "Canada",
+    "organization": "D-Wave",
+    "priority": "high",
+    "url": "https://www.dwavesys.com/press-releases/feed/",
+    "status": "active",
+    "notes": "Tracks commercial annealing deployments"
+  },
+  {
+    "name": "QuEra News Feed",
+    "category": "startup",
+    "country": "United States of America",
+    "organization": "QuEra",
+    "priority": "high",
+    "url": "https://quera.com/feed/",
+    "status": "active",
+    "notes": "Tracks Aquila neutral atom simulator updates"
+  },
+  {
+    "name": "QpiAI News Blog Feed",
+    "category": "startup",
+    "country": "India",
+    "organization": "QpiAI",
+    "priority": "high",
+    "url": "https://www.qpiai.tech/blog-feed.xml",
+    "status": "active",
+    "notes": "Indian silicon-spin and hybrid AI software releases"
+  },
+  {
+    "name": "Waterloo IQC Blog Feed",
+    "category": "academic",
+    "country": "Canada",
+    "organization": "University of Waterloo",
+    "priority": "medium",
+    "url": "https://uwaterloo.ca/institute-for-quantum-computing/feed",
+    "status": "active",
+    "notes": "Waterloo quantum research news"
+  },
+  {
+    "name": "Nature npj QI Feed",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Nature Group",
+    "priority": "high",
+    "url": "https://www.nature.com/npjqi.rss",
+    "status": "active",
+    "notes": "npj Quantum Information peer-reviewed research articles"
+  },
+  {
+    "name": "Phys.org Quantum Physics Feed",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Phys.org",
+    "priority": "medium",
+    "url": "https://phys.org/rss-feed/physics-news/quantum-physics/",
+    "status": "active",
+    "notes": "Comprehensive physics pre-print alerts"
+  },
+  {
+    "name": "The Quantum Insider News",
+    "category": "industry",
+    "country": "Global",
+    "organization": "TQI",
+    "priority": "high",
+    "url": "https://thequantuminsider.com/feed/",
+    "status": "active",
+    "notes": "Business intelligence and startups coverage"
+  },
+  {
+    "name": "Quantum Computing Report Feed",
+    "category": "industry",
+    "country": "Global",
+    "organization": "QCR",
+    "priority": "high",
+    "url": "https://quantumcomputingreport.com/feed/",
+    "status": "active",
+    "notes": "Tracks processor metrics, releases, and startup index indicators"
+  }
+]
