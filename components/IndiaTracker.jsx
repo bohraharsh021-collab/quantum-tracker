@@ -8,6 +8,7 @@ import {
   Award, 
   Milestone, 
   MapPin, 
+  Map,
   Search, 
   Calendar, 
   Building2, 
