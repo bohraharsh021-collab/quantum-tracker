@@ -1,5 +1,37 @@
 [
   {
+    "id": "build-0-1782788127348-203",
+    "headline": "Microsoft’s Majorana Qubit: What the Experts Actually Think",
+    "source": "Post-Quantum Security",
+    "timestamp": "2026-06-30T01:35:32.000Z",
+    "summary": "I've never trusted the Majorana story, but I'm no condensed-matter physicist. So after the latest chip and the latest Nature rebuttal, I went looking for where the experts, skeptic...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://postquantum.com/quantum-computing/microsoft-majorana-qubit-experts/"
+  },
+  {
+    "id": "build-0-1782788127581-86",
+    "headline": "Plutonium compound unlocks rare topological quantum behavior with potential nuclear science applications",
+    "source": "Phys.org: Quantum Physics",
+    "timestamp": "2026-06-29T23:30:01.000Z",
+    "summary": "Plutonium is one of the most complex elements in the periodic table. First synthesized and isolated in 1940 by scientists at the University of California, Berkeley, plutonium has b...",
+    "sentiment": "neutral",
+    "reliability": 4,
+    "topic": "Hardware",
+    "keywords": [
+      "quantum",
+      "global"
+    ],
+    "country": "Global",
+    "link": "https://phys.org/news/2026-06-plutonium-compound-rare-topological-quantum.html"
+  },
+  {
     "id": "build-0-1782768153994-307",
     "headline": "NIST Taps SRI to Establish The Quantum Manufacturing Engineering Center (QMEC)",
     "source": "The Quantum Insider",
