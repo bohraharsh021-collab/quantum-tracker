@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-07-01T02:55:37.510Z",
+  "lastRun": "2026-07-02T02:45:34.586Z",
   "feedStats": {
     "total": 21,
     "success": 6,
@@ -11,7 +11,7 @@
       },
       {
         "name": "India DST Feed",
-        "error": "Status code 404"
+        "error": "getaddrinfo ENOTFOUND dst.gov.in"
       },
       {
         "name": "ISRO Press Releases Feed",
@@ -63,10 +63,10 @@
       },
       {
         "name": "Quantum Computing Report Feed",
-        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: �"
+        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u000b"
       }
     ],
-    "duplicatesRemoved": 107
+    "duplicatesRemoved": 105
   },
-  "dbSize": 179
+  "dbSize": 192
 }
