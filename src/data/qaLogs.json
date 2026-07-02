@@ -1,0 +1,224 @@
+{
+  "lastRun": "2026-07-02T05:16:00.728Z",
+  "feedStats": {
+    "total": 77,
+    "success": 24,
+    "failed": 53,
+    "failedFeedsList": [
+      {
+        "name": "India PIB Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "India DST Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "ISRO Press Releases Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "USA NSF Physics Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "USA DOE News Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "UK NQCC News Feed",
+        "error": "Status code 403"
+      },
+      {
+        "name": "Canada NRC Feed",
+        "error": "Status code 403"
+      },
+      {
+        "name": "IBM Quantum Blog Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "IonQ Blog Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Rigetti Blog Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "D-Wave Press Releases Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "QuEra News Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "QpiAI News Blog Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Waterloo IQC Blog Feed",
+        "error": "Status code 404"
+      },
+      {
+        "name": "USA White House OSTP",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Innovate UK",
+        "error": "Invalid character in entity name\nLine: 400\nColumn: 44\nChar: ="
+      },
+      {
+        "name": "Germany BMBF",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Japan RIKEN",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Japan JST",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Australia CSIRO",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Singapore A*STAR",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Netherlands Quantum Delta",
+        "error": "write EPROTO 5C250000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:c:\\ws\\deps\\openssl\\openssl\\ssl\\record\\rec_layer_s3.c:1590:SSL alert number 112\n"
+      },
+      {
+        "name": "Israel Innovation Authority",
+        "error": "Status code 403"
+      },
+      {
+        "name": "South Korea MSIT",
+        "error": "Status code 404"
+      },
+      {
+        "name": "India MeitY",
+        "error": "Feed not recognized as RSS 1 or 2."
+      },
+      {
+        "name": "India DRDO",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Quantinuum",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Atom Computing",
+        "error": "Unexpected close tag\nLine: 346\nColumn: 7\nChar: >"
+      },
+      {
+        "name": "Infleqtion",
+        "error": "Feed not recognized as RSS 1 or 2."
+      },
+      {
+        "name": "Xanadu",
+        "error": "Invalid character in entity name\nLine: 0\nColumn: 1905\nChar: ="
+      },
+      {
+        "name": "IQM",
+        "error": "connect ETIMEDOUT 212.226.159.247:443"
+      },
+      {
+        "name": "Alice & Bob",
+        "error": "Status code 403"
+      },
+      {
+        "name": "Q-CTRL",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Riverlane",
+        "error": "Status code 403"
+      },
+      {
+        "name": "SeeQC",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Classiq",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Zapata AI",
+        "error": "write EPROTO 5C250000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:c:\\ws\\deps\\openssl\\openssl\\ssl\\record\\rec_layer_s3.c:1590:SSL alert number 40\n"
+      },
+      {
+        "name": "Anyon Systems",
+        "error": "Feed not recognized as RSS 1 or 2."
+      },
+      {
+        "name": "Harvard Quantum",
+        "error": "Status code 403"
+      },
+      {
+        "name": "Stanford Q-FARM",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Oxford Physics",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Cambridge Cavendish",
+        "error": "Status code 404"
+      },
+      {
+        "name": "ETH Zurich Quantum",
+        "error": "Status code 404"
+      },
+      {
+        "name": "EPFL Quantum",
+        "error": "Status code 404"
+      },
+      {
+        "name": "TIFR Mumbai",
+        "error": "Status code 404"
+      },
+      {
+        "name": "NUS CQT",
+        "error": "Status code 500"
+      },
+      {
+        "name": "University of Sydney",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Yale Quantum",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Princeton Quantum",
+        "error": "Status code 403"
+      },
+      {
+        "name": "UChicago Pritzker",
+        "error": "Status code 404"
+      },
+      {
+        "name": "Aachen JARA",
+        "error": "Status code 404"
+      },
+      {
+        "name": "HPC Wire Quantum",
+        "error": "Status code 403"
+      },
+      {
+        "name": "Quantum Computing News",
+        "error": "Feed not recognized as RSS 1 or 2."
+      }
+    ],
+    "duplicatesRemoved": 124
+  },
+  "dbSize": 539
+}
