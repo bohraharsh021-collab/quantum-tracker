@@ -1,0 +1,772 @@
+[
+  {
+    "name": "India PIB Feed",
+    "category": "government",
+    "country": "India",
+    "organization": "Press Information Bureau",
+    "priority": "high",
+    "url": "https://pib.gov.in/RssDocument.aspx",
+    "status": "active",
+    "notes": "Tracks Indian Cabinet & NQM updates"
+  },
+  {
+    "name": "India DST Feed",
+    "category": "government",
+    "country": "India",
+    "organization": "Department of Science & Technology",
+    "priority": "high",
+    "url": "https://dst.gov.in/rss.xml",
+    "status": "active",
+    "notes": "National Quantum Mission (NQM) host agency"
+  },
+  {
+    "name": "ISRO Press Releases Feed",
+    "category": "government",
+    "country": "India",
+    "organization": "ISRO",
+    "priority": "high",
+    "url": "https://www.isro.gov.in/rss/press_release.xml",
+    "status": "active",
+    "notes": "Tracks satellite-to-ground quantum communications links"
+  },
+  {
+    "name": "USA NIST Feed",
+    "category": "government",
+    "country": "United States of America",
+    "organization": "NIST",
+    "priority": "high",
+    "url": "https://www.nist.gov/blogs/taking-measure/rss.xml",
+    "status": "active",
+    "notes": "Post-quantum cryptography standards updates"
+  },
+  {
+    "name": "USA NSF Physics Feed",
+    "category": "government",
+    "country": "United States of America",
+    "organization": "National Science Foundation",
+    "priority": "medium",
+    "url": "https://www.nsf.gov/rss/rss_www_nsf_gov_mps_phy.xml",
+    "status": "active",
+    "notes": "Tracks federal physics and quantum research grants"
+  },
+  {
+    "name": "USA DOE News Feed",
+    "category": "government",
+    "country": "United States of America",
+    "organization": "Department of Energy",
+    "priority": "high",
+    "url": "https://www.energy.gov/rss/news.xml",
+    "status": "active",
+    "notes": "Tracks national lab research initiatives"
+  },
+  {
+    "name": "UK NQCC News Feed",
+    "category": "government",
+    "country": "United Kingdom",
+    "organization": "UK NQCC",
+    "priority": "high",
+    "url": "https://www.nqcc.ac.uk/feed/",
+    "status": "active",
+    "notes": "Tracks UK national quantum strategy projects"
+  },
+  {
+    "name": "Canada NRC Feed",
+    "category": "government",
+    "country": "Canada",
+    "organization": "National Research Council",
+    "priority": "medium",
+    "url": "https://nrc.canada.ca/en/rss.xml",
+    "status": "active",
+    "notes": "Tracks Canadian sovereign quantum computing hubs"
+  },
+  {
+    "name": "EU Commission Digital Feed",
+    "category": "government",
+    "country": "European Union",
+    "organization": "European Commission",
+    "priority": "high",
+    "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+    "status": "active",
+    "notes": "Tracks EuroQCI and Horizon Europe digital blocks"
+  },
+  {
+    "name": "IBM Quantum Blog Feed",
+    "category": "company",
+    "country": "United States of America",
+    "organization": "IBM",
+    "priority": "high",
+    "url": "https://www.ibm.com/quantum/blog/rss",
+    "status": "active",
+    "notes": "Superconducting processors & Qiskit developments"
+  },
+  {
+    "name": "Google AI Blog Feed",
+    "category": "company",
+    "country": "United States of America",
+    "organization": "Google Quantum AI",
+    "priority": "high",
+    "url": "https://blog.google/technology/ai/rss/",
+    "status": "active",
+    "notes": "Sycamore processor and error-correction updates"
+  },
+  {
+    "name": "IonQ Blog Feed",
+    "category": "startup",
+    "country": "United States of America",
+    "organization": "IonQ",
+    "priority": "high",
+    "url": "https://ionq.com/resources/rss.xml",
+    "status": "active",
+    "notes": "Trapped-ion hardware and cloud access announcements"
+  },
+  {
+    "name": "Rigetti Blog Feed",
+    "category": "startup",
+    "country": "United States of America",
+    "organization": "Rigetti Computing",
+    "priority": "high",
+    "url": "https://www.rigetti.com/blog-feed.xml",
+    "status": "active",
+    "notes": "Superconducting multi-chip architectures"
+  },
+  {
+    "name": "D-Wave Press Releases Feed",
+    "category": "company",
+    "country": "Canada",
+    "organization": "D-Wave",
+    "priority": "high",
+    "url": "https://www.dwavesys.com/press-releases/feed/",
+    "status": "active",
+    "notes": "Tracks commercial annealing deployments"
+  },
+  {
+    "name": "QuEra News Feed",
+    "category": "startup",
+    "country": "United States of America",
+    "organization": "QuEra",
+    "priority": "high",
+    "url": "https://quera.com/feed/",
+    "status": "active",
+    "notes": "Tracks Aquila neutral atom simulator updates"
+  },
+  {
+    "name": "QpiAI News Blog Feed",
+    "category": "startup",
+    "country": "India",
+    "organization": "QpiAI",
+    "priority": "high",
+    "url": "https://www.qpiai.tech/blog-feed.xml",
+    "status": "active",
+    "notes": "Indian silicon-spin and hybrid AI software releases"
+  },
+  {
+    "name": "Waterloo IQC Blog Feed",
+    "category": "academic",
+    "country": "Canada",
+    "organization": "University of Waterloo",
+    "priority": "medium",
+    "url": "https://uwaterloo.ca/institute-for-quantum-computing/feed",
+    "status": "active",
+    "notes": "Waterloo quantum research news"
+  },
+  {
+    "name": "Nature npj QI Feed",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Nature Group",
+    "priority": "high",
+    "url": "https://www.nature.com/npjqi.rss",
+    "status": "active",
+    "notes": "npj Quantum Information peer-reviewed research articles"
+  },
+  {
+    "name": "Phys.org Quantum Physics Feed",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Phys.org",
+    "priority": "medium",
+    "url": "https://phys.org/rss-feed/physics-news/quantum-physics/",
+    "status": "active",
+    "notes": "Comprehensive physics pre-print alerts"
+  },
+  {
+    "name": "The Quantum Insider News",
+    "category": "industry",
+    "country": "Global",
+    "organization": "TQI",
+    "priority": "high",
+    "url": "https://thequantuminsider.com/feed/",
+    "status": "active",
+    "notes": "Business intelligence and startups coverage"
+  },
+  {
+    "name": "Quantum Computing Report Feed",
+    "category": "industry",
+    "country": "Global",
+    "organization": "QCR",
+    "priority": "high",
+    "url": "https://quantumcomputingreport.com/feed/",
+    "status": "active",
+    "notes": "Tracks processor metrics, releases, and startup index indicators"
+  },
+  {
+    "name": "USA DARPA",
+    "category": "government",
+    "country": "United States of America",
+    "organization": "DARPA",
+    "priority": "medium",
+    "url": "https://www.darpa.mil/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: USA DARPA"
+  },
+  {
+    "name": "USA White House OSTP",
+    "category": "government",
+    "country": "United States of America",
+    "organization": "OSTP",
+    "priority": "medium",
+    "url": "https://www.whitehouse.gov/ostp/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: USA White House OSTP"
+  },
+  {
+    "name": "UK DSIT",
+    "category": "government",
+    "country": "United Kingdom",
+    "organization": "DSIT",
+    "priority": "medium",
+    "url": "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology.atom",
+    "status": "active",
+    "notes": "Expanded via automation: UK DSIT"
+  },
+  {
+    "name": "Innovate UK",
+    "category": "government",
+    "country": "United Kingdom",
+    "organization": "Innovate UK",
+    "priority": "medium",
+    "url": "https://innovateuk.blog.gov.uk/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Innovate UK"
+  },
+  {
+    "name": "Germany BMBF",
+    "category": "government",
+    "country": "Germany",
+    "organization": "BMBF",
+    "priority": "medium",
+    "url": "https://www.bmbf.de/bmbf/xml/rss",
+    "status": "active",
+    "notes": "Expanded via automation: Germany BMBF"
+  },
+  {
+    "name": "France CNRS",
+    "category": "government",
+    "country": "France",
+    "organization": "CNRS",
+    "priority": "medium",
+    "url": "https://www.cnrs.fr/fr/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: France CNRS"
+  },
+  {
+    "name": "Japan RIKEN",
+    "category": "government",
+    "country": "Japan",
+    "organization": "RIKEN",
+    "priority": "medium",
+    "url": "https://www.riken.jp/en/news_pubs/news/index.xml",
+    "status": "active",
+    "notes": "Expanded via automation: Japan RIKEN"
+  },
+  {
+    "name": "Japan JST",
+    "category": "government",
+    "country": "Japan",
+    "organization": "JST",
+    "priority": "medium",
+    "url": "https://www.jst.go.jp/EN/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: Japan JST"
+  },
+  {
+    "name": "Australia CSIRO",
+    "category": "government",
+    "country": "Australia",
+    "organization": "CSIRO",
+    "priority": "medium",
+    "url": "https://www.csiro.au/en/news/News-releases/rss",
+    "status": "active",
+    "notes": "Expanded via automation: Australia CSIRO"
+  },
+  {
+    "name": "Singapore A*STAR",
+    "category": "government",
+    "country": "Singapore",
+    "organization": "A*STAR",
+    "priority": "medium",
+    "url": "https://www.a-star.edu.sg/rss",
+    "status": "active",
+    "notes": "Expanded via automation: Singapore A*STAR"
+  },
+  {
+    "name": "Netherlands Quantum Delta",
+    "category": "government",
+    "country": "Netherlands",
+    "organization": "Quantum Delta NL",
+    "priority": "medium",
+    "url": "https://quantumdelta.nl/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Netherlands Quantum Delta"
+  },
+  {
+    "name": "Israel Innovation Authority",
+    "category": "government",
+    "country": "Israel",
+    "organization": "IIA",
+    "priority": "medium",
+    "url": "https://innovationisrael.org.il/en/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Israel Innovation Authority"
+  },
+  {
+    "name": "South Korea MSIT",
+    "category": "government",
+    "country": "South Korea",
+    "organization": "MSIT",
+    "priority": "medium",
+    "url": "https://www.msit.go.kr/eng/rss",
+    "status": "active",
+    "notes": "Expanded via automation: South Korea MSIT"
+  },
+  {
+    "name": "India MeitY",
+    "category": "government",
+    "country": "India",
+    "organization": "MeitY",
+    "priority": "medium",
+    "url": "https://www.meity.gov.in/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: India MeitY"
+  },
+  {
+    "name": "India DRDO",
+    "category": "government",
+    "country": "India",
+    "organization": "DRDO",
+    "priority": "medium",
+    "url": "https://www.drdo.gov.in/drdo/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: India DRDO"
+  },
+  {
+    "name": "Microsoft Quantum",
+    "category": "company",
+    "country": "United States of America",
+    "organization": "Microsoft",
+    "priority": "medium",
+    "url": "https://cloudblogs.microsoft.com/quantum/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Microsoft Quantum"
+  },
+  {
+    "name": "Quantinuum",
+    "category": "company",
+    "country": "United States of America",
+    "organization": "Quantinuum",
+    "priority": "medium",
+    "url": "https://www.quantinuum.com/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: Quantinuum"
+  },
+  {
+    "name": "Atom Computing",
+    "category": "company",
+    "country": "United States of America",
+    "organization": "Atom Computing",
+    "priority": "medium",
+    "url": "https://atom-computing.com/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Atom Computing"
+  },
+  {
+    "name": "Infleqtion",
+    "category": "company",
+    "country": "United States of America",
+    "organization": "Infleqtion",
+    "priority": "medium",
+    "url": "https://www.infleqtion.com/news?format=rss",
+    "status": "active",
+    "notes": "Expanded via automation: Infleqtion"
+  },
+  {
+    "name": "Xanadu",
+    "category": "company",
+    "country": "Canada",
+    "organization": "Xanadu",
+    "priority": "medium",
+    "url": "https://www.xanadu.ai/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: Xanadu"
+  },
+  {
+    "name": "IQM",
+    "category": "company",
+    "country": "Finland",
+    "organization": "IQM Quantum Computers",
+    "priority": "medium",
+    "url": "https://www.meetiqm.com/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: IQM"
+  },
+  {
+    "name": "ORCA Computing",
+    "category": "company",
+    "country": "United Kingdom",
+    "organization": "ORCA Computing",
+    "priority": "medium",
+    "url": "https://orcacomputing.com/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: ORCA Computing"
+  },
+  {
+    "name": "Alice & Bob",
+    "category": "company",
+    "country": "France",
+    "organization": "Alice & Bob",
+    "priority": "medium",
+    "url": "https://alice-bob.com/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Alice & Bob"
+  },
+  {
+    "name": "Oxford Quantum Circuits",
+    "category": "company",
+    "country": "United Kingdom",
+    "organization": "OQC",
+    "priority": "medium",
+    "url": "https://oxfordquantumcircuits.com/feed",
+    "status": "active",
+    "notes": "Expanded via automation: Oxford Quantum Circuits"
+  },
+  {
+    "name": "Pasqal",
+    "category": "company",
+    "country": "France",
+    "organization": "Pasqal",
+    "priority": "medium",
+    "url": "https://pasqal.com/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Pasqal"
+  },
+  {
+    "name": "Q-CTRL",
+    "category": "company",
+    "country": "Australia",
+    "organization": "Q-CTRL",
+    "priority": "medium",
+    "url": "https://q-ctrl.com/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: Q-CTRL"
+  },
+  {
+    "name": "Riverlane",
+    "category": "company",
+    "country": "United Kingdom",
+    "organization": "Riverlane",
+    "priority": "medium",
+    "url": "https://www.riverlane.com/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: Riverlane"
+  },
+  {
+    "name": "SeeQC",
+    "category": "company",
+    "country": "United States of America",
+    "organization": "SeeQC",
+    "priority": "medium",
+    "url": "https://seeqc.com/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: SeeQC"
+  },
+  {
+    "name": "Classiq",
+    "category": "company",
+    "country": "Israel",
+    "organization": "Classiq",
+    "priority": "medium",
+    "url": "https://www.classiq.io/feed",
+    "status": "active",
+    "notes": "Expanded via automation: Classiq"
+  },
+  {
+    "name": "Zapata AI",
+    "category": "company",
+    "country": "United States of America",
+    "organization": "Zapata Computing",
+    "priority": "medium",
+    "url": "https://zapata.ai/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Zapata AI"
+  },
+  {
+    "name": "Quantum Brilliance",
+    "category": "company",
+    "country": "Australia",
+    "organization": "Quantum Brilliance",
+    "priority": "medium",
+    "url": "https://quantumbrilliance.com/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Quantum Brilliance"
+  },
+  {
+    "name": "Anyon Systems",
+    "category": "company",
+    "country": "Canada",
+    "organization": "Anyon Systems",
+    "priority": "medium",
+    "url": "https://anyonsys.com/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Anyon Systems"
+  },
+  {
+    "name": "Qrypt",
+    "category": "company",
+    "country": "United States of America",
+    "organization": "Qrypt",
+    "priority": "medium",
+    "url": "https://www.qrypt.com/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Qrypt"
+  },
+  {
+    "name": "MIT Physics",
+    "category": "academic",
+    "country": "United States of America",
+    "organization": "MIT",
+    "priority": "medium",
+    "url": "https://news.mit.edu/rss/topic/physics",
+    "status": "active",
+    "notes": "Expanded via automation: MIT Physics"
+  },
+  {
+    "name": "Harvard Quantum",
+    "category": "academic",
+    "country": "United States of America",
+    "organization": "Harvard University",
+    "priority": "medium",
+    "url": "https://quantum.harvard.edu/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Harvard Quantum"
+  },
+  {
+    "name": "Stanford Q-FARM",
+    "category": "academic",
+    "country": "United States of America",
+    "organization": "Stanford",
+    "priority": "medium",
+    "url": "https://qfarm.stanford.edu/feed",
+    "status": "active",
+    "notes": "Expanded via automation: Stanford Q-FARM"
+  },
+  {
+    "name": "Oxford Physics",
+    "category": "academic",
+    "country": "United Kingdom",
+    "organization": "University of Oxford",
+    "priority": "medium",
+    "url": "https://www.physics.ox.ac.uk/rss",
+    "status": "active",
+    "notes": "Expanded via automation: Oxford Physics"
+  },
+  {
+    "name": "Cambridge Cavendish",
+    "category": "academic",
+    "country": "United Kingdom",
+    "organization": "University of Cambridge",
+    "priority": "medium",
+    "url": "https://www.phy.cam.ac.uk/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: Cambridge Cavendish"
+  },
+  {
+    "name": "ETH Zurich Quantum",
+    "category": "academic",
+    "country": "Switzerland",
+    "organization": "ETH Zurich",
+    "priority": "medium",
+    "url": "https://quantum.ethz.ch/news/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: ETH Zurich Quantum"
+  },
+  {
+    "name": "EPFL Quantum",
+    "category": "academic",
+    "country": "Switzerland",
+    "organization": "EPFL",
+    "priority": "medium",
+    "url": "https://actu.epfl.ch/search/qci/rss/",
+    "status": "active",
+    "notes": "Expanded via automation: EPFL Quantum"
+  },
+  {
+    "name": "QuTech",
+    "category": "academic",
+    "country": "Netherlands",
+    "organization": "QuTech / TU Delft",
+    "priority": "medium",
+    "url": "https://qutech.nl/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: QuTech"
+  },
+  {
+    "name": "IISc Physics",
+    "category": "academic",
+    "country": "India",
+    "organization": "IISc Bangalore",
+    "priority": "medium",
+    "url": "https://physics.iisc.ac.in/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: IISc Physics"
+  },
+  {
+    "name": "TIFR Mumbai",
+    "category": "academic",
+    "country": "India",
+    "organization": "TIFR",
+    "priority": "medium",
+    "url": "https://www.tifr.res.in/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: TIFR Mumbai"
+  },
+  {
+    "name": "Caltech IQIM",
+    "category": "academic",
+    "country": "United States of America",
+    "organization": "Caltech",
+    "priority": "medium",
+    "url": "https://iqim.caltech.edu/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Caltech IQIM"
+  },
+  {
+    "name": "NUS CQT",
+    "category": "academic",
+    "country": "Singapore",
+    "organization": "National University of Singapore",
+    "priority": "medium",
+    "url": "https://www.quantumlah.org/rss",
+    "status": "active",
+    "notes": "Expanded via automation: NUS CQT"
+  },
+  {
+    "name": "University of Sydney",
+    "category": "academic",
+    "country": "Australia",
+    "organization": "University of Sydney",
+    "priority": "medium",
+    "url": "https://www.sydney.edu.au/news-opinion/news/rss.xml",
+    "status": "active",
+    "notes": "Expanded via automation: University of Sydney"
+  },
+  {
+    "name": "Yale Quantum",
+    "category": "academic",
+    "country": "United States of America",
+    "organization": "Yale University",
+    "priority": "medium",
+    "url": "https://quantum.yale.edu/feed",
+    "status": "active",
+    "notes": "Expanded via automation: Yale Quantum"
+  },
+  {
+    "name": "Princeton Quantum",
+    "category": "academic",
+    "country": "United States of America",
+    "organization": "Princeton University",
+    "priority": "medium",
+    "url": "https://quantum.princeton.edu/feed",
+    "status": "active",
+    "notes": "Expanded via automation: Princeton Quantum"
+  },
+  {
+    "name": "UChicago Pritzker",
+    "category": "academic",
+    "country": "United States of America",
+    "organization": "University of Chicago",
+    "priority": "medium",
+    "url": "https://quantum.uchicago.edu/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: UChicago Pritzker"
+  },
+  {
+    "name": "Aachen JARA",
+    "category": "academic",
+    "country": "Germany",
+    "organization": "RWTH Aachen",
+    "priority": "medium",
+    "url": "https://www.jara.org/en/feed",
+    "status": "active",
+    "notes": "Expanded via automation: Aachen JARA"
+  },
+  {
+    "name": "ArXiv Quant-Ph",
+    "category": "academic",
+    "country": "Global",
+    "organization": "ArXiv",
+    "priority": "high",
+    "url": "http://export.arxiv.org/rss/quant-ph",
+    "status": "active",
+    "notes": "Expanded via automation: ArXiv Quant-Ph"
+  },
+  {
+    "name": "Nature Physics",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Nature",
+    "priority": "high",
+    "url": "https://www.nature.com/nphys.rss",
+    "status": "active",
+    "notes": "Expanded via automation: Nature Physics"
+  },
+  {
+    "name": "Science Daily Quantum",
+    "category": "industry",
+    "country": "Global",
+    "organization": "Science Daily",
+    "priority": "medium",
+    "url": "https://www.sciencedaily.com/rss/computers_math/quantum_computers.xml",
+    "status": "active",
+    "notes": "Expanded via automation: Science Daily Quantum"
+  },
+  {
+    "name": "HPC Wire Quantum",
+    "category": "industry",
+    "country": "Global",
+    "organization": "HPC Wire",
+    "priority": "medium",
+    "url": "https://www.hpcwire.com/category/quantum-computing/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: HPC Wire Quantum"
+  },
+  {
+    "name": "Inside Quantum Tech",
+    "category": "industry",
+    "country": "Global",
+    "organization": "IQT",
+    "priority": "high",
+    "url": "https://www.insidequantumtechnology.com/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Inside Quantum Tech"
+  },
+  {
+    "name": "Quantum Computing News",
+    "category": "industry",
+    "country": "Global",
+    "organization": "QCN",
+    "priority": "medium",
+    "url": "https://quantumcomputingnews.com/feed/",
+    "status": "active",
+    "notes": "Expanded via automation: Quantum Computing News"
+  }
+]
