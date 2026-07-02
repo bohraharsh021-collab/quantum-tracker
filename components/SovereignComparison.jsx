@@ -414,6 +414,197 @@ export const SOVEREIGN_COMPARISON_DATA = [
     ],
     strategicPriority: "World-class leadership in high-fidelity silicon spin qubits and industrial quantum control software.",
     readinessScore: 81
+  },
+  {
+    id: "southkorea",
+    country: "South Korea",
+    flag: "🇰🇷",
+    fundingUSD: 2.4,
+    fundingDetails: "Projected $2.4B USD strategy combining state subsidies with corporate semiconductor investments.",
+    policy: "Ministry of Science & ICT Quantum Strategy, driving packaging and telecom security.",
+    activeStartups: "SDT, local security ventures",
+    qubitRange: "10 - 20 Qubits",
+    qubitMin: 10,
+    qubitMax: 20,
+    qubitDetails: "Trapped ion hardware systems and high-precision electronic switches.",
+    workforce: "2,200+ Researchers",
+    workforceSize: 2200,
+    workforceDetails: "Highly skilled microelectronics and telecom workforce.",
+    hubs: [
+      { name: "KIST Quantum Hub", city: "Seoul", role: "Trapped ion hardware fabrication and security links" },
+      { name: "SKKU Quantum Foundry", city: "Suwon", role: "Superconducting material properties and device fabrication" }
+    ],
+    techFocus: [
+      "Trapped Ion QPU",
+      "Secure Fiber Relays",
+      "Quantum Key Distribution (QKD)",
+      "Cryo-CMOS Circuits"
+    ],
+    bottlenecks: [
+      "No domestic manufacturer of custom optical laser hardware.",
+      "High reliance on US software algorithms protocols."
+    ],
+    strategicPriority: "Securing national databases and telecom networks via sovereign hardware.",
+    readinessScore: 78
+  },
+  {
+    id: "finland",
+    country: "Finland",
+    flag: "🇫🇮",
+    fundingUSD: 0.15,
+    fundingDetails: "Estimated $150M USD funding allocated under state computing initiatives and IQM subsidies.",
+    policy: "VTT Technical Research Center hardware rollout for national quantum deployment.",
+    activeStartups: "IQM Quantum Computers, Bluefors Cryogenics",
+    qubitRange: "5 - 50 Qubits",
+    qubitMin: 5,
+    qubitMax: 50,
+    qubitDetails: "Superconducting transmons and cryogenic dilution refrigerators.",
+    workforce: "1,100+ Researchers",
+    workforceSize: 1100,
+    workforceDetails: "Concentrated talent pool at Aalto University and VTT.",
+    hubs: [
+      { name: "IQM Espoo Core", city: "Espoo", role: "Superconducting hardware fabrication and cryogenic cables" },
+      { name: "Aalto University Lab", city: "Helsinki", role: "Nanotechnology, superconducting qubits, and microwave controls" }
+    ],
+    techFocus: [
+      "Superconducting QPUs",
+      "Cryogenic Cable Design",
+      "Dilution Refrigerators (Bluefors)",
+      "High-Fidelity Metrology"
+    ],
+    bottlenecks: [
+      "Venture capital scale lags behind US and UK markets.",
+      "Talent drain to larger neighboring European hubs."
+    ],
+    strategicPriority: "Dominating the global cryogenic refrigerator and European superconducting research chip supply chains.",
+    readinessScore: 84
+  },
+  {
+    id: "russia",
+    country: "Russia",
+    flag: "🇷🇺",
+    fundingUSD: 0.35,
+    fundingDetails: "$350M+ funding run through Rosatom and Russian Quantum Center.",
+    policy: "Sovereign Strategic program for autonomous quantum technologies.",
+    activeStartups: "Russian Quantum Center (RQC)",
+    qubitRange: "8 - 16 Qubits",
+    qubitMin: 8,
+    qubitMax: 16,
+    qubitDetails: "Basic superconducting transmon QPUs.",
+    workforce: "1,400+ Researchers",
+    workforceSize: 1400,
+    workforceDetails: "Strong theoretical physics foundations in Moscow State and MIPT.",
+    hubs: [
+      { name: "Skoltech Quantum Command", city: "Moscow", role: "Superconducting chip design and microwave lines" },
+      { name: "MIPT Research Lab", city: "Dolgoprudny", role: "Sovereign quantum algorithms and cryptography protocols" }
+    ],
+    techFocus: [
+      "Superconducting Qubits",
+      "Microwave Calibration",
+      "Quantum Cryptography",
+      "Algorithm Modeling"
+    ],
+    bottlenecks: [
+      "Severe international export controls blocking standard Bluefors fridges.",
+      "High brain drain of senior researchers to European and US labs."
+    ],
+    strategicPriority: "Sovereign computing and crypto self-reliance to bypass global technology channels.",
+    readinessScore: 68
+  },
+  {
+    id: "denmark",
+    country: "Denmark",
+    flag: "🇩🇰",
+    fundingUSD: 0.22,
+    fundingDetails: "Estimated $220M USD allocated by Novo Nordisk Foundation and government initiatives.",
+    policy: "Novo Nordisk Foundation Quantum Computing Programme to build fault-tolerant hardware.",
+    activeStartups: "Boutique quantum tech and biotech developers",
+    qubitRange: "5 - 12 Qubits",
+    qubitMin: 5,
+    qubitMax: 12,
+    qubitDetails: "Small-scale experimental traps and semiconductor interface links.",
+    workforce: "900+ Researchers",
+    workforceSize: 900,
+    workforceDetails: "Top-tier Niels Bohr Institute quantum physics academics.",
+    hubs: [
+      { name: "Niels Bohr Institute", city: "Copenhagen", role: "Fault-tolerant qubits research and quantum chemistry modeling" }
+    ],
+    techFocus: [
+      "Fault-Tolerant Computing",
+      "Quantum Chemistry",
+      "Biotech & Life Sciences",
+      "Optical Interfaces"
+    ],
+    bottlenecks: [
+      "Lacks local cleanroom packaging foundries of industrial scale.",
+      "Limited private VC capital compared to London or Paris."
+    ],
+    strategicPriority: "Leading in quantum chemistry applications for pharmaceuticals and biotech research.",
+    readinessScore: 79
+  },
+  {
+    id: "austria",
+    country: "Austria",
+    flag: "🇦🇹",
+    fundingUSD: 0.12,
+    fundingDetails: "Estimated $120M USD funding, including Austrian Quantum Alliance grants.",
+    policy: "Austrian Quantum Alliance research program to support academic laboratories.",
+    activeStartups: "Laser components and optical providers",
+    qubitRange: "10 - 24 Qubits",
+    qubitMin: 10,
+    qubitMax: 24,
+    qubitDetails: "High-precision trapped-ion hardware setups in Innsbruck.",
+    workforce: "850+ Researchers",
+    workforceSize: 850,
+    workforceDetails: "Dense concentrations of laser physics and quantum optics PhDs.",
+    hubs: [
+      { name: "Innsbruck Quantum Hub", city: "Innsbruck", role: "Laser trapped ion physics and photonic quantum networking" },
+      { name: "Vienna Center for Quantum Science", city: "Vienna", role: "Entangled photonics and fundamental optomechanical studies" }
+    ],
+    techFocus: [
+      "Laser Ion Traps",
+      "Photonic Entanglement",
+      "Quantum Optics",
+      "Precision Metrology"
+    ],
+    bottlenecks: [
+      "Highly academic focus with limited commercial startup velocity.",
+      "No local semiconductor packaging foundries."
+    ],
+    strategicPriority: "Leading high-precision optomechanical devices and entangled photonic networks.",
+    readinessScore: 77
+  },
+  {
+    id: "switzerland",
+    country: "Switzerland",
+    flag: "🇨🇭",
+    fundingUSD: 0.15,
+    fundingDetails: "Estimated $150M USD funding via Swiss National Science Foundation.",
+    policy: "Swiss Quantum Initiative supporting academic excellence and industrial packaging.",
+    activeStartups: "Nanoscale sensing and cryo-CMOS firms",
+    qubitRange: "5 - 20 Qubits",
+    qubitMin: 5,
+    qubitMax: 20,
+    qubitDetails: "Silicon spin qubit testing and advanced cryo-electronics.",
+    workforce: "1,200+ Researchers",
+    workforceSize: 1200,
+    workforceDetails: "Highly skilled engineering talent at ETH Zurich and EPFL.",
+    hubs: [
+      { name: "ETH Zurich Quantum Lab", city: "Zurich", role: "Cryogenic control electronics and silicon spin interfaces" },
+      { name: "EPFL Lausanne Hub", city: "Lausanne", role: "Quantum algorithms for finance and solid-state devices" }
+    ],
+    techFocus: [
+      "Silicon Spin Qubits",
+      "Cryo-CMOS Chips",
+      "Advanced Microwave Control",
+      "Nanoscale Sensors"
+    ],
+    bottlenecks: [
+      "Immigration caps restricting high-level foreign software talent.",
+      "Scaling hardware foundries beyond academic cleanrooms."
+    ],
+    strategicPriority: "Unlocking advanced control systems via cryo-CMOS and leading silicon spin research.",
+    readinessScore: 82
   }
 ];
 

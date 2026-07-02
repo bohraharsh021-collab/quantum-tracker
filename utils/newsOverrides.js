@@ -9,6 +9,7 @@ export function getDynamicNewsOverrides(articles = []) {
   const overrides = {
     indiaQubits: null,
     indiaStatus: null,
+    indiaMilestones: {},
     newProcessors: [],
     newProcurements: [],
     newAlliances: [],
@@ -273,6 +274,39 @@ export function getDynamicNewsOverrides(articles = []) {
           date: dateStr,
           leadInvestors
         });
+      }
+    }
+
+    // ==========================================
+    // 6. SCAN FOR DYNAMIC NQM INDIA MILESTONES
+    // ==========================================
+    if (
+      content.includes('india') || 
+      content.includes('nqm') || 
+      content.includes('national quantum mission') || 
+      content.includes('isro') || 
+      content.includes('drdo') || 
+      content.includes('iisc') || 
+      content.includes('tifr') ||
+      content.includes('qpiai')
+    ) {
+      if (content.includes('50-qubit') || content.includes('50 qubits') || (overrides.indiaQubits && overrides.indiaQubits >= 50)) {
+        overrides.indiaMilestones["Deploy 50-physical qubit prototype indigenously."] = {
+          status: "Completed (Live Ingest)",
+          task: `Successfully demonstrated indigenously developed 50-physical qubit processor prototype early, verified via: "${headline}"`
+        };
+      }
+      if (content.includes('100-qubit') || content.includes('100 qubits') || (overrides.indiaQubits && overrides.indiaQubits >= 100)) {
+        overrides.indiaMilestones["Deploy 100-200 physical qubits processor indigenously."] = {
+          status: "Completed (Live Ingest)",
+          task: `Deployed indigenous 100+ physical qubits processor early, verified via: "${headline}"`
+        };
+      }
+      if (content.includes('1000-qubit') || content.includes('1000 qubits') || (overrides.indiaQubits && overrides.indiaQubits >= 1000)) {
+        overrides.indiaMilestones["Deploy 1000 physical qubits fault-tolerant processor indigenously."] = {
+          status: "Completed (Live Ingest)",
+          task: `Achieved sovereign milestone of 1000 physical qubits fault-tolerant processor early, verified via: "${headline}"`
+        };
       }
     }
   });

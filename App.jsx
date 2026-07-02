@@ -1,26 +1,26 @@
-import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo, Suspense } from 'react';
 import { MOCK_ARTICLES, MOCK_ALERTS } from './data/quantumData';
 import telemetryArticles from './data/telemetryDb.json';
 import feedsConfig from './data/feedsConfig.json';
 
-// Import sub-views
-import DashboardHub from './components/DashboardHub';
-import MediaWire from './components/MediaWire';
-import DirectoryEngine from './components/DirectoryEngine';
-import QuantumProcessorsMatrix from './components/QuantumProcessorsMatrix';
-import TaxonomyMaps from './components/TaxonomyMaps';
-import FinancialTracker from './components/FinancialTracker';
-import IndiaTracker from './components/IndiaTracker';
-import GlobalResources from './components/GlobalResources';
-import SovereignComparison from './components/SovereignComparison';
-import ApplicationsEncyclopedia from './components/ApplicationsEncyclopedia';
-import ProcurementLedger from './components/ProcurementLedger';
-import AlliancesNode from './components/AlliancesNode';
-import ExporterEngine from './components/ExporterEngine';
-import WorldMapLeaflet from './components/WorldMapLeaflet';
-import StrategicAdvisory from './components/StrategicAdvisory';
-import Settings from './components/Settings';
-import QAValidationRoom from './components/QAValidationRoom';
+// Import sub-views lazily
+const DashboardHub = React.lazy(() => import('./components/DashboardHub'));
+const MediaWire = React.lazy(() => import('./components/MediaWire'));
+const DirectoryEngine = React.lazy(() => import('./components/DirectoryEngine'));
+const QuantumProcessorsMatrix = React.lazy(() => import('./components/QuantumProcessorsMatrix'));
+const TaxonomyMaps = React.lazy(() => import('./components/TaxonomyMaps'));
+const FinancialTracker = React.lazy(() => import('./components/FinancialTracker'));
+const IndiaTracker = React.lazy(() => import('./components/IndiaTracker'));
+const GlobalResources = React.lazy(() => import('./components/GlobalResources'));
+const SovereignComparison = React.lazy(() => import('./components/SovereignComparison'));
+const ApplicationsEncyclopedia = React.lazy(() => import('./components/ApplicationsEncyclopedia'));
+const ProcurementLedger = React.lazy(() => import('./components/ProcurementLedger'));
+const AlliancesNode = React.lazy(() => import('./components/AlliancesNode'));
+const ExporterEngine = React.lazy(() => import('./components/ExporterEngine'));
+const WorldMapLeaflet = React.lazy(() => import('./components/WorldMapLeaflet'));
+const StrategicAdvisory = React.lazy(() => import('./components/StrategicAdvisory'));
+const Settings = React.lazy(() => import('./components/Settings'));
+const QAValidationRoom = React.lazy(() => import('./components/QAValidationRoom'));
 
 // Import Icons
 import { 
@@ -68,6 +68,32 @@ const NQMEmblem = () => (
     ))}
   </svg>
 );
+
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+  static getDerivedStateFromError(error) {
+    return { hasError: true, error };
+  }
+  componentDidCatch(error, errorInfo) {
+    console.error("Module crashed:", error, errorInfo);
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="flex h-full flex-col items-center justify-center text-red-500 font-mono p-8 text-center bg-[#0B1320]">
+          <span className="text-4xl mb-4">⚠️</span>
+          <h2 className="text-xl font-bold mb-2">Module Crash Detected</h2>
+          <p className="text-xs text-red-400 opacity-80 max-w-lg">{this.state.error?.toString()}</p>
+          <button onClick={() => window.location.reload()} className="mt-6 px-4 py-2 border border-red-500/30 rounded hover:bg-red-500/10">Reload Interface</button>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -458,7 +484,15 @@ export default function App() {
             </div>
           )}
 
-          {renderViewContent()}
+          <ErrorBoundary>
+            <Suspense fallback={
+              <div className="flex h-full items-center justify-center text-cyber-accent font-mono animate-pulse text-sm tracking-widest">
+                LOADING MODULE...
+              </div>
+            }>
+              {renderViewContent()}
+            </Suspense>
+          </ErrorBoundary>
         </main>
       </div>
     </div>

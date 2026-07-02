@@ -247,8 +247,8 @@ export default function Settings({
           <SectionCard icon={Info} title="About">
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {[
-                { icon: Globe,  label: 'App Name',    value: 'Quantum Tracker 2.0' },
-                { icon: Info,   label: 'Version',     value: '2.0.1' },
+                { icon: Globe,  label: 'App Name',    value: 'Quantum Command' },
+                { icon: Info,   label: 'Version',     value: 'v2.0' },
                 { icon: Zap,    label: 'Engine',      value: 'Dynamic News-to-Hardware Intelligence Parser' },
                 { icon: Globe,  label: 'Hosting',     value: 'GitHub Pages (Free)' },
                 { icon: Clock,  label: 'Auto-Update', value: 'GitHub Actions CI/CD (Free)' },

@@ -109,11 +109,23 @@ export default function IndiaTracker({ articles = [] }) {
     }
   ], []);
 
-  // Calendar milestones for NQM India
+  // Calendar milestones for NQM India with dynamic overrides support
   const milestones = useMemo(() => {
     const nqm = SOVEREIGN_FUNDING.find(f => f.country === 'India');
-    return nqm?.milestones || [];
-  }, []);
+    const baseMilestones = nqm?.milestones || [];
+    
+    return baseMilestones.map(m => {
+      const override = dynamicOverrides?.indiaMilestones?.[m.task];
+      if (override) {
+        return {
+          ...m,
+          status: override.status,
+          task: override.task
+        };
+      }
+      return m;
+    });
+  }, [dynamicOverrides]);
 
   // Process data for the main resource directory list
   const filteredEcosystemItems = useMemo(() => {
@@ -358,14 +370,14 @@ export default function IndiaTracker({ articles = [] }) {
               <div key={idx} className="relative space-y-1">
                 {/* Timeline status dot */}
                 <span className={`absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full border border-cyber-bg ${
-                  m.status === 'Completed' ? 'bg-cyber-accent shadow-[0_0_8px_rgba(0,230,153,0.5)]' : 'bg-cyber-muted'
+                  m.status.includes('Completed') ? 'bg-cyber-accent shadow-[0_0_8px_rgba(0,230,153,0.5)]' : 'bg-cyber-muted'
                 }`} />
                 <div className="flex items-center gap-2">
                   <span className="text-xs font-mono font-bold text-cyber-accent bg-cyber-accent/10 px-1.5 py-0.2 rounded border border-cyber-accent/15">
                     {m.year}
                   </span>
                   <span className={`text-[9px] font-mono uppercase px-1.5 rounded font-bold ${
-                    m.status === 'Completed' 
+                    m.status.includes('Completed') 
                       ? 'bg-green-500/10 text-green-400 border border-green-500/20' 
                       : 'bg-[#111A28] text-cyber-muted border border-cyber-border'
                   }`}>

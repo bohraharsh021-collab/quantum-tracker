@@ -45,6 +45,14 @@ export default function GlobalResources({ articles = [] }) {
       sovereignThreatIndex: 'Low (Self-reliant supply chain)'
     },
     {
+      country: 'India',
+      budget: '$730M (₹6,003 Cr NQM)',
+      primaryQubit: 'Superconducting & Photonic',
+      satelliteQKD: 'Active R&D (ISRO LEO communication link)',
+      pqcTransition: 'Moderate (National cryptography framework)',
+      sovereignThreatIndex: 'Medium (Imported cryo equipment reliance)'
+    },
+    {
       country: 'United Kingdom',
       budget: '£1B+ (National Program)',
       primaryQubit: 'Trapped Ion & Superconducting',
@@ -75,6 +83,54 @@ export default function GlobalResources({ articles = [] }) {
       satelliteQKD: 'Operational (Satellite ground swaps)',
       pqcTransition: 'Moderate (Financial sector rollout)',
       sovereignThreatIndex: 'Low (Deep specialization)'
+    },
+    {
+      country: 'Canada',
+      budget: '$360M USD (NQS Strategy)',
+      primaryQubit: 'Photonic & Superconducting Annealing',
+      satelliteQKD: 'R&D Phase (Kepler QKD payload)',
+      pqcTransition: 'Moderate (Academic systems alignment)',
+      sovereignThreatIndex: 'Medium (US corporate talent drain)'
+    },
+    {
+      country: 'Israel',
+      budget: '$400M USD (INQI Focus)',
+      primaryQubit: 'Trapped Ion & Silicon Dots',
+      satelliteQKD: 'R&D Phase (Defense cryptography)',
+      pqcTransition: 'Advanced (Control hardware synthesis)',
+      sovereignThreatIndex: 'Medium (Limited local foundry capacity)'
+    },
+    {
+      country: 'Australia',
+      budget: '$600M USD (National Strategy)',
+      primaryQubit: 'Silicon Spin & Quantum Diamond',
+      satelliteQKD: 'R&D Phase (High-rate ground receivers)',
+      pqcTransition: 'Advanced (Control algorithms optimization)',
+      sovereignThreatIndex: 'Low-Medium (Geographic supply chain distance)'
+    },
+    {
+      country: 'South Korea',
+      budget: '$2.4B USD (ICT Subsidies)',
+      primaryQubit: 'Trapped Ion & Silicon spins',
+      satelliteQKD: 'Active testing (Sovereign telecom fiber links)',
+      pqcTransition: 'Advanced (Microelectronics and switches)',
+      sovereignThreatIndex: 'Medium (High laser component dependence)'
+    },
+    {
+      country: 'Finland',
+      budget: '$150M USD (State hardware)',
+      primaryQubit: 'Superconducting',
+      satelliteQKD: 'R&D Phase (Academic sensors)',
+      pqcTransition: 'Moderate (Nokia PQC networks)',
+      sovereignThreatIndex: 'Low-Medium (Strong local cryo infrastructure)'
+    },
+    {
+      country: 'Russia',
+      budget: '$350M+ USD (Rosatom)',
+      primaryQubit: 'Superconducting Transmon',
+      satelliteQKD: 'Active testing (Civilian fiber networks)',
+      pqcTransition: 'Moderate (Sovereign crypto protocols)',
+      sovereignThreatIndex: 'High (Severe cryo refrigerator sanctions)'
     }
   ], []);
 

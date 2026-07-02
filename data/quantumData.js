@@ -14,7 +14,7 @@ export const MOCK_SOURCES = [
 ];
 
 export const MOCK_ORGANIZATIONS = [
-  {
+{
     id: 'org-1',
     name: 'QNu Labs',
     type: 'Startup',
@@ -133,6 +133,1230 @@ export const MOCK_ORGANIZATIONS = [
     funding: 'NQM Approved Hub',
     employees: '40+ Researchers',
     description: 'National Quantum Mission (NQM) designated hub focusing on silicon-based photonic integrated circuits and quantum sensors for aerospace and medicine.'
+  },
+  {
+    id: "org-11",
+    name: "IIT Delhi Quantum Lab",
+    type: "Academic Hub",
+    location: "Bengaluru, India",
+    country: "India",
+    established: 2013,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "102+ Researchers",
+    description: "IIT Delhi Quantum Lab represents a leading academic hub based in Bengaluru, India. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-12",
+    name: "IIT Kanpur Cryptography Lab",
+    type: "Academic Hub",
+    location: "Bengaluru, India",
+    country: "India",
+    established: 1992,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "101+ Researchers",
+    description: "IIT Kanpur Cryptography Lab represents a leading academic hub based in Bengaluru, India. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-13",
+    name: "C-DAC Pune Computing Hub",
+    type: "Government Agency",
+    location: "Bengaluru, India",
+    country: "India",
+    established: 2008,
+    focus: "National coordination, secure cryptography networks rollout, and funding",
+    funding: "Federal Infrastructure Budget",
+    employees: "175+ Researchers",
+    description: "C-DAC Pune Computing Hub represents a leading government agency based in Bengaluru, India. Focusing on national coordination, secure cryptography networks rollout, and funding to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-14",
+    name: "TIFR Mumbai Transmon Hub",
+    type: "Startup",
+    location: "Bengaluru, India",
+    country: "India",
+    established: 2016,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "124+ Researchers",
+    description: "TIFR Mumbai Transmon Hub represents a leading startup based in Bengaluru, India. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-15",
+    name: "IIT Kharagpur Quantum Optoelectronics",
+    type: "Startup",
+    location: "Bengaluru, India",
+    country: "India",
+    established: 2009,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "142+ Researchers",
+    description: "IIT Kharagpur Quantum Optoelectronics represents a leading startup based in Bengaluru, India. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-16",
+    name: "DRDO Quantum Tech Lab Jodhpur",
+    type: "Academic Hub",
+    location: "Bengaluru, India",
+    country: "India",
+    established: 2003,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "59+ Researchers",
+    description: "DRDO Quantum Tech Lab Jodhpur represents a leading academic hub based in Bengaluru, India. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-17",
+    name: "ISRO Satellite Link Terminal",
+    type: "Government Agency",
+    location: "Bengaluru, India",
+    country: "India",
+    established: 1999,
+    focus: "National coordination, secure cryptography networks rollout, and funding",
+    funding: "Federal Infrastructure Budget",
+    employees: "12+ Researchers",
+    description: "ISRO Satellite Link Terminal represents a leading government agency based in Bengaluru, India. Focusing on national coordination, secure cryptography networks rollout, and funding to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-18",
+    name: "QNu Labs HQ",
+    type: "Academic Hub",
+    location: "Bengaluru, India",
+    country: "India",
+    established: 2002,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "45+ Researchers",
+    description: "QNu Labs HQ represents a leading academic hub based in Bengaluru, India. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-19",
+    name: "QpiAI India",
+    type: "Startup",
+    location: "Bengaluru, India",
+    country: "India",
+    established: 1998,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "87+ Researchers",
+    description: "QpiAI India represents a leading startup based in Bengaluru, India. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-20",
+    name: "BosonQ Psi",
+    type: "Startup",
+    location: "Bengaluru, India",
+    country: "India",
+    established: 2006,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "70+ Researchers",
+    description: "BosonQ Psi represents a leading startup based in Bengaluru, India. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-21",
+    name: "Yale Quantum Institute",
+    type: "Academic Hub",
+    location: "New York, USA",
+    country: "United States of America",
+    established: 2017,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "161+ Researchers",
+    description: "Yale Quantum Institute represents a leading academic hub based in New York, USA. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-22",
+    name: "Princeton Quantum Initiative",
+    type: "Startup",
+    location: "New York, USA",
+    country: "United States of America",
+    established: 1998,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "185+ Researchers",
+    description: "Princeton Quantum Initiative represents a leading startup based in New York, USA. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-23",
+    name: "Caltech IQIM",
+    type: "Startup",
+    location: "New York, USA",
+    country: "United States of America",
+    established: 1995,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "190+ Researchers",
+    description: "Caltech IQIM represents a leading startup based in New York, USA. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-24",
+    name: "Stanford Q-FARM",
+    type: "Startup",
+    location: "New York, USA",
+    country: "United States of America",
+    established: 1994,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "104+ Researchers",
+    description: "Stanford Q-FARM represents a leading startup based in New York, USA. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-25",
+    name: "UChicago Pritzker School",
+    type: "Academic Hub",
+    location: "New York, USA",
+    country: "United States of America",
+    established: 2014,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "81+ Researchers",
+    description: "UChicago Pritzker School represents a leading academic hub based in New York, USA. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-26",
+    name: "MIT Center for Quantum Engineering",
+    type: "Academic Hub",
+    location: "New York, USA",
+    country: "United States of America",
+    established: 2024,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "185+ Researchers",
+    description: "MIT Center for Quantum Engineering represents a leading academic hub based in New York, USA. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-27",
+    name: "IBM Quantum Yorktown",
+    type: "Enterprise",
+    location: "New York, USA",
+    country: "United States of America",
+    established: 1998,
+    focus: "Commercial gate scaling, cloud infrastructure integration, and supply chain scaling",
+    funding: "Corporate R&D Funding",
+    employees: "17+ Researchers",
+    description: "IBM Quantum Yorktown represents a leading enterprise based in New York, USA. Focusing on commercial gate scaling, cloud infrastructure integration, and supply chain scaling to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-28",
+    name: "Google Quantum AI",
+    type: "Enterprise",
+    location: "New York, USA",
+    country: "United States of America",
+    established: 2003,
+    focus: "Commercial gate scaling, cloud infrastructure integration, and supply chain scaling",
+    funding: "Corporate R&D Funding",
+    employees: "135+ Researchers",
+    description: "Google Quantum AI represents a leading enterprise based in New York, USA. Focusing on commercial gate scaling, cloud infrastructure integration, and supply chain scaling to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-29",
+    name: "IonQ College Park",
+    type: "Startup",
+    location: "New York, USA",
+    country: "United States of America",
+    established: 1995,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "75+ Researchers",
+    description: "IonQ College Park represents a leading startup based in New York, USA. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-30",
+    name: "Rigetti Computing",
+    type: "Startup",
+    location: "New York, USA",
+    country: "United States of America",
+    established: 2005,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "35+ Researchers",
+    description: "Rigetti Computing represents a leading startup based in New York, USA. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-31",
+    name: "Atom Computing",
+    type: "Startup",
+    location: "New York, USA",
+    country: "United States of America",
+    established: 2013,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "66+ Researchers",
+    description: "Atom Computing represents a leading startup based in New York, USA. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-32",
+    name: "PsiQuantum",
+    type: "Startup",
+    location: "New York, USA",
+    country: "United States of America",
+    established: 2009,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "24+ Researchers",
+    description: "PsiQuantum represents a leading startup based in New York, USA. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-33",
+    name: "Infleqtion",
+    type: "Startup",
+    location: "New York, USA",
+    country: "United States of America",
+    established: 2024,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "144+ Researchers",
+    description: "Infleqtion represents a leading startup based in New York, USA. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-34",
+    name: "Cambridge Cavendish Lab",
+    type: "Academic Hub",
+    location: "London, UK",
+    country: "United Kingdom",
+    established: 2018,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "170+ Researchers",
+    description: "Cambridge Cavendish Lab represents a leading academic hub based in London, UK. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-35",
+    name: "Oxford Physics Hub",
+    type: "Startup",
+    location: "London, UK",
+    country: "United Kingdom",
+    established: 1992,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "124+ Researchers",
+    description: "Oxford Physics Hub represents a leading startup based in London, UK. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-36",
+    name: "University of Bristol Quantum Engineering",
+    type: "Academic Hub",
+    location: "London, UK",
+    country: "United Kingdom",
+    established: 2015,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "158+ Researchers",
+    description: "University of Bristol Quantum Engineering represents a leading academic hub based in London, UK. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-37",
+    name: "OQC Harwell Fab",
+    type: "Startup",
+    location: "London, UK",
+    country: "United Kingdom",
+    established: 2021,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "26+ Researchers",
+    description: "OQC Harwell Fab represents a leading startup based in London, UK. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-38",
+    name: "Orca Computing London",
+    type: "Startup",
+    location: "London, UK",
+    country: "United Kingdom",
+    established: 2019,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "139+ Researchers",
+    description: "Orca Computing London represents a leading startup based in London, UK. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-39",
+    name: "Quantum Motion London",
+    type: "Startup",
+    location: "London, UK",
+    country: "United Kingdom",
+    established: 2016,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "57+ Researchers",
+    description: "Quantum Motion London represents a leading startup based in London, UK. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-40",
+    name: "Phasecraft Bristol",
+    type: "Startup",
+    location: "London, UK",
+    country: "United Kingdom",
+    established: 2008,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "10+ Researchers",
+    description: "Phasecraft Bristol represents a leading startup based in London, UK. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-41",
+    name: "Quantinuum UK",
+    type: "Startup",
+    location: "London, UK",
+    country: "United Kingdom",
+    established: 1992,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "109+ Researchers",
+    description: "Quantinuum UK represents a leading startup based in London, UK. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-42",
+    name: "Waterloo IQC",
+    type: "Startup",
+    location: "Waterloo, Canada",
+    country: "Canada",
+    established: 2020,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "21+ Researchers",
+    description: "Waterloo IQC represents a leading startup based in Waterloo, Canada. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-43",
+    name: "Sherbrooke Quantum Institute",
+    type: "Academic Hub",
+    location: "Waterloo, Canada",
+    country: "Canada",
+    established: 2022,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "25+ Researchers",
+    description: "Sherbrooke Quantum Institute represents a leading academic hub based in Waterloo, Canada. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-44",
+    name: "UBC Quantum Matter Institute",
+    type: "Academic Hub",
+    location: "Waterloo, Canada",
+    country: "Canada",
+    established: 1997,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "142+ Researchers",
+    description: "UBC Quantum Matter Institute represents a leading academic hub based in Waterloo, Canada. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-45",
+    name: "D-Wave Systems Burnaby",
+    type: "Startup",
+    location: "Waterloo, Canada",
+    country: "Canada",
+    established: 2001,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "153+ Researchers",
+    description: "D-Wave Systems Burnaby represents a leading startup based in Waterloo, Canada. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-46",
+    name: "Xanadu Toronto",
+    type: "Startup",
+    location: "Waterloo, Canada",
+    country: "Canada",
+    established: 1999,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "163+ Researchers",
+    description: "Xanadu Toronto represents a leading startup based in Waterloo, Canada. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-47",
+    name: "Photonic Inc Coquitlam",
+    type: "Startup",
+    location: "Waterloo, Canada",
+    country: "Canada",
+    established: 2007,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "100+ Researchers",
+    description: "Photonic Inc Coquitlam represents a leading startup based in Waterloo, Canada. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-48",
+    name: "Nord Quantique Sherbrooke",
+    type: "Startup",
+    location: "Waterloo, Canada",
+    country: "Canada",
+    established: 2012,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "180+ Researchers",
+    description: "Nord Quantique Sherbrooke represents a leading startup based in Waterloo, Canada. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-49",
+    name: "CQT Singapore",
+    type: "Startup",
+    location: "Singapore",
+    country: "Singapore",
+    established: 1991,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "144+ Researchers",
+    description: "CQT Singapore represents a leading startup based in Singapore. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-50",
+    name: "Horizon Quantum Computing",
+    type: "Startup",
+    location: "Singapore",
+    country: "Singapore",
+    established: 2011,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "125+ Researchers",
+    description: "Horizon Quantum Computing represents a leading startup based in Singapore. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-51",
+    name: "Entropica Labs",
+    type: "Academic Hub",
+    location: "Singapore",
+    country: "Singapore",
+    established: 2013,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "201+ Researchers",
+    description: "Entropica Labs represents a leading academic hub based in Singapore. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-52",
+    name: "SpeQtral Singapore",
+    type: "Startup",
+    location: "Singapore",
+    country: "Singapore",
+    established: 2002,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "197+ Researchers",
+    description: "SpeQtral Singapore represents a leading startup based in Singapore. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-53",
+    name: "RIKEN Wako Hub",
+    type: "Startup",
+    location: "Tokyo, Japan",
+    country: "Japan",
+    established: 2004,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "198+ Researchers",
+    description: "RIKEN Wako Hub represents a leading startup based in Tokyo, Japan. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-54",
+    name: "Tokyo University Quantum Center",
+    type: "Academic Hub",
+    location: "Tokyo, Japan",
+    country: "Japan",
+    established: 2003,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "33+ Researchers",
+    description: "Tokyo University Quantum Center represents a leading academic hub based in Tokyo, Japan. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-55",
+    name: "Toshiba QKD Lab",
+    type: "Academic Hub",
+    location: "Tokyo, Japan",
+    country: "Japan",
+    established: 2004,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "84+ Researchers",
+    description: "Toshiba QKD Lab represents a leading academic hub based in Tokyo, Japan. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-56",
+    name: "Q-STAR Tokyo Consortium",
+    type: "Startup",
+    location: "Tokyo, Japan",
+    country: "Japan",
+    established: 2024,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "31+ Researchers",
+    description: "Q-STAR Tokyo Consortium represents a leading startup based in Tokyo, Japan. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-57",
+    name: "NEC Superconducting Lab",
+    type: "Academic Hub",
+    location: "Tokyo, Japan",
+    country: "Japan",
+    established: 2016,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "163+ Researchers",
+    description: "NEC Superconducting Lab represents a leading academic hub based in Tokyo, Japan. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-58",
+    name: "Fujitsu Annealer Division",
+    type: "Enterprise",
+    location: "Tokyo, Japan",
+    country: "Japan",
+    established: 2009,
+    focus: "Commercial gate scaling, cloud infrastructure integration, and supply chain scaling",
+    funding: "Corporate R&D Funding",
+    employees: "206+ Researchers",
+    description: "Fujitsu Annealer Division represents a leading enterprise based in Tokyo, Japan. Focusing on commercial gate scaling, cloud infrastructure integration, and supply chain scaling to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-59",
+    name: "planqc Munich",
+    type: "Startup",
+    location: "Munich, Germany",
+    country: "Germany",
+    established: 2003,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "203+ Researchers",
+    description: "planqc Munich represents a leading startup based in Munich, Germany. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-60",
+    name: "eleQtron Siegen",
+    type: "Startup",
+    location: "Munich, Germany",
+    country: "Germany",
+    established: 2016,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "48+ Researchers",
+    description: "eleQtron Siegen represents a leading startup based in Munich, Germany. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-61",
+    name: "kiutra Munich",
+    type: "Startup",
+    location: "Munich, Germany",
+    country: "Germany",
+    established: 2004,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "154+ Researchers",
+    description: "kiutra Munich represents a leading startup based in Munich, Germany. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-62",
+    name: "HQS Quantum Simulations",
+    type: "Startup",
+    location: "Munich, Germany",
+    country: "Germany",
+    established: 2024,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "174+ Researchers",
+    description: "HQS Quantum Simulations represents a leading startup based in Munich, Germany. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-63",
+    name: "Max Planck Quantum Optics",
+    type: "Startup",
+    location: "Munich, Germany",
+    country: "Germany",
+    established: 2016,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "27+ Researchers",
+    description: "Max Planck Quantum Optics represents a leading startup based in Munich, Germany. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-64",
+    name: "Jülich Supercomputing Centre",
+    type: "Academic Hub",
+    location: "Munich, Germany",
+    country: "Germany",
+    established: 2024,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "46+ Researchers",
+    description: "Jülich Supercomputing Centre represents a leading academic hub based in Munich, Germany. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-65",
+    name: "Alice & Bob Paris",
+    type: "Startup",
+    location: "Paris, France",
+    country: "France",
+    established: 1998,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "175+ Researchers",
+    description: "Alice & Bob Paris represents a leading startup based in Paris, France. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-66",
+    name: "Pasqal Massy",
+    type: "Startup",
+    location: "Paris, France",
+    country: "France",
+    established: 2020,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "13+ Researchers",
+    description: "Pasqal Massy represents a leading startup based in Paris, France. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-67",
+    name: "Quandela Palaiseau",
+    type: "Startup",
+    location: "Paris, France",
+    country: "France",
+    established: 2022,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "77+ Researchers",
+    description: "Quandela Palaiseau represents a leading startup based in Paris, France. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-68",
+    name: "C12 Quantum Electronics Paris",
+    type: "Startup",
+    location: "Paris, France",
+    country: "France",
+    established: 2008,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "197+ Researchers",
+    description: "C12 Quantum Electronics Paris represents a leading startup based in Paris, France. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-69",
+    name: "CEA-Leti Grenoble",
+    type: "Startup",
+    location: "Paris, France",
+    country: "France",
+    established: 2017,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "99+ Researchers",
+    description: "CEA-Leti Grenoble represents a leading startup based in Paris, France. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-70",
+    name: "CNRS LKB Paris",
+    type: "Startup",
+    location: "Paris, France",
+    country: "France",
+    established: 2005,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "156+ Researchers",
+    description: "CNRS LKB Paris represents a leading startup based in Paris, France. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-71",
+    name: "Sydney Quantum Academy",
+    type: "Academic Hub",
+    location: "Sydney, Australia",
+    country: "Australia",
+    established: 2011,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "138+ Researchers",
+    description: "Sydney Quantum Academy represents a leading academic hub based in Sydney, Australia. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-72",
+    name: "UNSW Quantum Lab",
+    type: "Academic Hub",
+    location: "Sydney, Australia",
+    country: "Australia",
+    established: 1997,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "116+ Researchers",
+    description: "UNSW Quantum Lab represents a leading academic hub based in Sydney, Australia. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-73",
+    name: "Diraq Sydney",
+    type: "Startup",
+    location: "Sydney, Australia",
+    country: "Australia",
+    established: 2020,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "159+ Researchers",
+    description: "Diraq Sydney represents a leading startup based in Sydney, Australia. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-74",
+    name: "Silicon Quantum Computing",
+    type: "Startup",
+    location: "Sydney, Australia",
+    country: "Australia",
+    established: 2022,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "207+ Researchers",
+    description: "Silicon Quantum Computing represents a leading startup based in Sydney, Australia. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-75",
+    name: "Q-Ctrl Sydney",
+    type: "Startup",
+    location: "Sydney, Australia",
+    country: "Australia",
+    established: 2005,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "10+ Researchers",
+    description: "Q-Ctrl Sydney represents a leading startup based in Sydney, Australia. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-76",
+    name: "Quantum Brilliance Canberra",
+    type: "Startup",
+    location: "Sydney, Australia",
+    country: "Australia",
+    established: 2002,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "200+ Researchers",
+    description: "Quantum Brilliance Canberra represents a leading startup based in Sydney, Australia. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-77",
+    name: "Weizmann Quantum Hub",
+    type: "Startup",
+    location: "Tel Aviv, Israel",
+    country: "Israel",
+    established: 1991,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "136+ Researchers",
+    description: "Weizmann Quantum Hub represents a leading startup based in Tel Aviv, Israel. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-78",
+    name: "Technion Quantum Center",
+    type: "Academic Hub",
+    location: "Tel Aviv, Israel",
+    country: "Israel",
+    established: 2023,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "60+ Researchers",
+    description: "Technion Quantum Center represents a leading academic hub based in Tel Aviv, Israel. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-79",
+    name: "Quantum Machines Tel Aviv",
+    type: "Startup",
+    location: "Tel Aviv, Israel",
+    country: "Israel",
+    established: 2011,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "145+ Researchers",
+    description: "Quantum Machines Tel Aviv represents a leading startup based in Tel Aviv, Israel. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-80",
+    name: "Classiq Tel Aviv",
+    type: "Startup",
+    location: "Tel Aviv, Israel",
+    country: "Israel",
+    established: 2002,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "85+ Researchers",
+    description: "Classiq Tel Aviv represents a leading startup based in Tel Aviv, Israel. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-81",
+    name: "Quantum Source Rehovot",
+    type: "Startup",
+    location: "Tel Aviv, Israel",
+    country: "Israel",
+    established: 2001,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "57+ Researchers",
+    description: "Quantum Source Rehovot represents a leading startup based in Tel Aviv, Israel. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-82",
+    name: "KIST Quantum Hub",
+    type: "Startup",
+    location: "Seoul, South Korea",
+    country: "South Korea",
+    established: 2000,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "135+ Researchers",
+    description: "KIST Quantum Hub represents a leading startup based in Seoul, South Korea. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-83",
+    name: "SNU Quantum Center",
+    type: "Academic Hub",
+    location: "Seoul, South Korea",
+    country: "South Korea",
+    established: 2002,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "187+ Researchers",
+    description: "SNU Quantum Center represents a leading academic hub based in Seoul, South Korea. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-84",
+    name: "SKKU Quantum Foundry",
+    type: "Academic Hub",
+    location: "Seoul, South Korea",
+    country: "South Korea",
+    established: 2022,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "40+ Researchers",
+    description: "SKKU Quantum Foundry represents a leading academic hub based in Seoul, South Korea. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-85",
+    name: "Samsung Advanced Institute",
+    type: "Academic Hub",
+    location: "Seoul, South Korea",
+    country: "South Korea",
+    established: 1996,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "13+ Researchers",
+    description: "Samsung Advanced Institute represents a leading academic hub based in Seoul, South Korea. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-86",
+    name: "SDT Seoul",
+    type: "Startup",
+    location: "Seoul, South Korea",
+    country: "South Korea",
+    established: 1991,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "168+ Researchers",
+    description: "SDT Seoul represents a leading startup based in Seoul, South Korea. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-87",
+    name: "IQM Espoo",
+    type: "Startup",
+    location: "Espoo, Finland",
+    country: "Finland",
+    established: 1990,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "85+ Researchers",
+    description: "IQM Espoo represents a leading startup based in Espoo, Finland. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-88",
+    name: "VTT Technical Research Centre",
+    type: "Academic Hub",
+    location: "Espoo, Finland",
+    country: "Finland",
+    established: 2008,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "82+ Researchers",
+    description: "VTT Technical Research Centre represents a leading academic hub based in Espoo, Finland. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-89",
+    name: "Aalto University Quantum Physics",
+    type: "Academic Hub",
+    location: "Espoo, Finland",
+    country: "Finland",
+    established: 1996,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "54+ Researchers",
+    description: "Aalto University Quantum Physics represents a leading academic hub based in Espoo, Finland. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-90",
+    name: "Bluefors Cryogenics Helsinki",
+    type: "Startup",
+    location: "Espoo, Finland",
+    country: "Finland",
+    established: 2011,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "59+ Researchers",
+    description: "Bluefors Cryogenics Helsinki represents a leading startup based in Espoo, Finland. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-91",
+    name: "Skoltech Moscow",
+    type: "Startup",
+    location: "Moscow, Russia",
+    country: "Russia",
+    established: 2021,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "168+ Researchers",
+    description: "Skoltech Moscow represents a leading startup based in Moscow, Russia. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-92",
+    name: "Russian Quantum Center",
+    type: "Academic Hub",
+    location: "Moscow, Russia",
+    country: "Russia",
+    established: 2021,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "209+ Researchers",
+    description: "Russian Quantum Center represents a leading academic hub based in Moscow, Russia. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-93",
+    name: "MIPT Quantum Computing Lab",
+    type: "Academic Hub",
+    location: "Moscow, Russia",
+    country: "Russia",
+    established: 2007,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "83+ Researchers",
+    description: "MIPT Quantum Computing Lab represents a leading academic hub based in Moscow, Russia. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-94",
+    name: "Rosatom Quantum Command",
+    type: "Government Agency",
+    location: "Moscow, Russia",
+    country: "Russia",
+    established: 2021,
+    focus: "National coordination, secure cryptography networks rollout, and funding",
+    funding: "Federal Infrastructure Budget",
+    employees: "41+ Researchers",
+    description: "Rosatom Quantum Command represents a leading government agency based in Moscow, Russia. Focusing on national coordination, secure cryptography networks rollout, and funding to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-95",
+    name: "ETH Zurich Quantum Engineering",
+    type: "Startup",
+    location: "Zurich, Switzerland",
+    country: "Switzerland",
+    established: 2018,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "90+ Researchers",
+    description: "ETH Zurich Quantum Engineering represents a leading startup based in Zurich, Switzerland. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-96",
+    name: "University of Basel Spin Lab",
+    type: "Academic Hub",
+    location: "Zurich, Switzerland",
+    country: "Switzerland",
+    established: 1997,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "66+ Researchers",
+    description: "University of Basel Spin Lab represents a leading academic hub based in Zurich, Switzerland. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-97",
+    name: "EPFL Lausanne Quantum Hub",
+    type: "Startup",
+    location: "Zurich, Switzerland",
+    country: "Switzerland",
+    established: 2010,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "115+ Researchers",
+    description: "EPFL Lausanne Quantum Hub represents a leading startup based in Zurich, Switzerland. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-98",
+    name: "IBM Research Zurich",
+    type: "Enterprise",
+    location: "Zurich, Switzerland",
+    country: "Switzerland",
+    established: 2017,
+    focus: "Commercial gate scaling, cloud infrastructure integration, and supply chain scaling",
+    funding: "Corporate R&D Funding",
+    employees: "63+ Researchers",
+    description: "IBM Research Zurich represents a leading enterprise based in Zurich, Switzerland. Focusing on commercial gate scaling, cloud infrastructure integration, and supply chain scaling to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-99",
+    name: "Niels Bohr Institute Copenhagen",
+    type: "Academic Hub",
+    location: "Copenhagen, Denmark",
+    country: "Denmark",
+    established: 2020,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "18+ Researchers",
+    description: "Niels Bohr Institute Copenhagen represents a leading academic hub based in Copenhagen, Denmark. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-100",
+    name: "Novo Nordisk Quantum Foundation",
+    type: "Startup",
+    location: "Copenhagen, Denmark",
+    country: "Denmark",
+    established: 1992,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "50+ Researchers",
+    description: "Novo Nordisk Quantum Foundation represents a leading startup based in Copenhagen, Denmark. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-101",
+    name: "Copenhagen Quantum Mechanics Lab",
+    type: "Academic Hub",
+    location: "Copenhagen, Denmark",
+    country: "Denmark",
+    established: 2000,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "97+ Researchers",
+    description: "Copenhagen Quantum Mechanics Lab represents a leading academic hub based in Copenhagen, Denmark. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-102",
+    name: "Innsbruck Quantum Optics",
+    type: "Startup",
+    location: "Innsbruck, Austria",
+    country: "Austria",
+    established: 2004,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "56+ Researchers",
+    description: "Innsbruck Quantum Optics represents a leading startup based in Innsbruck, Austria. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-103",
+    name: "Vienna Quantum Science Center",
+    type: "Academic Hub",
+    location: "Innsbruck, Austria",
+    country: "Austria",
+    established: 2009,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "107+ Researchers",
+    description: "Vienna Quantum Science Center represents a leading academic hub based in Innsbruck, Austria. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-104",
+    name: "Austrian Quantum Alliance",
+    type: "Startup",
+    location: "Innsbruck, Austria",
+    country: "Austria",
+    established: 2013,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "179+ Researchers",
+    description: "Austrian Quantum Alliance represents a leading startup based in Innsbruck, Austria. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-105",
+    name: "Chalmers University Quantum Technology",
+    type: "Academic Hub",
+    location: "Stockholm, Sweden",
+    country: "Sweden",
+    established: 2022,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "19+ Researchers",
+    description: "Chalmers University Quantum Technology represents a leading academic hub based in Stockholm, Sweden. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-106",
+    name: "Wallenberg Center for Quantum",
+    type: "Academic Hub",
+    location: "Stockholm, Sweden",
+    country: "Sweden",
+    established: 1994,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "134+ Researchers",
+    description: "Wallenberg Center for Quantum represents a leading academic hub based in Stockholm, Sweden. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-107",
+    name: "KTH Royal Institute Stockholm",
+    type: "Academic Hub",
+    location: "Stockholm, Sweden",
+    country: "Sweden",
+    established: 2003,
+    focus: "Quantum physics education, fundamental qubit properties, and algorithms research",
+    funding: "Sovereign Academic Grants",
+    employees: "178+ Researchers",
+    description: "KTH Royal Institute Stockholm represents a leading academic hub based in Stockholm, Sweden. Focusing on quantum physics education, fundamental qubit properties, and algorithms research to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-108",
+    name: "QuTech Delft",
+    type: "Startup",
+    location: "Delft, Netherlands",
+    country: "Netherlands",
+    established: 2023,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "146+ Researchers",
+    description: "QuTech Delft represents a leading startup based in Delft, Netherlands. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-109",
+    name: "QuantWare Delft",
+    type: "Startup",
+    location: "Delft, Netherlands",
+    country: "Netherlands",
+    established: 2020,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "68+ Researchers",
+    description: "QuantWare Delft represents a leading startup based in Delft, Netherlands. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-110",
+    name: "Orange Quantum Systems",
+    type: "Startup",
+    location: "Delft, Netherlands",
+    country: "Netherlands",
+    established: 1993,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "48+ Researchers",
+    description: "Orange Quantum Systems represents a leading startup based in Delft, Netherlands. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-111",
+    name: "QuiX Quantum Enschede",
+    type: "Startup",
+    location: "Delft, Netherlands",
+    country: "Netherlands",
+    established: 1995,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "106+ Researchers",
+    description: "QuiX Quantum Enschede represents a leading startup based in Delft, Netherlands. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
+  },
+  {
+    id: "org-112",
+    name: "QphoX Delft",
+    type: "Startup",
+    location: "Delft, Netherlands",
+    country: "Netherlands",
+    established: 1991,
+    focus: "Designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures",
+    funding: "Venture Capital funded ($20M+)",
+    employees: "77+ Researchers",
+    description: "QphoX Delft represents a leading startup based in Delft, Netherlands. Focusing on designing high-fidelity qubit chips, compiler middleware tools, and custom cooling architectures to accelerate the sovereign and global quantum computing race."
   }
 ];
 
@@ -288,7 +1512,7 @@ export const MOCK_ALERTS = [
 
 // Processor Matrix containing exactly 18 technical columns to evaluate
 export const PROCESSORS_MATRIX = [
-  {
+{
     name: "Condor",
     manufacturer: "IBM",
     qubitType: "Superconducting",
@@ -487,20 +1711,169 @@ export const PROCESSORS_MATRIX = [
     energyConsumption: 10,
     clops: 100,
     launchYear: 2022
+  },
+  {
+    name: "Wukong",
+    manufacturer: "Origin Quantum",
+    qubitType: "Superconducting",
+    physicalQubits: 72,
+    logicalQubits: 0,
+    quantumVolume: 512,
+    gateFidelity1Q: "99.90%",
+    gateFidelity2Q: "98.70%",
+    t1Coherence: 95,
+    t2Coherence: 80,
+    coolingTemp: 15,
+    coolingMethod: "Dilution Refrigerator",
+    errorMitigation: "Zero Noise Extrapolation",
+    devStatus: "Production",
+    deploymentModel: "Cloud & On-premises",
+    energyConsumption: 16,
+    clops: 4200,
+    launchYear: 2024
+  },
+  {
+    name: "Lucy",
+    manufacturer: "Oxford Quantum Circuits",
+    qubitType: "Superconducting",
+    physicalQubits: 32,
+    logicalQubits: 0,
+    quantumVolume: 256,
+    gateFidelity1Q: "99.80%",
+    gateFidelity2Q: "97.50%",
+    t1Coherence: 70,
+    t2Coherence: 50,
+    coolingTemp: 20,
+    coolingMethod: "Dilution Refrigerator",
+    errorMitigation: "Calibration based",
+    devStatus: "Production",
+    deploymentModel: "Hybrid Cloud",
+    energyConsumption: 12,
+    clops: 3000,
+    launchYear: 2023
+  },
+  {
+    name: "Spin-2",
+    manufacturer: "Diraq",
+    qubitType: "Silicon Spin",
+    physicalQubits: 10,
+    logicalQubits: 0,
+    quantumVolume: 128,
+    gateFidelity1Q: "99.95%",
+    gateFidelity2Q: "99.00%",
+    t1Coherence: 1500,
+    t2Coherence: 1000,
+    coolingTemp: 1000,
+    coolingMethod: "Helium Flow Cryostat",
+    errorMitigation: "Dynamical Decoupling",
+    devStatus: "Production",
+    deploymentModel: "Lab Cloud Access",
+    energyConsumption: 5,
+    clops: 2500,
+    launchYear: 2025
+  },
+  {
+    name: "Orion",
+    manufacturer: "Alice & Bob",
+    qubitType: "Superconducting (Cat Qubit)",
+    physicalQubits: 16,
+    logicalQubits: 2,
+    quantumVolume: 1024,
+    gateFidelity1Q: "99.99%",
+    gateFidelity2Q: "99.50%",
+    t1Coherence: 4000,
+    t2Coherence: 3500,
+    coolingTemp: 10,
+    coolingMethod: "Dilution Refrigerator",
+    errorMitigation: "Passive Error Correction",
+    devStatus: "Production",
+    deploymentModel: "Cloud-only",
+    energyConsumption: 18,
+    clops: 3500,
+    launchYear: 2025
+  },
+  {
+    name: "Helmi",
+    manufacturer: "IQM / VTT",
+    qubitType: "Superconducting",
+    physicalQubits: 5,
+    logicalQubits: 0,
+    quantumVolume: 32,
+    gateFidelity1Q: "99.90%",
+    gateFidelity2Q: "98.00%",
+    t1Coherence: 90,
+    t2Coherence: 70,
+    coolingTemp: 15,
+    coolingMethod: "Dilution Refrigerator",
+    errorMitigation: "Calibration based",
+    devStatus: "Production",
+    deploymentModel: "On-premises Lab",
+    energyConsumption: 10,
+    clops: 1500,
+    launchYear: 2022
+  },
+  {
+    name: "KIST-Trapped-20",
+    manufacturer: "KIST",
+    qubitType: "Trapped Ion",
+    physicalQubits: 20,
+    logicalQubits: 0,
+    quantumVolume: 512,
+    gateFidelity1Q: "99.97%",
+    gateFidelity2Q: "99.10%",
+    t1Coherence: 500000,
+    t2Coherence: 400000,
+    coolingTemp: 4000,
+    coolingMethod: "Laser & Closed Cycle Cryostat",
+    errorMitigation: "Surface Code Calibration",
+    devStatus: "Production",
+    deploymentModel: "Lab Cloud Access",
+    energyConsumption: 30,
+    clops: 800,
+    launchYear: 2025
+  },
+  {
+    name: "Skoltech-16",
+    manufacturer: "Rosatom / Skoltech",
+    qubitType: "Superconducting",
+    physicalQubits: 16,
+    logicalQubits: 0,
+    quantumVolume: 128,
+    gateFidelity1Q: "99.70%",
+    gateFidelity2Q: "97.00%",
+    t1Coherence: 60,
+    t2Coherence: 45,
+    coolingTemp: 18,
+    coolingMethod: "Dilution Refrigerator",
+    errorMitigation: "Basic Calibration",
+    devStatus: "Production",
+    deploymentModel: "On-premises Lab",
+    energyConsumption: 14,
+    clops: 1800,
+    launchYear: 2024
   }
 ];
 
 export const VC_FUNDING_ROUNDS = [
-  { id: 'vc-1', startup: "QNu Labs", country: "India", round: "Series A", amount: 12.0, date: "2024-03-15", leadInvestors: "Speciale Invest, SIDBI Venture Capital" },
+{ id: 'vc-1', startup: "QNu Labs", country: "India", round: "Series A", amount: 12.0, date: "2024-03-15", leadInvestors: "Speciale Invest, SIDBI Venture Capital" },
   { id: 'vc-2', startup: "PsiQuantum", country: "United States of America", round: "Series D Extension", amount: 150.0, date: "2024-05-10", leadInvestors: "Australian Government, Queensland Government" },
   { id: 'vc-3', startup: "QpiAI", country: "India", round: "Pre-Series A", amount: 6.5, date: "2023-11-20", leadInvestors: "YourNest Venture Capital" },
   { id: 'vc-4', startup: "Pasqal", country: "France", round: "Series B", amount: 108.0, date: "2023-01-24", leadInvestors: "Temasek Holdings, Wa\'ed Ventures" },
   { id: 'vc-5', startup: "Rigetti Computing", country: "United States of America", round: "Post-IPO Debt", amount: 20.0, date: "2024-02-05", leadInvestors: "Shoals Technologies Group" },
-  { id: 'vc-6', startup: "Quantum Motion", country: "United Kingdom", round: "Series B", amount: 50.0, date: "2023-02-28", leadInvestors: "Bosch Ventures, Porsche SE, British Patient Capital" }
+  { id: 'vc-6', startup: "Quantum Motion", country: "United Kingdom", round: "Series B", amount: 50.0, date: "2023-02-28", leadInvestors: "Bosch Ventures, Porsche SE, British Patient Capital" },
+  { id: 'vc-7', startup: "Diraq", country: "Australia", round: "Series A", amount: 15.0, date: "2024-03-22", leadInvestors: "Allectus Capital" },
+  { id: 'vc-8', startup: "planqc", country: "Germany", round: "Series A", amount: 50.0, date: "2024-06-12", leadInvestors: "CATCON, UVC Partners" },
+  { id: 'vc-9', startup: "Alice & Bob", country: "France", round: "Series B", amount: 30.0, date: "2023-04-18", leadInvestors: "Elaia Partners, Bpifrance" },
+  { id: 'vc-10', startup: "IQM Quantum Computers", country: "Finland", round: "Series B", amount: 128.0, date: "2022-07-28", leadInvestors: "World Fund, Varma" },
+  { id: 'vc-11', startup: "Classiq", country: "Israel", round: "Series B", amount: 33.0, date: "2022-02-17", leadInvestors: "Hewlett Packard Pathfinder, Phoenix" },
+  { id: 'vc-12', startup: "Quantum Machines", country: "Israel", round: "Series B", amount: 50.0, date: "2021-09-08", leadInvestors: "Red Dot Capital Partners" },
+  { id: 'vc-13', startup: "Xanadu", country: "Canada", round: "Series C", amount: 100.0, date: "2022-11-09", leadInvestors: "Georgian, Porsche" },
+  { id: 'vc-14', startup: "Silicon Quantum Computing", country: "Australia", round: "Series A", amount: 50.4, date: "2023-07-15", leadInvestors: "Australian Government, Telstra" },
+  { id: 'vc-15', startup: "Nord Quantique", country: "Canada", round: "Seed Extension", amount: 9.5, date: "2024-01-10", leadInvestors: "BDC Capital, Real Ventures" }
 ];
 
 export const MOCK_HUBS = [
-  {
+{
     id: "hub-bengaluru",
     name: "Bengaluru Quantum Hub",
     coordinates: [13.0184, 77.5673],
@@ -579,7 +1952,55 @@ export const MOCK_HUBS = [
     institution: "National University of Singapore (NUS) & A*STAR",
     focus: "Satellite-to-ground QKD communication and atomic sensors",
     status: "Active"
-  }
+  },
+  {
+    id: "hub-waterloo",
+    name: "Waterloo Quantum Valley",
+    coordinates: [43.4643, -80.5204],
+    institution: "Institute for Quantum Computing (IQC) & Xanadu",
+    focus: "Photonic chip processors & quantum communications cryptography labs",
+    status: "Active"
+  },
+  {
+    id: "hub-telaviv",
+    name: "Tel Aviv Quantum Command",
+    coordinates: [32.0853, 34.7818],
+    institution: "Quantum Machines & Weizmann Institute",
+    focus: "Quantum control orchestration hardware & laser ion-traps",
+    status: "Active"
+  },
+  {
+    id: "hub-sydney",
+    name: "Sydney Quantum Academy Hub",
+    coordinates: [-33.8688, 151.2093],
+    institution: "UNSW & Diraq & Silicon Quantum Computing",
+    focus: "Silicon spin qubits & atom-scale fabrication lines",
+    status: "Active"
+  },
+  {
+    id: "hub-espoo",
+    name: "Espoo Superconducting Core",
+    coordinates: [60.2055, 24.6559],
+    institution: "IQM & VTT Research Centre of Finland",
+    focus: "Research superconducting processors fabrication & cryogenic components",
+    status: "Active"
+  },
+  {
+    id: "hub-seoul",
+    name: "Seoul National Quantum Command",
+    coordinates: [37.5665, 126.9780],
+    institution: "KIST & SKKU",
+    focus: "Trapped ion hardware systems & civilian post-quantum networking",
+    status: "Active"
+  },
+  {
+    id: "hub-moscow",
+    name: "Moscow Skolkovo Quantum Center",
+    coordinates: [55.7558, 37.6173],
+    institution: "Russian Quantum Center & Skoltech",
+    focus: "Sovereign superconducting transmon chip development & microwave lines",
+    status: "Active"
+  },
 ];
 
 // Helper to build milestones array supporting both flat rendering and past/future queries
@@ -594,7 +2015,7 @@ const buildMilestones = (past, future) => {
 };
 
 export const SOVEREIGN_FUNDING = [
-  {
+{
     country: "India",
     initiative: "National Quantum Mission (NQM)",
     budgetUSD: 730.0, // in Millions USD
@@ -608,11 +2029,15 @@ export const SOVEREIGN_FUNDING = [
     milestones: buildMilestones(
       [
         { year: "2023", task: "Cabinet approval of ₹6,003 crore budget." },
-        { year: "2024", task: "Formulate governing board & approve T-Hub guidelines." }
+        { year: "2024", task: "Formulate governing board & approve T-Hub guidelines." },
+        { year: "2024", task: "Set up of four NQM Thematic Hubs (T-Hubs) across India (Achieved early)." },
+        { year: "2025", task: "Demonstrated indigenously fabricated 8-physical qubit superconducting transmon processor (Achieved early)." },
+        { year: "2025", task: "Launch first LEO satellite-to-ground secure quantum communication link trials (Achieved early)." }
       ],
       [
-        { year: "2026", task: "Demonstrate 8-physical qubit superconducting processor." },
-        { year: "2028", task: "Deploy 50-physical qubit prototype indigenously." }
+        { year: "2028", task: "Deploy 50-physical qubit prototype indigenously.", status: "In Progress" },
+        { year: "2030", task: "Deploy 100-200 physical qubits processor indigenously.", status: "Planned" },
+        { year: "2031", task: "Deploy 1000 physical qubits fault-tolerant processor indigenously.", status: "Planned" }
       ]
     )
   },
@@ -653,6 +2078,66 @@ export const SOVEREIGN_FUNDING = [
       ],
       [
         { year: "2024", task: "Introduce Jiuzhang 3.0 GBS processor prototype." }
+      ]
+    )
+  },
+  {
+    country: "Canada",
+    initiative: "National Quantum Strategy (NQS)",
+    budgetUSD: 360.0,
+    period: "2021 - 2028",
+    focusAreas: [
+      { name: "Hardware Scale-up", area: "Hardware Scale-up", allocation: "35%", description: "Scaling photonic computing (Xanadu) and commercial annealing (D-Wave)." },
+      { name: "Communications Security", area: "Communications Security", allocation: "30%", description: "Funding regional secure fiber channels and QKD satellite payloads." },
+      { name: "Talent Retention", area: "Talent Retention", allocation: "35%", description: "Establishing dedicated scholarship programs at Waterloo IQC and Sherbrooke." }
+    ],
+    milestones: buildMilestones(
+      [
+        { year: "2021", task: "Formulate the CAD 360M National Quantum Strategy." },
+        { year: "2023", task: "Launch the PennyLane-Vite software compiler interface." }
+      ],
+      [
+        { year: "2026", task: "Achieve utility-scale simulation on Borealis photonic processors." }
+      ]
+    )
+  },
+  {
+    country: "Israel",
+    initiative: "Israel National Quantum Initiative (INQI)",
+    budgetUSD: 400.0,
+    period: "2019 - 2026",
+    focusAreas: [
+      { name: "Control Hardware", area: "Control Hardware", allocation: "45%", description: "Dominating the global quantum control orchestration market via Quantum Machines." },
+      { name: "Academic Hubs", area: "Academic Hubs", allocation: "30%", description: "Consolidating quantum physics research at Weizmann Institute and Technion." },
+      { name: "Defense Crypto", area: "Defense Crypto", allocation: "25%", description: "Deploying QKD nodes and quantum-proofing military databases." }
+    ],
+    milestones: buildMilestones(
+      [
+        { year: "2019", task: "Cabinet approval of the ILS 1.25B initiative." },
+        { year: "2022", task: "Classiq releases advanced synthesis compiler." }
+      ],
+      [
+        { year: "2026", task: "Deliver a 50-qubit research-grade trapped-ion computer." }
+      ]
+    )
+  },
+  {
+    country: "Australia",
+    initiative: "National Quantum Strategy",
+    budgetUSD: 600.0,
+    period: "2023 - 2030",
+    focusAreas: [
+      { name: "Silicon Spins", area: "Silicon Spins", allocation: "40%", description: "Fabricating high-fidelity silicon spin-qubits in Sydney." },
+      { name: "Control Software", area: "Control Software", allocation: "35%", description: "Sponsoring Q-Ctrl industrial control software for global scaling." },
+      { name: "Workforce", area: "Workforce", allocation: "25%", description: "Sponsoring joint training blocks via Sydney Quantum Academy." }
+    ],
+    milestones: buildMilestones(
+      [
+        { year: "2023", task: "Unveil national strategy with Chief Scientist." },
+        { year: "2024", task: "Deploy first 10-qubit silicon spin processor." }
+      ],
+      [
+        { year: "2027", task: "Deploy a fault-tolerant logical qubit prototype." }
       ]
     )
   }
@@ -755,7 +2240,7 @@ export const MOCK_TAXONOMY = [
 ];
 
 export const GLOBAL_RESOURCES_DATA = [
-  {
+{
     country: "United States of America",
     government: "National Quantum Initiative (NQI) Act ($1.8B budget). Coordinates via NSF, Department of Energy (DOE) National Labs.",
     startups: "IonQ (Trapped-ion pioneer), Rigetti (Superconducting chips), QuEra (Neutral atom simulation), PsiQuantum (Photonic architecture).",
@@ -802,6 +2287,54 @@ export const GLOBAL_RESOURCES_DATA = [
     corporations: "Collaborates with global partners for telecom integrations.",
     academic: "Centre for Quantum Technologies (CQT) at National University of Singapore (NUS).",
     summary: "Regional hub in Southeast Asia with deep specialization in satellite QKD sensors, compiler automation, and finance algorithms."
+  },
+  {
+    country: "Canada",
+    government: "National Quantum Strategy ($360M USD budget) supporting research at IQC and Sherbrooke.",
+    startups: "D-Wave (Annealing pioneer), Xanadu (Photonic leader), Photonic Inc (Silicon spins), Nord Quantique.",
+    corporations: "Collaborates with global cloud providers (AWS, Azure) to distribute local hardware access.",
+    academic: "Institute for Quantum Computing (Waterloo), Sherbrooke Quantum Institute.",
+    summary: "Strong in photonic and annealing hardware, open-source software (PennyLane), and startup acceleration."
+  },
+  {
+    country: "Israel",
+    government: "Israel National Quantum Initiative ($400M USD budget) focused on control stacks and defense keys.",
+    startups: "Quantum Machines (Control processors), Classiq (Software synthesis), Quantum Source, Kedma.",
+    corporations: "Deep partnerships between local software hubs and global hardware manufacturers.",
+    academic: "Weizmann Institute of Science, Technion (Haifa), Hebrew University.",
+    summary: "Global leader in quantum orchestration control hardware, compiler optimization, and security algorithms."
+  },
+  {
+    country: "Australia",
+    government: "National Quantum Strategy ($600M USD budget) anchoring silicon-spin and control stack ecosystems.",
+    startups: "Silicon Quantum Computing, Diraq, Q-Ctrl (Quantum control software), QuintessenceLabs.",
+    corporations: "Telstra partnering with startups for trial quantum communication relays.",
+    academic: "UNSW (Sydney), University of Sydney, Melbourne University, Sydney Quantum Academy.",
+    summary: "World-class center for silicon spin qubits, high-fidelity control middleware, and atom-scale fabrication."
+  },
+  {
+    country: "South Korea",
+    government: "National Quantum Strategy ($2.4B USD projected). Ministry of Science & ICT coordinating hubs.",
+    startups: "SDT (Quantum control systems), local security ventures.",
+    corporations: "Samsung (Venture investor in IonQ, hardware research), SK Telecom (QKD network builder).",
+    academic: "KIST, Seoul National University, SKKU.",
+    summary: "Excellent electronic integration, corporate venture backing, and telecom-backed secure fiber lines."
+  },
+  {
+    country: "Finland",
+    government: "VTT Technical Research Centre coordinating state computing hardware acquisitions.",
+    startups: "IQM Quantum Computers (Superconducting hardware leader).",
+    corporations: "Nokia (PQC research, network security integrations).",
+    academic: "Aalto University, University of Helsinki.",
+    summary: "European leader in superconducting hardware co-design, cryogenic cabling, and research systems."
+  },
+  {
+    country: "Russia",
+    government: "State Rosatom Quantum Program ($300M+). Skolkovo acts as central engineering hub.",
+    startups: "Russian Quantum Center (RQC).",
+    corporations: "Sberbank (Algorithms testing), Rosstat.",
+    academic: "Skoltech, Moscow State University, MIPT.",
+    summary: "Self-reliant transmon designs, microwave electronics calibration, and sovereign cryptography focus."
   }
 ];
 

@@ -1,10 +1,30 @@
 import React from 'react';
 import { MOCK_ALERTS, SOVEREIGN_FUNDING, PROCESSORS_MATRIX } from '../data/quantumData';
 import { Shield, Cpu, TrendingUp, AlertTriangle, CheckCircle, Award } from 'lucide-react';
+import { getDynamicNewsOverrides } from '../utils/newsOverrides';
 
 export default function DashboardHub({ articles, onSwitchTab, onSearch }) {
   const activeAlerts = MOCK_ALERTS;
   const nqmIndia = SOVEREIGN_FUNDING.find(f => f.country === 'India');
+
+  const dynamicOverrides = React.useMemo(() => {
+    return getDynamicNewsOverrides(articles);
+  }, [articles]);
+
+  const milestones = React.useMemo(() => {
+    const baseMilestones = nqmIndia?.milestones || [];
+    return baseMilestones.map(m => {
+      const override = dynamicOverrides?.indiaMilestones?.[m.task];
+      if (override) {
+        return {
+          ...m,
+          status: override.status,
+          task: override.task
+        };
+      }
+      return m;
+    });
+  }, [nqmIndia, dynamicOverrides]);
 
   // Compute metrics
   const totalProcessors = PROCESSORS_MATRIX.length;
@@ -140,11 +160,11 @@ export default function DashboardHub({ articles, onSwitchTab, onSearch }) {
               NQM Strategic Milestones
             </h3>
             <div className="relative border-l border-cyber-border pl-4 space-y-4 py-2 ml-2">
-              {nqmIndia?.milestones.map((m, idx) => (
+              {milestones.map((m, idx) => (
                 <div key={idx} className="relative">
                   {/* Timeline dot */}
                   <span className={`absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full border border-cyber-bg ${
-                    m.status === 'Completed' ? 'bg-cyber-accent' : 
+                    m.status.includes('Completed') ? 'bg-cyber-accent shadow-[0_0_8px_rgba(0,230,153,0.5)]' : 
                     m.status === 'In Progress' ? 'bg-cyber-blue' : 'bg-cyber-muted'
                   }`} />
                   <div className="flex items-center gap-2">
@@ -152,7 +172,7 @@ export default function DashboardHub({ articles, onSwitchTab, onSearch }) {
                       {m.year}
                     </span>
                     <span className={`text-[10px] font-mono uppercase px-1.5 rounded ${
-                      m.status === 'Completed' ? 'bg-green-500/10 text-green-400 border border-green-500/20' :
+                      m.status.includes('Completed') ? 'bg-green-500/10 text-green-400 border border-green-500/20' :
                       m.status === 'In Progress' ? 'bg-blue-500/10 text-blue-400 border border-blue-500/20' :
                       'bg-gray-500/10 text-cyber-muted'
                     }`}>

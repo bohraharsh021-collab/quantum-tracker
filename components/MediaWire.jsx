@@ -75,67 +75,7 @@ export default function MediaWire({
             </select>
           </div>
 
-          {/* Sentiment Selection */}
-          <div className="space-y-1">
-            <span className="text-[10px] font-mono text-cyber-muted uppercase block">Scored Sentiment</span>
-            <div className="grid grid-cols-2 gap-1.5 font-mono text-[10px]">
-              {['all', 'positive', 'negative', 'mixed', 'neutral'].map(s => (
-                <button
-                  key={s}
-                  onClick={() => handleFilterChange('sentiment', s)}
-                  className={`py-1 px-1.5 border rounded uppercase text-center truncate ${
-                    filters.sentiment === s 
-                      ? 'bg-cyber-accent/15 border-cyber-accent text-cyber-accent font-bold' 
-                      : 'bg-[#0B1320] border-cyber-border text-cyber-muted hover:text-white'
-                  }`}
-                >
-                  {s}
-                </button>
-              ))}
-            </div>
-          </div>
 
-          {/* Reliability Star Slider */}
-          <div className="space-y-1">
-            <div className="flex justify-between text-[10px] font-mono text-cyber-muted">
-              <span>MIN RELIABILITY</span>
-              <span className="text-cyber-accent font-bold">{filters.minReliability} Stars</span>
-            </div>
-            <input 
-              type="range" 
-              min="1" 
-              max="5" 
-              value={filters.minReliability}
-              onChange={e => handleFilterChange('minReliability', parseInt(e.target.value))}
-              className="w-full accent-cyber-accent h-1 bg-[#0B1320] rounded-lg cursor-pointer"
-            />
-          </div>
-
-          {/* Time-Travel History Slider */}
-          <div className="space-y-1">
-            <div className="flex justify-between text-[10px] font-mono text-cyber-muted">
-              <span>TIME-TRAVEL DEPTH</span>
-              <span className="text-cyber-accent font-bold">
-                {filters.dateRange === '365' ? '1 Year (All)' : `${filters.dateRange} Days`}
-              </span>
-            </div>
-            <input 
-              type="range" 
-              min="1" 
-              max="90" 
-              value={filters.dateRange === '365' ? 90 : filters.dateRange}
-              onChange={e => {
-                const val = e.target.value;
-                handleFilterChange('dateRange', val === '90' ? '365' : val);
-              }}
-              className="w-full accent-cyber-accent h-1 bg-[#0B1320] rounded-lg cursor-pointer"
-            />
-            <div className="flex justify-between text-[8px] font-mono text-cyber-muted/70 px-0.5">
-              <span>1 DAY</span>
-              <span>30 DAYS</span>
-              <span>1 YEAR</span>
-            </div>
-          </div>
         </div>
 
         {/* Right column: Grid of Articles */}
@@ -161,7 +101,7 @@ export default function MediaWire({
                       <span className="bg-[#0B1320] px-2 py-0.5 rounded border border-cyber-border">
                         {art.source}
                       </span>
-                      <span>{new Date(art.timestamp).toLocaleDateString()}</span>
+                      <span>{new Date(art.pubDate || art.timestamp).toLocaleDateString()}</span>
                     </div>
 
                     <a 
