@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-07-04T01:55:20.284Z",
+  "lastRun": "2026-07-05T02:02:24.028Z",
   "feedStats": {
     "total": 77,
-    "success": 22,
-    "failed": 55,
+    "success": 23,
+    "failed": 54,
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
@@ -31,7 +31,7 @@
       },
       {
         "name": "Canada NRC Feed",
-        "error": "Request timed out after 60000ms"
+        "error": "Status code 404"
       },
       {
         "name": "IBM Quantum Blog Feed",
@@ -91,11 +91,11 @@
       },
       {
         "name": "Singapore A*STAR",
-        "error": "Status code 403"
+        "error": "Status code 404"
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 809C8DA3247F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 80DCC9BA687F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -103,7 +103,7 @@
       },
       {
         "name": "South Korea MSIT",
-        "error": "Status code 404"
+        "error": "Request timed out after 60000ms"
       },
       {
         "name": "India MeitY",
@@ -131,11 +131,11 @@
       },
       {
         "name": "IQM",
-        "error": "Status code 403"
+        "error": "Status code 404"
       },
       {
         "name": "Alice & Bob",
-        "error": "Status code 403"
+        "error": "Invalid character in entity name\nLine: 0\nColumn: 120\nChar: ="
       },
       {
         "name": "Q-CTRL",
@@ -155,11 +155,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 809C8DA3247F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
-      },
-      {
-        "name": "Quantum Brilliance",
-        "error": "Status code 415"
+        "error": "write EPROTO 80DCC9BA687F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -226,7 +222,7 @@
         "error": "Feed not recognized as RSS 1 or 2."
       }
     ],
-    "duplicatesRemoved": 351
+    "duplicatesRemoved": 363
   },
-  "dbSize": 723
+  "dbSize": 724
 }

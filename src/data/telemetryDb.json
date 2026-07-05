@@ -1,5 +1,30 @@
 [
   {
+    "uuid": "6606c4a2-3161-4cc0-b0df-24cacc5d117c",
+    "title": "Quantum state design and emergent confinement mechanism in measured tensor network states",
+    "summary": "...",
+    "source": "Nature npj QI Feed",
+    "rssFeed": "https://www.nature.com/npjqi.rss",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Nature Group",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": true,
+    "pubDate": "2026-07-04T00:00:00.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://www.nature.com/articles/s41534-026-01298-9"
+  },
+  {
     "uuid": "f856da85-f0d5-495b-8681-f9830464bc7f",
     "title": "Plug-and-play single-photon source can work at room temperature",
     "summary": "The Korea Research Institute of Standards and Science (KRISS) has developed a room-temperature single-photon source built into a compact 19-inch rack-mounted device that operates without cryogenic cooling. Designed as a plug-and-play system...",
