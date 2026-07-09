@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-07-08T01:44:56.690Z",
+  "lastRun": "2026-07-09T01:56:30.881Z",
   "feedStats": {
     "total": 77,
     "success": 22,
@@ -31,7 +31,7 @@
       },
       {
         "name": "Canada NRC Feed",
-        "error": "Status code 404"
+        "error": "Request timed out after 60000ms"
       },
       {
         "name": "IBM Quantum Blog Feed",
@@ -99,7 +99,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 802C69CA0A7F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 80DC086C037F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -159,7 +159,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 802C69CA0A7F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO 80DC086C037F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -183,7 +183,7 @@
       },
       {
         "name": "ETH Zurich Quantum",
-        "error": "Status code 404"
+        "error": ""
       },
       {
         "name": "EPFL Quantum",
@@ -226,7 +226,7 @@
         "error": "Feed not recognized as RSS 1 or 2."
       }
     ],
-    "duplicatesRemoved": 331
+    "duplicatesRemoved": 341
   },
-  "dbSize": 1071
+  "dbSize": 1219
 }
