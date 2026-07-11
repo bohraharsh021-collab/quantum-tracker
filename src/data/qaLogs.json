@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-07-10T01:55:59.293Z",
+  "lastRun": "2026-07-11T01:45:03.040Z",
   "feedStats": {
     "total": 77,
-    "success": 21,
-    "failed": 56,
+    "success": 22,
+    "failed": 55,
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
@@ -63,7 +63,7 @@
       },
       {
         "name": "Quantum Computing Report Feed",
-        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f"
+        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u000b"
       },
       {
         "name": "USA White House OSTP",
@@ -95,11 +95,11 @@
       },
       {
         "name": "Singapore A*STAR",
-        "error": "Status code 404"
+        "error": "Status code 403"
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 800C112D1E7F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 80BCC904B97F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -116,10 +116,6 @@
       {
         "name": "India DRDO",
         "error": "Status code 404"
-      },
-      {
-        "name": "Microsoft Quantum",
-        "error": "Request timed out after 60000ms"
       },
       {
         "name": "Quantinuum",
@@ -143,7 +139,7 @@
       },
       {
         "name": "Alice & Bob",
-        "error": "Status code 403"
+        "error": "Invalid character in entity name\nLine: 0\nColumn: 120\nChar: ="
       },
       {
         "name": "Q-CTRL",
@@ -163,7 +159,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 800C112D1E7F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO 80BCC904B97F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -230,7 +226,7 @@
         "error": "Feed not recognized as RSS 1 or 2."
       }
     ],
-    "duplicatesRemoved": 330
+    "duplicatesRemoved": 337
   },
-  "dbSize": 1352
+  "dbSize": 1510
 }
