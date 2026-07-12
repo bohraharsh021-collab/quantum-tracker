@@ -1,5 +1,30 @@
 [
   {
+    "uuid": "4dc0f29f-882d-4c20-85f2-508de7f8cb8a",
+    "title": "Why Quantum Computing Needs Strong Ecosystems to Scale",
+    "summary": "Guest Post by Yonathan Cohen, Co-Founder and Chief Technology Officer of Quantum Machines. Something is changing in the quantum industry. Not long ago, most conversations focused almost entirely on qubits: fidelities, coherence times, error...",
+    "source": "The Quantum Insider News",
+    "rssFeed": "https://thequantuminsider.com/feed/",
+    "category": "industry",
+    "country": "Global",
+    "organization": "TQI",
+    "organizationType": "Startup",
+    "technology": "Superconducting",
+    "processor": "None",
+    "qubitMethod": "Superconducting Transmons",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-07-11T07:49:00.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "superconducting"
+    ],
+    "url": "https://thequantuminsider.com/2026/07/11/why-quantum-computing-needs-national-ecosystems-to-scale/"
+  },
+  {
     "uuid": "14c3ac4a-ea63-4d25-8cad-86e77c1c26c4",
     "title": "Adiabatic preparation of thermal states and entropy-noise relation on noisy quantum computers",
     "summary": "...",
@@ -23,6 +48,56 @@
       "hardware platforms"
     ],
     "url": "https://www.nature.com/articles/s41534-026-01320-0"
+  },
+  {
+    "uuid": "1d35d810-95a6-4d62-80d2-38fd160b8e9d",
+    "title": "Variational Gibbs state preparation on trapped-ion devices",
+    "summary": "...",
+    "source": "Nature npj QI Feed",
+    "rssFeed": "https://www.nature.com/npjqi.rss",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Nature Group",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-07-11T00:00:00.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://www.nature.com/articles/s41534-026-01318-8"
+  },
+  {
+    "uuid": "15862ac8-39fe-4353-bece-42597baa6ba9",
+    "title": "Erbium-doped fiber quantum memory for chip-integrated quantum-dot single photons at 980 nm",
+    "summary": "...",
+    "source": "Nature npj QI Feed",
+    "rssFeed": "https://www.nature.com/npjqi.rss",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Nature Group",
+    "organizationType": "Startup",
+    "technology": "Photonic",
+    "processor": "None",
+    "qubitMethod": "Photonic / Linear Optical",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-07-11T00:00:00.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "photonic"
+    ],
+    "url": "https://www.nature.com/articles/s41534-026-01316-w"
   },
   {
     "uuid": "31ce135f-aaa6-4916-832b-472649a82d80",
