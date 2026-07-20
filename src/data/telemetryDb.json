@@ -1,5 +1,30 @@
 [
   {
+    "uuid": "837a10aa-fcad-41b1-bf9e-57904fb980a9",
+    "title": "Quantum entanglement without transport: Leaky qubits offer route around noisy channels",
+    "summary": "The inevitable leakage of energy and information from a quantum system into its surrounding environment is the enemy of quantum technology. Now, researchers have demonstrated that it can be exploited to generate entanglement—the \"resource\" ...",
+    "source": "Phys.org Quantum Physics Feed",
+    "rssFeed": "https://phys.org/rss-feed/physics-news/quantum-physics/",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Phys.org",
+    "organizationType": "Startup",
+    "technology": "Superconducting",
+    "processor": "None",
+    "qubitMethod": "Superconducting Transmons",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-07-19T18:20:01.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "superconducting"
+    ],
+    "url": "https://phys.org/news/2026-07-quantum-entanglement-leaky-qubits-route.html"
+  },
+  {
     "uuid": "e0bdd465-e46d-4752-85ed-3a7a17037b12",
     "title": "How quantum circuits based on neutral atoms could find and fix errors",
     "summary": "Quantum computers, devices that process information by leveraging the laws of quantum mechanics, have been found to outperform classical computers in some advanced tasks. Instead of storing information in the form of classical binary bits (...",
