@@ -1,5 +1,30 @@
 [
   {
+    "uuid": "6f7915a6-29ec-48cf-acee-f8f6a158ecbf",
+    "title": "Guest Post: Inside Africa’s Coordinated Race to Secure a Post-Quantum Future",
+    "summary": "Guest Post by By Somtochukwu Igwegbe More than two trillion dollars moved through mobile money worldwide in 2025, and roughly two-thirds of that value flowed through sub-Saharan Africa, according to GSMA’s State of the Industry Report on Mo...",
+    "source": "The Quantum Insider News",
+    "rssFeed": "https://thequantuminsider.com/feed/",
+    "category": "industry",
+    "country": "United Kingdom",
+    "organization": "TQI",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "Post-Quantum Cryptography & QKD",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-07-25T09:00:00.000Z",
+    "tags": [
+      "quantum",
+      "united kingdom",
+      "hardware platforms"
+    ],
+    "url": "https://thequantuminsider.com/2026/07/25/inside-africas-coordinated-race-to-secure-a-post-quantum-future/"
+  },
+  {
     "uuid": "4c19676c-50f8-4163-b8b9-719d721f9fce",
     "title": "Long-lived ytterbium states could sharpen quantum computing and atomic clocks",
     "summary": "Researchers from the University of Amsterdam and the University of New South Wales have answered a question that has been around for decades: whether ions of the metal ytterbium can enter certain long-lived, nearly stable states and, if so,...",
