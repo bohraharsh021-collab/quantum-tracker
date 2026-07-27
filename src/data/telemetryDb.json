@@ -1,5 +1,55 @@
 [
   {
+    "uuid": "1c79f765-9396-486c-8397-3630a1b46c04",
+    "title": "Near a black hole, gravity changes a quantum circuit's readings, not its rules",
+    "summary": "Imagine holding one of our most precise quantum devices at a fixed position outside a black hole. A Josephson junction—two superconductors separated by an ultrathin barrier—can turn a voltage into a quantum oscillation with extraordinary pr...",
+    "source": "Phys.org Quantum Physics Feed",
+    "rssFeed": "https://phys.org/rss-feed/physics-news/quantum-physics/",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Phys.org",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-07-26T23:00:01.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://phys.org/news/2026-07-black-hole-gravity-quantum-circuit.html"
+  },
+  {
+    "uuid": "37c3d08b-b9b0-4e73-a420-724105ad88d5",
+    "title": "A quantum heat engine that simultaneously provides work and refrigeration",
+    "summary": "The laws of thermodynamics state that heat naturally flows from hotter systems or regions to colder systems or regions until a state of thermal equilibrium is reached. This simple principle underpins the operation of numerous technologies, ...",
+    "source": "Phys.org Quantum Physics Feed",
+    "rssFeed": "https://phys.org/rss-feed/physics-news/quantum-physics/",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Phys.org",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-07-26T16:20:01.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://phys.org/news/2026-07-quantum-simultaneously-refrigeration.html"
+  },
+  {
     "uuid": "6f7915a6-29ec-48cf-acee-f8f6a158ecbf",
     "title": "Guest Post: Inside Africa’s Coordinated Race to Secure a Post-Quantum Future",
     "summary": "Guest Post by By Somtochukwu Igwegbe More than two trillion dollars moved through mobile money worldwide in 2025, and roughly two-thirds of that value flowed through sub-Saharan Africa, according to GSMA’s State of the Industry Report on Mo...",
