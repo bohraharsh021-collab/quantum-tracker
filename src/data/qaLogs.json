@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-07-29T01:30:33.570Z",
+  "lastRun": "2026-07-30T01:25:24.313Z",
   "feedStats": {
     "total": 77,
     "success": 23,
@@ -11,7 +11,7 @@
       },
       {
         "name": "India DST Feed",
-        "error": "Status code 404"
+        "error": "Request timed out after 60000ms"
       },
       {
         "name": "ISRO Press Releases Feed",
@@ -59,7 +59,7 @@
       },
       {
         "name": "Quantum Computing Report Feed",
-        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u000b"
+        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f"
       },
       {
         "name": "USA White House OSTP",
@@ -95,7 +95,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 805C14B9557F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 807C510B7C7F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -103,7 +103,7 @@
       },
       {
         "name": "South Korea MSIT",
-        "error": "Status code 404"
+        "error": "Request timed out after 60000ms"
       },
       {
         "name": "India MeitY",
@@ -155,7 +155,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 805C14B9557F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO 807C510B7C7F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -179,7 +179,7 @@
       },
       {
         "name": "ETH Zurich Quantum",
-        "error": "Status code 404"
+        "error": ""
       },
       {
         "name": "EPFL Quantum",
@@ -224,5 +224,5 @@
     ],
     "duplicatesRemoved": 357
   },
-  "dbSize": 3390
+  "dbSize": 3538
 }
