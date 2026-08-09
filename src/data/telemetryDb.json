@@ -1,5 +1,30 @@
 [
   {
+    "uuid": "c2d14bc2-8149-4281-b526-eddb3cff5b59",
+    "title": "Matt Kinsella (Infleqtion): Why Neutral Atoms Power Sensors, Clocks, and Computers Alike",
+    "summary": "Yuval Boger interviews Matt Kinsella, CEO of Infleqtion. They discuss Infleqtion’s neutral-atom strategy, including its combination of quantum computing, sensing, and timing products, and why Matt believes that diversified approach strength...",
+    "source": "The Quantum Insider News",
+    "rssFeed": "https://thequantuminsider.com/feed/",
+    "category": "industry",
+    "country": "Global",
+    "organization": "Infleqtion",
+    "organizationType": "Startup",
+    "technology": "Neutral Atom",
+    "processor": "None",
+    "qubitMethod": "Neutral Atoms / Rydberg Arrays",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-08-08T19:00:00.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "neutral atom"
+    ],
+    "url": "https://thequantuminsider.com/2026/08/08/matt-kinsella-infleqtion-why-neutral-atoms-power-sensors-clocks-and-computers-alike/"
+  },
+  {
     "uuid": "bf86abab-92d3-48ca-ba0d-a4ea44e75cd5",
     "title": "New 'shape-shifting' architecture brings versatility to photonic quantum computing",
     "summary": "Using light to process quantum information is one of the most promising approaches to building future quantum computers. Light particles, known as photons, are excellent carriers of quantum information, but their lack of natural interaction...",
@@ -48,6 +73,31 @@
       "hardware platforms"
     ],
     "url": "https://phys.org/news/2026-08-mirror-world-particles-wisps-fog.html"
+  },
+  {
+    "uuid": "3d8ed8c2-1261-4908-a4f4-775bc145d7b3",
+    "title": "Energy Department Launches $100 Million Initiative to Build America’s Critical Minerals Workforce, Strengthen Domestic Supply Chains",
+    "summary": "The PROSPECT program will help train the next generation of American workers needed to secure U.S. energy and mineral independence...",
+    "source": "USA DOE News Feed",
+    "rssFeed": "https://www.energy.gov/rss/news.xml",
+    "category": "government",
+    "country": "United States of America",
+    "organization": "Department of Energy",
+    "organizationType": "Government",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": true,
+    "partnership": false,
+    "pubDate": "2026-08-07T19:32:59.000Z",
+    "tags": [
+      "quantum",
+      "united states of america",
+      "hardware platforms"
+    ],
+    "url": "https://www.energy.gov/articles/energy-department-launches-100-million-initiative-build-americas-critical-minerals"
   },
   {
     "uuid": "e1c3bd8a-e1fe-4d0f-a65e-e46a4dfadece",
