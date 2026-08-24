@@ -1,5 +1,55 @@
 [
   {
+    "uuid": "9be71085-9a5d-47bf-a639-2151c87e2747",
+    "title": "Brookhaven And Stony Brook Researchers Demonstrate ‘Wireless’ Capability for Quantum Network",
+    "summary": "Insider Brief PRESS RELEASE — Researchers at the U.S. Department of Energy’s (DOE) Brookhaven National Laboratory and the State University of New York at Stony Brook (Stony Brook University) have successfully transmitted light particles con...",
+    "source": "The Quantum Insider News",
+    "rssFeed": "https://thequantuminsider.com/feed/",
+    "category": "industry",
+    "country": "Global",
+    "organization": "MIT",
+    "organizationType": "Academia",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-08-23T15:32:07.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://thequantuminsider.com/2026/08/23/wireless-capability-quantum-network/"
+  },
+  {
+    "uuid": "1652d983-c4cd-4ba1-8c28-c6f637d5272b",
+    "title": "Quantum computer microscope is set to significantly improve electron microscopy",
+    "summary": "Electron microscopes are used wherever particularly small details need to be imaged. But from a strictly physical point of view, every electron in a conventional electron microscope represents a missed opportunity: If all you do is count el...",
+    "source": "Phys.org Quantum Physics Feed",
+    "rssFeed": "https://phys.org/rss-feed/physics-news/quantum-physics/",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Phys.org",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": true,
+    "pubDate": "2026-08-23T13:00:01.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://phys.org/news/2026-08-quantum-microscope-significantly-electron-microscopy.html"
+  },
+  {
     "uuid": "ad782421-4c8e-44b7-b96e-69b28d4a84f3",
     "title": "Who’s News: Strategic Appointments at D-Wave, BTQ Technologies, Symmatrics, and Rigetti Computing",
     "summary": "D-Wave Quantum Inc. has appointed Kevan P. Krysler to its Board of Directors and Audit Committee. Krysler currently serves as Chief Financial Officer of Carbon Robotics and brings over two decades of financial leadership experience from pre...",
