@@ -1,5 +1,55 @@
 [
   {
+    "uuid": "0664bc3e-6101-45e4-a410-1938c86c26b2",
+    "title": "Pasqal Shares Nearly Double in Nasdaq Debut",
+    "summary": "Insider Brief Pasqal shares nearly doubled during the French quantum computing company’s first day of trading on Nasdaq, reflecting strong investor interest in one of Europe’s leading quantum hardware developers. The shares closed Friday at...",
+    "source": "The Quantum Insider News",
+    "rssFeed": "https://thequantuminsider.com/feed/",
+    "category": "industry",
+    "country": "Global",
+    "organization": "Pasqal",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "Portfolio & Arbitrage Optimization",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-08-29T07:41:53.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://thequantuminsider.com/2026/08/29/pasqal-shares-nearly-double-in-nasdaq-debut/"
+  },
+  {
+    "uuid": "e36c98cc-2262-4538-bb57-43d23c86a473",
+    "title": "Michaela Eichinger (Quantum Machines): Why classical compute and HPC integration will define useful quantum",
+    "summary": "Yuval Boger interviews Michaela Eichinger, a product solutions physicist at Quantum Machines and the author of a widely read quantum computing newsletter. They discuss her transition from academia to industry, her fascination with systems-l...",
+    "source": "The Quantum Insider News",
+    "rssFeed": "https://thequantuminsider.com/feed/",
+    "category": "industry",
+    "country": "Global",
+    "organization": "TQI",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-08-29T07:00:00.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://thequantuminsider.com/2026/08/29/michaela-eichinger-quantum-machines-why-classical-compute-and-hpc-integration-will-define-useful-quantum/"
+  },
+  {
     "uuid": "69a5a66a-0745-4e7e-8705-1e8a4f8fdfcf",
     "title": "Governor Newsom Awards $9.74M to Scale Southern California Quantum Ecosystem",
     "summary": "California Governor Gavin Newsom has announced a $48.5 million state investment under the California Jobs First Regional Investment Initiative (Round II Implementation Phase) to advance high-growth technology sectors and regional workforce ...",
