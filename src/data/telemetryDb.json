@@ -1,5 +1,55 @@
 [
   {
+    "uuid": "33cd3f26-aa03-44fc-8698-86ba64f5cb33",
+    "title": "IBM quantum computer solves classically intractable problem in 15 minutes",
+    "summary": "IBM and University of Chicago researchers have completed a quantum computation that leading classical methods could not practically reproduce. The system used 70 error-corrected logical qubits and finished the task in roughly 15 minutes whi...",
+    "source": "Science Daily Quantum",
+    "rssFeed": "https://www.sciencedaily.com/rss/computers_math/quantum_computers.xml",
+    "category": "industry",
+    "country": "United States of America",
+    "organization": "IBM",
+    "organizationType": "Corporation",
+    "technology": "Superconducting",
+    "processor": "None",
+    "qubitMethod": "Superconducting Transmons",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-08-30T14:08:13.000Z",
+    "tags": [
+      "quantum",
+      "united states of america",
+      "superconducting"
+    ],
+    "url": "https://www.sciencedaily.com/releases/2026/08/260829035219.htm"
+  },
+  {
+    "uuid": "ce48f492-8104-43d9-a52c-e4a642520982",
+    "title": "Hollow-core fiber platform could help different quantum technologies connect",
+    "summary": "Quantum technologies promise secure communication networks, powerful forms of computing and new sensing tools. One of the major challenges, however, is that different quantum systems often operate at different wavelengths of light. Quantum ...",
+    "source": "Phys.org Quantum Physics Feed",
+    "rssFeed": "https://phys.org/rss-feed/physics-news/quantum-physics/",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Phys.org",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-08-30T13:00:02.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://phys.org/news/2026-08-hollow-core-fiber-platform-quantum.html"
+  },
+  {
     "uuid": "0664bc3e-6101-45e4-a410-1938c86c26b2",
     "title": "Pasqal Shares Nearly Double in Nasdaq Debut",
     "summary": "Insider Brief Pasqal shares nearly doubled during the French quantum computing company’s first day of trading on Nasdaq, reflecting strong investor interest in one of Europe’s leading quantum hardware developers. The shares closed Friday at...",
