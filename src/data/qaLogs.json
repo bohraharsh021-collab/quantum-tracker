@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-09-04T02:00:41.606Z",
+  "lastRun": "2026-09-05T01:57:20.732Z",
   "feedStats": {
     "total": 77,
     "success": 22,
@@ -95,7 +95,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 80DCD16F357F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 806C2BB1E77F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -131,7 +131,7 @@
       },
       {
         "name": "IQM",
-        "error": "Status code 521"
+        "error": "Status code 404"
       },
       {
         "name": "Alice & Bob",
@@ -155,7 +155,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 80DCD16F357F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO 806C2BB1E77F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -226,7 +226,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 350
+    "duplicatesRemoved": 365
   },
-  "dbSize": 7189
+  "dbSize": 7330
 }
