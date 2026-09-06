@@ -1,5 +1,55 @@
 [
   {
+    "uuid": "820dd42d-e100-4c3a-8325-792bd863d5a7",
+    "title": "What do you wanna talk about?",
+    "summary": "The Quantum Dragon will be attending Q+AI 2026 (3.0): Uncovering the Coming Wave of Quantum + AI, which will be held October 25-27, 2026, in New York City, and its companion PQC+IQT conference on October 25-26. While there, he will attempt ...",
+    "source": "Inside Quantum Tech",
+    "rssFeed": "https://www.insidequantumtechnology.com/feed/",
+    "category": "industry",
+    "country": "Global",
+    "organization": "IQT",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-09-05T11:00:11.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://www.insidequantumtechnology.com/news-archive/what-do-you-wanna-talk-about/"
+  },
+  {
+    "uuid": "865b1d41-d520-4fb2-89be-5274c7f38aa9",
+    "title": "Brian Gaucher (ERVA): Why engineering, not physics, now limits quantum progress",
+    "summary": "Yuval Boger interviews Brian Gaucher, an experienced engineer and IBM veteran who co-chaired ERVA’s report Engineering Research to Advance Quantum Technologies. Brian explains that while U.S. quantum science remains strong, global competiti...",
+    "source": "The Quantum Insider News",
+    "rssFeed": "https://thequantuminsider.com/feed/",
+    "category": "industry",
+    "country": "United States of America",
+    "organization": "IBM",
+    "organizationType": "Corporation",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-09-05T07:00:00.000Z",
+    "tags": [
+      "quantum",
+      "united states of america",
+      "hardware platforms"
+    ],
+    "url": "https://thequantuminsider.com/2026/09/05/brian-gaucher-erva-why-engineering-not-physics-now-limits-quantum-progress/"
+  },
+  {
     "uuid": "ab40178f-b9ee-4fe5-875d-9f11b02c86cb",
     "title": "Magic-angle graphene provides evidence for unconventional superconductivity",
     "summary": "Researchers have completely suppressed superconductivity in magic-angle graphene by screening interactions between electrons, helping resolve a long-running debate about the origin of the phenomenon....",
