@@ -1,5 +1,30 @@
 [
   {
+    "uuid": "d8bee19b-cc6b-42c6-99b8-a20f22ed3194",
+    "title": "NEC Halts Development of Quantum Computer Hardware",
+    "summary": "Insider Brief NEC has ended its effort to build a working quantum computer, pulling back from a field that the company helped pioneer. The company discontinued development of a physical quantum computing system at the end of March, Nikkei A...",
+    "source": "The Quantum Insider News",
+    "rssFeed": "https://thequantuminsider.com/feed/",
+    "category": "industry",
+    "country": "Global",
+    "organization": "TQI",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-09-06T18:34:34.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://thequantuminsider.com/2026/09/06/nec-halts-development-of-quantum-computer-hardware/"
+  },
+  {
     "uuid": "820dd42d-e100-4c3a-8325-792bd863d5a7",
     "title": "What do you wanna talk about?",
     "summary": "The Quantum Dragon will be attending Q+AI 2026 (3.0): Uncovering the Coming Wave of Quantum + AI, which will be held October 25-27, 2026, in New York City, and its companion PQC+IQT conference on October 25-26. While there, he will attempt ...",
