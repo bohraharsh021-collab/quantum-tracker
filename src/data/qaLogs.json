@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-09-08T02:01:57.249Z",
+  "lastRun": "2026-09-09T02:04:58.123Z",
   "feedStats": {
     "total": 77,
     "success": 22,
@@ -67,7 +67,7 @@
       },
       {
         "name": "Innovate UK",
-        "error": "Invalid character in entity name\nLine: 423\nColumn: 44\nChar: ="
+        "error": "Invalid character in entity name\nLine: 429\nColumn: 44\nChar: ="
       },
       {
         "name": "Germany BMBF",
@@ -75,7 +75,7 @@
       },
       {
         "name": "France CNRS",
-        "error": "Request timed out after 60000ms"
+        "error": "Feed not recognized as RSS 1 or 2."
       },
       {
         "name": "Japan RIKEN",
@@ -95,7 +95,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 80CCD0057A7F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 807C2E2A3A7F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -103,7 +103,7 @@
       },
       {
         "name": "South Korea MSIT",
-        "error": "Request timed out after 60000ms"
+        "error": "Status code 404"
       },
       {
         "name": "India MeitY",
@@ -135,7 +135,7 @@
       },
       {
         "name": "Alice & Bob",
-        "error": "Status code 403"
+        "error": "Invalid character in entity name\nLine: 0\nColumn: 120\nChar: ="
       },
       {
         "name": "Q-CTRL",
@@ -155,7 +155,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 80CCD0057A7F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO 807C2E2A3A7F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -226,7 +226,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 357
+    "duplicatesRemoved": 335
   },
-  "dbSize": 7436
+  "dbSize": 7455
 }
