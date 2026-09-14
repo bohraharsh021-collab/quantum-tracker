@@ -1,5 +1,55 @@
 [
   {
+    "uuid": "c240aa43-27a2-49b8-a40a-b996cedc0976",
+    "title": "Scientists are building a microscope powered by a quantum computer",
+    "summary": "Scientists are combining an electron microscope with a quantum computer to squeeze far more information from each electron. The approach could reveal faint details with fewer electrons, helping protect fragile samples that conventional micr...",
+    "source": "Science Daily Quantum",
+    "rssFeed": "https://www.sciencedaily.com/rss/computers_math/quantum_computers.xml",
+    "category": "industry",
+    "country": "Global",
+    "organization": "Science Daily",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-09-13T12:03:59.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://www.sciencedaily.com/releases/2026/09/260912220038.htm"
+  },
+  {
+    "uuid": "e8b639c1-28dd-4c70-9f44-d7c3f5e03594",
+    "title": "Physicists discover a hidden “curveball” in quantum light",
+    "summary": "Researchers have experimentally demonstrated the optical Magnus effect for the first time, revealing that a tightly focused laser interacts most strongly with an atom slightly away from the beam’s center. The unexpected shift is similar to ...",
+    "source": "Science Daily Quantum",
+    "rssFeed": "https://www.sciencedaily.com/rss/computers_math/quantum_computers.xml",
+    "category": "industry",
+    "country": "Singapore",
+    "organization": "National University of Singapore",
+    "organizationType": "Academia",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-09-13T11:22:01.000Z",
+    "tags": [
+      "quantum",
+      "singapore",
+      "hardware platforms"
+    ],
+    "url": "https://www.sciencedaily.com/releases/2026/09/260912220025.htm"
+  },
+  {
     "uuid": "70ac23ec-3570-49ce-9e42-7f267a46b591",
     "title": "Tiny sound waves could help solve a major quantum computing problem",
     "summary": "Researchers at Harvard have demonstrated a way to protect quantum information using microscopic sound waves. By continuously surrounding a diamond-based qubit with mechanical vibrations, they extended its coherence time by roughly threefold...",
