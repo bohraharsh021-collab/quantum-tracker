@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-09-15T02:23:31.778Z",
+  "lastRun": "2026-09-16T02:17:24.939Z",
   "feedStats": {
     "total": 77,
     "success": 22,
@@ -7,7 +7,7 @@
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
-        "error": "write EPROTO 800C0C20EE7F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 80\n"
+        "error": "Status code 404"
       },
       {
         "name": "India DST Feed",
@@ -59,7 +59,7 @@
       },
       {
         "name": "Quantum Computing Report Feed",
-        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f"
+        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u000b"
       },
       {
         "name": "USA White House OSTP",
@@ -95,7 +95,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 800C0C20EE7F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 806CAEC42A7F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -135,7 +135,7 @@
       },
       {
         "name": "Alice & Bob",
-        "error": "Status code 403"
+        "error": "Invalid character in entity name\nLine: 0\nColumn: 120\nChar: ="
       },
       {
         "name": "Q-CTRL",
@@ -155,7 +155,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 800C0C20EE7F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO 806CAEC42A7F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -226,7 +226,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 348
+    "duplicatesRemoved": 371
   },
-  "dbSize": 7919
+  "dbSize": 8168
 }
