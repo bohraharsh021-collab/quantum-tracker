@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-09-22T02:22:03.839Z",
+  "lastRun": "2026-09-23T02:23:18.964Z",
   "feedStats": {
     "total": 77,
-    "success": 23,
-    "failed": 54,
+    "success": 22,
+    "failed": 55,
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
@@ -58,6 +58,10 @@
         "error": "Status code 404"
       },
       {
+        "name": "Quantum Computing Report Feed",
+        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f"
+      },
+      {
         "name": "USA White House OSTP",
         "error": "Status code 404"
       },
@@ -91,7 +95,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 801C1497987F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 80FC6DF3647F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -151,7 +155,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 801C1497987F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO 80FC6DF3647F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -171,7 +175,7 @@
       },
       {
         "name": "Cambridge Cavendish",
-        "error": "Status code 404"
+        "error": "Status code 400"
       },
       {
         "name": "ETH Zurich Quantum",
@@ -222,7 +226,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 348
+    "duplicatesRemoved": 383
   },
-  "dbSize": 8762
+  "dbSize": 8990
 }
