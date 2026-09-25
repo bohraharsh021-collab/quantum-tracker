@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-09-24T02:09:56.014Z",
+  "lastRun": "2026-09-25T02:27:25.513Z",
   "feedStats": {
     "total": 77,
-    "success": 23,
-    "failed": 54,
+    "success": 22,
+    "failed": 55,
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
@@ -91,7 +91,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 800CF055937F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 80AC71BCD17F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -131,7 +131,7 @@
       },
       {
         "name": "Alice & Bob",
-        "error": "Status code 403"
+        "error": "Invalid character in entity name\nLine: 0\nColumn: 120\nChar: ="
       },
       {
         "name": "Q-CTRL",
@@ -151,7 +151,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 800CF055937F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO 80AC71BCD17F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -180,6 +180,10 @@
       {
         "name": "EPFL Quantum",
         "error": "Status code 404"
+      },
+      {
+        "name": "IISc Physics",
+        "error": "Status code 502"
       },
       {
         "name": "TIFR Mumbai",
@@ -222,7 +226,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 359
+    "duplicatesRemoved": 338
   },
-  "dbSize": 9143
+  "dbSize": 9316
 }
