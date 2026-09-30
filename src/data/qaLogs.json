@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-09-29T03:17:06.441Z",
+  "lastRun": "2026-09-30T02:58:48.213Z",
   "feedStats": {
     "total": 77,
     "success": 22,
@@ -11,7 +11,7 @@
       },
       {
         "name": "India DST Feed",
-        "error": "Status code 404"
+        "error": "Request timed out after 60000ms"
       },
       {
         "name": "ISRO Press Releases Feed",
@@ -27,7 +27,7 @@
       },
       {
         "name": "Canada NRC Feed",
-        "error": "Request timed out after 60000ms"
+        "error": "Status code 404"
       },
       {
         "name": "IBM Quantum Blog Feed",
@@ -95,7 +95,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 804C6E9BCD7F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 80EC88BCE07F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -103,7 +103,7 @@
       },
       {
         "name": "South Korea MSIT",
-        "error": "Status code 404"
+        "error": "Request timed out after 60000ms"
       },
       {
         "name": "India MeitY",
@@ -155,7 +155,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 804C6E9BCD7F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO 80EC88BCE07F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -226,7 +226,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 360
+    "duplicatesRemoved": 334
   },
-  "dbSize": 9600
+  "dbSize": 9620
 }
