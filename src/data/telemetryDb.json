@@ -19425,6 +19425,31 @@
     "url": "https://www.sciencedaily.com/releases/2026/09/260929053550.htm"
   },
   {
+    "uuid": "3c4ef9d2-19a4-430f-a198-71c287595227",
+    "title": "Guidance: Women in Research Charter",
+    "summary": "A voluntary commitment to improve outcomes for women across the UK research system, with actions for research funders and research performing organisations....",
+    "source": "UK DSIT",
+    "rssFeed": "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology.atom",
+    "category": "government",
+    "country": "United Kingdom",
+    "organization": "MIT",
+    "organizationType": "Academia",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-09-29T12:00:23.000Z",
+    "tags": [
+      "quantum",
+      "united kingdom",
+      "hardware platforms"
+    ],
+    "url": "https://www.gov.uk/government/publications/women-in-research-charter"
+  },
+  {
     "uuid": "07ab4fb1-e2eb-4080-b1f9-b5ba97f8c058",
     "title": "Terra Quantum and Empa Develop AI Model for Laser Welding Prediction",
     "summary": "Insider Brief PRESS RELEASE — Terra Quantum, a global leader in quantum technologies, and Empa, the Swiss Federal Laboratories for Materials Science and Technology, announced LP-FNO (Laser Processing Fourier Neural Operator), an artificial ...",
@@ -249973,30 +249998,5 @@
       "hardware platforms"
     ],
     "url": "https://thequantuminsider.com/2026/07/01/microsoft-moves-up-quantum-safe-security-deadline-to-2029/"
-  },
-  {
-    "uuid": "328a21bb-a751-4c58-848d-f86f46c2c988",
-    "title": "A framework of partial error correction for intermediate-scale quantum computers",
-    "summary": "...",
-    "source": "Nature npj QI Feed",
-    "rssFeed": "https://www.nature.com/npjqi.rss",
-    "category": "academic",
-    "country": "Global",
-    "organization": "Nature Group",
-    "organizationType": "Startup",
-    "technology": "Hardware Platforms",
-    "processor": "None",
-    "qubitMethod": "Other",
-    "application": "General Quantum",
-    "procurement": false,
-    "funding": false,
-    "partnership": false,
-    "pubDate": "2026-07-01T00:00:00.000Z",
-    "tags": [
-      "quantum",
-      "global",
-      "hardware platforms"
-    ],
-    "url": "https://www.nature.com/articles/s41534-026-01301-3"
   }
 ]
