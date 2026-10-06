@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-05T02:57:26.154Z",
+  "lastRun": "2026-10-06T03:48:41.475Z",
   "feedStats": {
     "total": 77,
     "success": 22,
@@ -15,7 +15,7 @@
       },
       {
         "name": "ISRO Press Releases Feed",
-        "error": "Status code 502"
+        "error": "Status code 404"
       },
       {
         "name": "USA NSF Physics Feed",
@@ -59,7 +59,7 @@
       },
       {
         "name": "Quantum Computing Report Feed",
-        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f"
+        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: �"
       },
       {
         "name": "USA White House OSTP",
@@ -95,7 +95,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 800C8EA4C57F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 80DC8AF5607F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -135,7 +135,7 @@
       },
       {
         "name": "Alice & Bob",
-        "error": "Status code 403"
+        "error": "Invalid character in entity name\nLine: 0\nColumn: 120\nChar: ="
       },
       {
         "name": "Q-CTRL",
@@ -155,7 +155,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 800C8EA4C57F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO 80DC8AF5607F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -226,7 +226,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 215
+    "duplicatesRemoved": 253
   },
   "dbSize": 10000
 }
