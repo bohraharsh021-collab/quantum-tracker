@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-07T03:14:57.961Z",
+  "lastRun": "2026-10-08T03:32:00.676Z",
   "feedStats": {
     "total": 77,
     "success": 22,
@@ -59,7 +59,7 @@
       },
       {
         "name": "Quantum Computing Report Feed",
-        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f"
+        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: �"
       },
       {
         "name": "USA White House OSTP",
@@ -67,11 +67,11 @@
       },
       {
         "name": "Innovate UK",
-        "error": "Invalid character in entity name\nLine: 79\nColumn: 44\nChar: ="
+        "error": "Invalid character in entity name\nLine: 159\nColumn: 44\nChar: ="
       },
       {
         "name": "Germany BMBF",
-        "error": "read ECONNRESET"
+        "error": "Status code 404"
       },
       {
         "name": "France CNRS",
@@ -95,7 +95,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 806C8B4F8B7F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 80ECC948A07F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -135,7 +135,7 @@
       },
       {
         "name": "Alice & Bob",
-        "error": "Invalid character in entity name\nLine: 0\nColumn: 120\nChar: ="
+        "error": "Status code 403"
       },
       {
         "name": "Q-CTRL",
@@ -155,7 +155,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 806C8B4F8B7F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO 80ECC948A07F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -226,7 +226,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 193
+    "duplicatesRemoved": 222
   },
   "dbSize": 10000
 }
