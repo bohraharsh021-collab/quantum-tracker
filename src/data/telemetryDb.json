@@ -1,5 +1,30 @@
 [
   {
+    "uuid": "77d016fe-fe94-40c3-afd1-cf3303f6b9c2",
+    "title": "Quantum 'birthmarks' hold lasting traces of a system's past",
+    "summary": "Some classical physical systems can explore many configurations over time until their long-term behavior no longer reveals their starting conditions. The sampling of available configurations according to the appropriate statistical distribu...",
+    "source": "Phys.org Quantum Physics Feed",
+    "rssFeed": "https://phys.org/rss-feed/physics-news/quantum-physics/",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Phys.org",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-10-11T18:20:01.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://phys.org/news/2026-10-quantum-birthmarks.html"
+  },
+  {
     "uuid": "c18c0770-bbfd-4b8b-ae72-7af22496ec39",
     "title": "Ultraviolet laser pulses engineer diamond defects selectively, leaving quantum qubits intact",
     "summary": "When we think about a diamond, we often think about a material whose value comes from its perfection. In my research, however, I am interested in something almost opposite: the tiny imperfections inside diamonds. These atomic-scale defects ...",
@@ -23,6 +48,31 @@
       "superconducting"
     ],
     "url": "https://phys.org/news/2026-10-ultraviolet-laser-pulses-diamond-defects.html"
+  },
+  {
+    "uuid": "bf49e584-120f-438b-a994-474a12a11a30",
+    "title": "Energy Department Authorizes Strategic Petroleum Reserve Exchange to Address Supply Disruptions Due to Hurricane",
+    "summary": "The U.S. Department of Energy (DOE) authorized the emergency exchange to alleviate supply disruption due to inclement weather in the Gulf of America...",
+    "source": "USA DOE News Feed",
+    "rssFeed": "https://www.energy.gov/rss/news.xml",
+    "category": "government",
+    "country": "United States of America",
+    "organization": "Department of Energy",
+    "organizationType": "Government",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-10-10T19:05:00.000Z",
+    "tags": [
+      "quantum",
+      "united states of america",
+      "hardware platforms"
+    ],
+    "url": "https://www.energy.gov/articles/energy-department-authorizes-strategic-petroleum-reserve-exchange-address-supply"
   },
   {
     "uuid": "e33550cd-7ac8-4fbe-a8b0-ab877660642b",
@@ -249948,55 +249998,5 @@
       "hardware platforms"
     ],
     "url": "https://arxiv.org/abs/2512.15453"
-  },
-  {
-    "uuid": "53127bfa-e549-4997-b3e4-61fcbc6b195a",
-    "title": "Feedback Cooling and Thermometry of a Single Trapped Ion Using a Knife Edge",
-    "summary": "arXiv:2512.16368v2 Announce Type: replace \nAbstract: We report on a simple and easy to implement method of feedback cooling trapped ions to temperatures below those achievable using only Doppler cooling. Additionally, the feedback cooling r...",
-    "source": "ArXiv Quant-Ph",
-    "rssFeed": "http://export.arxiv.org/rss/quant-ph",
-    "category": "academic",
-    "country": "Global",
-    "organization": "ArXiv",
-    "organizationType": "Startup",
-    "technology": "Trapped Ion",
-    "processor": "None",
-    "qubitMethod": "Trapped Ions",
-    "application": "General Quantum",
-    "procurement": false,
-    "funding": false,
-    "partnership": false,
-    "pubDate": "2026-07-08T04:00:00.000Z",
-    "tags": [
-      "quantum",
-      "global",
-      "trapped ion"
-    ],
-    "url": "https://arxiv.org/abs/2512.16368"
-  },
-  {
-    "uuid": "bdab6018-dbe3-4b5c-a100-58a333a63546",
-    "title": "Asymmetry effects in homodyne and heterodyne measurements: Positive operator-valued measures and asymptotic security of Gaussian-continuous-variable quantum key distribution",
-    "summary": "arXiv:2512.22591v2 Announce Type: replace \nAbstract: We use the Gaussian approximation describing photocount statistics for both the homodyne and the double homodyne (heterodyne) measurements to study asymmetry effects arising from imbalanc...",
-    "source": "ArXiv Quant-Ph",
-    "rssFeed": "http://export.arxiv.org/rss/quant-ph",
-    "category": "academic",
-    "country": "Global",
-    "organization": "ArXiv",
-    "organizationType": "Startup",
-    "technology": "Hardware Platforms",
-    "processor": "None",
-    "qubitMethod": "Other",
-    "application": "Post-Quantum Cryptography & QKD",
-    "procurement": false,
-    "funding": false,
-    "partnership": false,
-    "pubDate": "2026-07-08T04:00:00.000Z",
-    "tags": [
-      "quantum",
-      "global",
-      "hardware platforms"
-    ],
-    "url": "https://arxiv.org/abs/2512.22591"
   }
 ]
