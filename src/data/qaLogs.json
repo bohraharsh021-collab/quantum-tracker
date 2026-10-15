@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-14T02:38:45.748Z",
+  "lastRun": "2026-10-15T02:18:49.626Z",
   "feedStats": {
     "total": 77,
-    "success": 22,
-    "failed": 55,
+    "success": 23,
+    "failed": 54,
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
@@ -58,10 +58,6 @@
         "error": "Status code 404"
       },
       {
-        "name": "Quantum Computing Report Feed",
-        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f"
-      },
-      {
         "name": "USA White House OSTP",
         "error": "Status code 404"
       },
@@ -75,7 +71,7 @@
       },
       {
         "name": "France CNRS",
-        "error": "Feed not recognized as RSS 1 or 2."
+        "error": "Status code 503"
       },
       {
         "name": "Japan RIKEN",
@@ -95,7 +91,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 806C6B55F37F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 80DCEB9C707F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -155,7 +151,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 806C6B55F37F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO 80DCEB9C707F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -179,7 +175,7 @@
       },
       {
         "name": "ETH Zurich Quantum",
-        "error": ""
+        "error": "Status code 404"
       },
       {
         "name": "EPFL Quantum",
@@ -226,7 +222,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 188
+    "duplicatesRemoved": 189
   },
   "dbSize": 10000
 }
