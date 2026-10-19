@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-18T02:03:28.329Z",
+  "lastRun": "2026-10-19T02:21:19.212Z",
   "feedStats": {
     "total": 77,
     "success": 23,
@@ -71,7 +71,7 @@
       },
       {
         "name": "France CNRS",
-        "error": "Feed not recognized as RSS 1 or 2."
+        "error": "Request timed out after 60000ms"
       },
       {
         "name": "Japan RIKEN",
@@ -91,7 +91,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 809CBF9BE07F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO 80FC6F4CB67F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -151,7 +151,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 809CBF9BE07F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO 80FC6F4CB67F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -222,7 +222,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 208
+    "duplicatesRemoved": 218
   },
   "dbSize": 10000
 }
