@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-19T02:21:19.212Z",
+  "lastRun": "2026-10-20T02:35:43.863Z",
   "feedStats": {
     "total": 77,
-    "success": 23,
-    "failed": 54,
+    "success": 22,
+    "failed": 55,
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
@@ -58,6 +58,10 @@
         "error": "Status code 404"
       },
       {
+        "name": "Quantum Computing Report Feed",
+        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: �"
+      },
+      {
         "name": "USA White House OSTP",
         "error": "Status code 404"
       },
@@ -71,7 +75,7 @@
       },
       {
         "name": "France CNRS",
-        "error": "Request timed out after 60000ms"
+        "error": "Feed not recognized as RSS 1 or 2."
       },
       {
         "name": "Japan RIKEN",
@@ -91,7 +95,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO 80FC6F4CB67F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO C0ECB1EF7E7B0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -151,7 +155,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO 80FC6F4CB67F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C0ECB1EF7E7B0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -222,7 +226,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 218
+    "duplicatesRemoved": 227
   },
   "dbSize": 10000
 }
