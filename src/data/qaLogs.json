@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-20T02:35:43.863Z",
+  "lastRun": "2026-10-21T02:30:14.904Z",
   "feedStats": {
     "total": 77,
     "success": 22,
@@ -75,7 +75,7 @@
       },
       {
         "name": "France CNRS",
-        "error": "Feed not recognized as RSS 1 or 2."
+        "error": "Request timed out after 60000ms"
       },
       {
         "name": "Japan RIKEN",
@@ -95,7 +95,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO C0ECB1EF7E7B0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO C09C6B0804770000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -111,7 +111,7 @@
       },
       {
         "name": "India DRDO",
-        "error": "Status code 404"
+        "error": "Request timed out after 60000ms"
       },
       {
         "name": "Quantinuum",
@@ -123,11 +123,11 @@
       },
       {
         "name": "Infleqtion",
-        "error": "Feed not recognized as RSS 1 or 2."
+        "error": "Status code 404"
       },
       {
         "name": "Xanadu",
-        "error": "Invalid character in entity name\nLine: 0\nColumn: 1905\nChar: ="
+        "error": "Feed not recognized as RSS 1 or 2."
       },
       {
         "name": "IQM",
@@ -155,7 +155,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C0ECB1EF7E7B0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C09C6B0804770000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -226,7 +226,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 227
+    "duplicatesRemoved": 191
   },
   "dbSize": 10000
 }
