@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-21T02:30:14.904Z",
+  "lastRun": "2026-10-22T02:34:00.905Z",
   "feedStats": {
     "total": 77,
-    "success": 22,
-    "failed": 55,
+    "success": 19,
+    "failed": 58,
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
@@ -27,7 +27,11 @@
       },
       {
         "name": "Canada NRC Feed",
-        "error": "Status code 404"
+        "error": "Request timed out after 60000ms"
+      },
+      {
+        "name": "EU Commission Digital Feed",
+        "error": "Status code 403"
       },
       {
         "name": "IBM Quantum Blog Feed",
@@ -59,7 +63,7 @@
       },
       {
         "name": "Quantum Computing Report Feed",
-        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: �"
+        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f"
       },
       {
         "name": "USA White House OSTP",
@@ -75,7 +79,7 @@
       },
       {
         "name": "France CNRS",
-        "error": "Request timed out after 60000ms"
+        "error": "Feed not recognized as RSS 1 or 2."
       },
       {
         "name": "Japan RIKEN",
@@ -95,7 +99,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO C09C6B0804770000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "connect ECONNREFUSED 159.223.5.52:443"
       },
       {
         "name": "Israel Innovation Authority",
@@ -107,11 +111,15 @@
       },
       {
         "name": "India MeitY",
-        "error": "Feed not recognized as RSS 1 or 2."
+        "error": "Invalid character in entity name\nLine: 6\nColumn: 31\nChar: &"
       },
       {
         "name": "India DRDO",
         "error": "Request timed out after 60000ms"
+      },
+      {
+        "name": "Microsoft Quantum",
+        "error": "Status code 403"
       },
       {
         "name": "Quantinuum",
@@ -119,7 +127,7 @@
       },
       {
         "name": "Atom Computing",
-        "error": "Unexpected close tag\nLine: 346\nColumn: 7\nChar: >"
+        "error": "Feed not recognized as RSS 1 or 2."
       },
       {
         "name": "Infleqtion",
@@ -127,7 +135,7 @@
       },
       {
         "name": "Xanadu",
-        "error": "Feed not recognized as RSS 1 or 2."
+        "error": "Invalid character in entity name\nLine: 0\nColumn: 1905\nChar: ="
       },
       {
         "name": "IQM",
@@ -155,7 +163,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C09C6B0804770000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C01C6C6AC07E0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -171,7 +179,7 @@
       },
       {
         "name": "Oxford Physics",
-        "error": "Status code 404"
+        "error": "Request timed out after 60000ms"
       },
       {
         "name": "Cambridge Cavendish",
@@ -184,6 +192,10 @@
       {
         "name": "EPFL Quantum",
         "error": "Status code 404"
+      },
+      {
+        "name": "QuTech",
+        "error": "Request timed out after 60000ms"
       },
       {
         "name": "TIFR Mumbai",
@@ -223,10 +235,10 @@
       },
       {
         "name": "Quantum Computing News",
-        "error": "Client network socket disconnected before secure TLS connection was established"
+        "error": "read ECONNRESET"
       }
     ],
-    "duplicatesRemoved": 191
+    "duplicatesRemoved": 205
   },
   "dbSize": 10000
 }
