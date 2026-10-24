@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-23T02:32:22.426Z",
+  "lastRun": "2026-10-24T02:29:12.299Z",
   "feedStats": {
     "total": 77,
-    "success": 18,
-    "failed": 59,
+    "success": 20,
+    "failed": 57,
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
@@ -62,16 +62,12 @@
         "error": "Status code 404"
       },
       {
-        "name": "Quantum Computing Report Feed",
-        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f"
-      },
-      {
         "name": "USA White House OSTP",
         "error": "Status code 404"
       },
       {
         "name": "Innovate UK",
-        "error": "Invalid character in entity name\nLine: 74\nColumn: 44\nChar: ="
+        "error": "Invalid character in entity name\nLine: 93\nColumn: 44\nChar: ="
       },
       {
         "name": "Germany BMBF",
@@ -99,7 +95,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "Request timed out after 60000ms"
+        "error": "connect ECONNREFUSED 159.223.5.52:443"
       },
       {
         "name": "Israel Innovation Authority",
@@ -163,7 +159,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C0BC11F0E6790000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C02C906BE67E0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -192,10 +188,6 @@
       {
         "name": "EPFL Quantum",
         "error": "Status code 404"
-      },
-      {
-        "name": "QuTech",
-        "error": "Request timed out after 60000ms"
       },
       {
         "name": "IISc Physics",
@@ -242,7 +234,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 194
+    "duplicatesRemoved": 195
   },
   "dbSize": 10000
 }
