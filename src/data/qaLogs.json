@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-24T02:29:12.299Z",
+  "lastRun": "2026-10-25T02:15:06.374Z",
   "feedStats": {
     "total": 77,
-    "success": 20,
-    "failed": 57,
+    "success": 19,
+    "failed": 58,
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
@@ -62,6 +62,10 @@
         "error": "Status code 404"
       },
       {
+        "name": "Quantum Computing Report Feed",
+        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f"
+      },
+      {
         "name": "USA White House OSTP",
         "error": "Status code 404"
       },
@@ -71,7 +75,7 @@
       },
       {
         "name": "Germany BMBF",
-        "error": "Status code 404"
+        "error": "read ECONNRESET"
       },
       {
         "name": "France CNRS",
@@ -95,7 +99,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "connect ECONNREFUSED 159.223.5.52:443"
+        "error": "write EPROTO C0AC1657B8770000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -159,7 +163,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C02C906BE67E0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C0AC1657B8770000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -234,7 +238,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 195
+    "duplicatesRemoved": 192
   },
   "dbSize": 10000
 }
