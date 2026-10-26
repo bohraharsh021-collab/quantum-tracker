@@ -1,5 +1,30 @@
 [
   {
+    "uuid": "5aab94bd-62fa-432f-b3e5-aecc4ba658c9",
+    "title": "Supercurrent enables the reading of quantum information without destroying it",
+    "summary": "One of the fundamental challenges of quantum computing is obtaining information from a quantum bit, or qubit. Unlike a conventional bit, which can be read repeatedly without altering its content, direct measurement of a quantum system typic...",
+    "source": "Phys.org Quantum Physics Feed",
+    "rssFeed": "https://phys.org/rss-feed/physics-news/quantum-physics/",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Phys.org",
+    "organizationType": "Startup",
+    "technology": "Superconducting",
+    "processor": "None",
+    "qubitMethod": "Superconducting Transmons",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-10-25T19:00:20.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "superconducting"
+    ],
+    "url": "https://phys.org/news/2026-10-supercurrent-enables-quantum-destroying.html"
+  },
+  {
     "uuid": "91d190ad-3841-4c99-8700-2b2fbb3b92e1",
     "title": "'One-positron cyclotron' could test a key prediction of the Standard Model",
     "summary": "The positron is the antimatter counterpart of the electron, identical in mass but carrying an equal and opposite electric charge. Like the electron, it also behaves like a tiny bar magnet, and according to a key prediction of the Standard M...",
@@ -249973,30 +249998,5 @@
       "hardware platforms"
     ],
     "url": "https://arxiv.org/abs/2506.00650"
-  },
-  {
-    "uuid": "d792c292-400e-4a89-8fa8-f1e9e770e5b6",
-    "title": "Simultaneous High-Fidelity Single-Qubit Gates in a Spin Qubit Array",
-    "summary": "arXiv:2507.11918v2 Announce Type: replace \nAbstract: Silicon spin qubits offer a promising path to scalable quantum computing due to their compatibility with industrial semiconductor manufacturing and recent advances in multi-qubit integrat...",
-    "source": "ArXiv Quant-Ph",
-    "rssFeed": "http://export.arxiv.org/rss/quant-ph",
-    "category": "academic",
-    "country": "Global",
-    "organization": "ArXiv",
-    "organizationType": "Startup",
-    "technology": "Superconducting",
-    "processor": "None",
-    "qubitMethod": "Superconducting Transmons",
-    "application": "General Quantum",
-    "procurement": false,
-    "funding": false,
-    "partnership": false,
-    "pubDate": "2026-07-16T04:00:00.000Z",
-    "tags": [
-      "quantum",
-      "global",
-      "superconducting"
-    ],
-    "url": "https://arxiv.org/abs/2507.11918"
   }
 ]
