@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-27T02:52:53.468Z",
+  "lastRun": "2026-10-28T03:01:12.862Z",
   "feedStats": {
     "total": 77,
-    "success": 19,
-    "failed": 58,
+    "success": 20,
+    "failed": 57,
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
@@ -27,7 +27,7 @@
       },
       {
         "name": "Canada NRC Feed",
-        "error": "Status code 404"
+        "error": "Request timed out after 60000ms"
       },
       {
         "name": "EU Commission Digital Feed",
@@ -99,7 +99,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO C01C4BEA5A710000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO C07CAC2D53790000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -142,10 +142,6 @@
         "error": "Status code 404"
       },
       {
-        "name": "Alice & Bob",
-        "error": "Invalid character in entity name\nLine: 0\nColumn: 120\nChar: ="
-      },
-      {
         "name": "Q-CTRL",
         "error": "Status code 404"
       },
@@ -163,7 +159,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C01C4BEA5A710000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C07CAC2D53790000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -238,7 +234,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 199
+    "duplicatesRemoved": 298
   },
   "dbSize": 10000
 }
