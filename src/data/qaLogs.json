@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-28T03:01:12.862Z",
+  "lastRun": "2026-10-30T03:28:24.363Z",
   "feedStats": {
     "total": 77,
-    "success": 20,
-    "failed": 57,
+    "success": 24,
+    "failed": 53,
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
@@ -27,11 +27,7 @@
       },
       {
         "name": "Canada NRC Feed",
-        "error": "Request timed out after 60000ms"
-      },
-      {
-        "name": "EU Commission Digital Feed",
-        "error": "Status code 403"
+        "error": "Status code 404"
       },
       {
         "name": "IBM Quantum Blog Feed",
@@ -62,10 +58,6 @@
         "error": "Status code 404"
       },
       {
-        "name": "Quantum Computing Report Feed",
-        "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: �"
-      },
-      {
         "name": "USA White House OSTP",
         "error": "Status code 404"
       },
@@ -76,10 +68,6 @@
       {
         "name": "Germany BMBF",
         "error": "Status code 404"
-      },
-      {
-        "name": "France CNRS",
-        "error": "Feed not recognized as RSS 1 or 2."
       },
       {
         "name": "Japan RIKEN",
@@ -99,7 +87,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO C07CAC2D53790000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO C06CB769BD770000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -159,7 +147,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C07CAC2D53790000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C06CB769BD770000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -188,10 +176,6 @@
       {
         "name": "EPFL Quantum",
         "error": "Status code 404"
-      },
-      {
-        "name": "IISc Physics",
-        "error": "Status code 502"
       },
       {
         "name": "TIFR Mumbai",
@@ -234,7 +218,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 298
+    "duplicatesRemoved": 196
   },
   "dbSize": 10000
 }
