@@ -1,5 +1,30 @@
 [
   {
+    "uuid": "f0960daf-2a45-41c2-ae82-649c9dc5baad",
+    "title": "Unifying quantum smoothing theories with extended retrodiction",
+    "summary": "...",
+    "source": "Nature npj QI Feed",
+    "rssFeed": "https://www.nature.com/npjqi.rss",
+    "category": "academic",
+    "country": "Global",
+    "organization": "Nature Group",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-11-01T00:00:00.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://www.nature.com/articles/s41534-026-01379-9"
+  },
+  {
     "uuid": "25f58daa-45cf-4925-b419-a41fe7a91d41",
     "title": "Ultracold atoms simulate hard-to-observe matter-antimatter pair production",
     "summary": "According to quantum electrodynamics, the theory describing interactions between light and electrically charged particles, a sufficiently strong electric field can, in principle, convert some of its energy into particles and their antimatte...",
@@ -249973,30 +249998,5 @@
       "hardware platforms"
     ],
     "url": "https://arxiv.org/abs/2607.14223"
-  },
-  {
-    "uuid": "bc7eac4d-e292-48d8-a469-bdd175d8d9f1",
-    "title": "Principles of Quantum Optimization for Constrained Problems",
-    "summary": "arXiv:2607.14227v1 Announce Type: new \nAbstract: Constrained combinatorial optimization underlies many industrial and technological decision problems. We develop a spectral theory that unifies many quantum optimization algorithms. We show t...",
-    "source": "ArXiv Quant-Ph",
-    "rssFeed": "http://export.arxiv.org/rss/quant-ph",
-    "category": "academic",
-    "country": "Global",
-    "organization": "ArXiv",
-    "organizationType": "Startup",
-    "technology": "Hardware Platforms",
-    "processor": "None",
-    "qubitMethod": "Other",
-    "application": "General Quantum",
-    "procurement": false,
-    "funding": false,
-    "partnership": false,
-    "pubDate": "2026-07-17T04:00:00.000Z",
-    "tags": [
-      "quantum",
-      "global",
-      "hardware platforms"
-    ],
-    "url": "https://arxiv.org/abs/2607.14227"
   }
 ]
