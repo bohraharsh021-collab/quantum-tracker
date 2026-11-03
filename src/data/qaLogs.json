@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-02T03:19:03.069Z",
+  "lastRun": "2026-11-03T04:33:28.954Z",
   "feedStats": {
     "total": 77,
     "success": 23,
@@ -87,7 +87,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO C08CB1CEB8780000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO C02C34FAE6790000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -151,7 +151,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C08CB1CEB8780000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C02C34FAE6790000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -222,7 +222,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 234
+    "duplicatesRemoved": 242
   },
   "dbSize": 10000
 }
