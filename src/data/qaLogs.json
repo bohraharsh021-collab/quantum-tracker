@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-04T03:52:30.588Z",
+  "lastRun": "2026-11-05T04:11:10.202Z",
   "feedStats": {
     "total": 77,
     "success": 23,
@@ -87,7 +87,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO C02CB03899790000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO C08CAEBB77740000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -131,7 +131,7 @@
       },
       {
         "name": "Alice & Bob",
-        "error": "Invalid character in entity name\nLine: 0\nColumn: 120\nChar: ="
+        "error": "socket hang up"
       },
       {
         "name": "Q-CTRL",
@@ -151,7 +151,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C02CB03899790000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C08CAEBB77740000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -191,7 +191,7 @@
       },
       {
         "name": "NUS CQT",
-        "error": "Status code 500"
+        "error": "Invalid character in entity name\nLine: 154\nColumn: 43\nChar: ="
       },
       {
         "name": "University of Sydney",
