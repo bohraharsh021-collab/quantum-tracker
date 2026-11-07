@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-06T04:09:07.519Z",
+  "lastRun": "2026-11-07T03:43:16.957Z",
   "feedStats": {
     "total": 77,
     "success": 23,
@@ -63,7 +63,7 @@
       },
       {
         "name": "Innovate UK",
-        "error": "Invalid character in entity name\nLine: 93\nColumn: 44\nChar: ="
+        "error": "Invalid character in entity name\nLine: 184\nColumn: 44\nChar: ="
       },
       {
         "name": "Germany BMBF",
@@ -87,7 +87,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO C01C304E73740000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO C09C0C82D87B0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -103,7 +103,7 @@
       },
       {
         "name": "India DRDO",
-        "error": "Request timed out after 60000ms"
+        "error": "connect ECONNREFUSED 164.100.77.87:443"
       },
       {
         "name": "Microsoft Quantum",
@@ -151,7 +151,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C01C304E73740000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C09C0C82D87B0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -222,7 +222,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 230
+    "duplicatesRemoved": 242
   },
   "dbSize": 10000
 }
