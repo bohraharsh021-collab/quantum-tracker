@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-11-08T03:16:32.471Z",
+  "lastRun": "2026-11-09T03:36:29.424Z",
   "feedStats": {
     "total": 77,
-    "success": 23,
-    "failed": 54,
+    "success": 22,
+    "failed": 55,
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
@@ -27,7 +27,7 @@
       },
       {
         "name": "Canada NRC Feed",
-        "error": "Request timed out after 60000ms"
+        "error": "Status code 404"
       },
       {
         "name": "IBM Quantum Blog Feed",
@@ -87,7 +87,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO C02C754A25750000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO C01CBD7E7F720000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -151,7 +151,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C02C754A25750000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C01CBD7E7F720000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -175,11 +175,15 @@
       },
       {
         "name": "ETH Zurich Quantum",
-        "error": "Status code 404"
+        "error": ""
       },
       {
         "name": "EPFL Quantum",
         "error": "Status code 404"
+      },
+      {
+        "name": "IISc Physics",
+        "error": "Status code 504"
       },
       {
         "name": "TIFR Mumbai",
@@ -222,7 +226,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 219
+    "duplicatesRemoved": 221
   },
   "dbSize": 10000
 }

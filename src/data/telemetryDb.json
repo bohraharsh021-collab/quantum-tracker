@@ -1,5 +1,80 @@
 [
   {
+    "uuid": "ddeb1cf4-6066-4091-a67f-2dea96023cb0",
+    "title": "Riverlane Demonstrates Data-Driven DEM Augmentation to Reduce Surface-Code Logical Errors",
+    "summary": "Riverlane has developed a data-driven method to improve quantum error correction in surface-code architectures. By identifying unmodeled correlated error mechanisms from syndrome measurement data, their technique augments standard Detector ...",
+    "source": "Quantum Computing Report Feed",
+    "rssFeed": "https://quantumcomputingreport.com/feed/",
+    "category": "industry",
+    "country": "Global",
+    "organization": "Riverlane",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-11-08T03:48:31.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://quantumcomputingreport.com/riverlane-demonstrates-data-driven-dem-augmentation-to-reduce-surface-code-logical-errors/"
+  },
+  {
+    "uuid": "999ab50e-93f9-4d8d-a745-228b80fc7d68",
+    "title": "Who’s News: Strategic Appointments at Quantum eMotion, Qtonic Quantum, Chicago Quantum Exchange, and Equal1",
+    "summary": "Quantum eMotion, Qtonic Quantum, Chicago Quantum Exchange, and Equal1 have announced strategic appointments to key leadership positions, bringing in experienced professionals to drive their respective technology, operations, and quantum com...",
+    "source": "Quantum Computing Report Feed",
+    "rssFeed": "https://quantumcomputingreport.com/feed/",
+    "category": "industry",
+    "country": "Global",
+    "organization": "QCR",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-11-08T03:31:22.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://quantumcomputingreport.com/whos-news-strategic-appointments-at-quantum-emotion-qtonic-quantum-chicago-quantum-exchange-and-equal1/"
+  },
+  {
+    "uuid": "d5eeaf32-9558-4b91-b556-3015c130d90e",
+    "title": "CO.LAB Selects Four Startups for Inaugural CO.LAB Q Commercialization Studio in Chattanooga",
+    "summary": "CO.LAB has launched its first CO.LAB Q commercialization studio in Chattanooga, featuring four startups: RidgeQuantum, Superquantum, esoteriq, and Kottackal Business Solutions. This 12-month program, starting November 2026, aims to commerci...",
+    "source": "Quantum Computing Report Feed",
+    "rssFeed": "https://quantumcomputingreport.com/feed/",
+    "category": "industry",
+    "country": "Global",
+    "organization": "QCR",
+    "organizationType": "Startup",
+    "technology": "Hardware Platforms",
+    "processor": "None",
+    "qubitMethod": "Other",
+    "application": "General Quantum",
+    "procurement": false,
+    "funding": false,
+    "partnership": false,
+    "pubDate": "2026-11-07T21:11:48.000Z",
+    "tags": [
+      "quantum",
+      "global",
+      "hardware platforms"
+    ],
+    "url": "https://quantumcomputingreport.com/co-lab-selects-four-startups-for-inaugural-co-lab-q-commercialization-studio-in-chattanooga/"
+  },
+  {
     "uuid": "9859505c-9401-44c9-aed7-1315e0e97090",
     "title": "Scottish Widows and Aberdeen Allocate UK Workplace Pension Capital to Oxford Quantum Circuits and Quantum Motion via LTAF",
     "summary": "Scottish Widows and Aberdeen Investments have allocated UK workplace pension capital to Oxford Quantum Circuits and Quantum Motion through the CG Scottish Widows Growth LTAF. This initiative aims to connect defined-contribution retirement a...",
@@ -249923,80 +249998,5 @@
       "quantum annealing"
     ],
     "url": "https://arxiv.org/abs/2607.20042"
-  },
-  {
-    "uuid": "c190aa54-9264-4af2-980c-7b413b586112",
-    "title": "PN-QNN: Harnessing Physical Noise as a Native Regularizer in Photonic Hybrid Quantum Neural Networks",
-    "summary": "arXiv:2607.20045v1 Announce Type: new \nAbstract: Physical noise in near-term quantum hardware is usually treated as a nuisance to suppress. We ask whether it can instead act as a hardware-native regularizer for photonic hybrid quantum-class...",
-    "source": "ArXiv Quant-Ph",
-    "rssFeed": "http://export.arxiv.org/rss/quant-ph",
-    "category": "academic",
-    "country": "Global",
-    "organization": "ArXiv",
-    "organizationType": "Startup",
-    "technology": "Photonic",
-    "processor": "None",
-    "qubitMethod": "Photonic / Linear Optical",
-    "application": "Quantum Machine Learning (QML)",
-    "procurement": false,
-    "funding": false,
-    "partnership": false,
-    "pubDate": "2026-07-23T04:00:00.000Z",
-    "tags": [
-      "quantum",
-      "global",
-      "photonic"
-    ],
-    "url": "https://arxiv.org/abs/2607.20045"
-  },
-  {
-    "uuid": "11d07907-9c8d-40ed-8ce0-3d2cf9375e37",
-    "title": "Physics-Informed Graph Neural Networks for Surface Code Decoding via Discrete Exterior Calculus",
-    "summary": "arXiv:2607.20060v1 Announce Type: new \nAbstract: We introduce a physics-informed graph neural network decoder for the surface code. A discrete Poisson equation on the syndrome graph acts as a hard inductive bias on which a graph encoder lea...",
-    "source": "ArXiv Quant-Ph",
-    "rssFeed": "http://export.arxiv.org/rss/quant-ph",
-    "category": "academic",
-    "country": "Global",
-    "organization": "ArXiv",
-    "organizationType": "Startup",
-    "technology": "Hardware Platforms",
-    "processor": "None",
-    "qubitMethod": "Other",
-    "application": "Quantum Machine Learning (QML)",
-    "procurement": false,
-    "funding": false,
-    "partnership": false,
-    "pubDate": "2026-07-23T04:00:00.000Z",
-    "tags": [
-      "quantum",
-      "global",
-      "hardware platforms"
-    ],
-    "url": "https://arxiv.org/abs/2607.20060"
-  },
-  {
-    "uuid": "2fcba6d1-769c-494e-ae4b-b444267fdecb",
-    "title": "Schr\\\"odinger's real-valued equation revisited",
-    "summary": "arXiv:2607.20104v1 Announce Type: new \nAbstract: The Schr\\\"odinger equation can be rewritten as a second-order equation for a single real-valued scalar field. Taken at face value, however, this one-field reduction obscures several local str...",
-    "source": "ArXiv Quant-Ph",
-    "rssFeed": "http://export.arxiv.org/rss/quant-ph",
-    "category": "academic",
-    "country": "Global",
-    "organization": "ArXiv",
-    "organizationType": "Startup",
-    "technology": "Hardware Platforms",
-    "processor": "None",
-    "qubitMethod": "Other",
-    "application": "General Quantum",
-    "procurement": true,
-    "funding": false,
-    "partnership": false,
-    "pubDate": "2026-07-23T04:00:00.000Z",
-    "tags": [
-      "quantum",
-      "global",
-      "hardware platforms"
-    ],
-    "url": "https://arxiv.org/abs/2607.20104"
   }
 ]
