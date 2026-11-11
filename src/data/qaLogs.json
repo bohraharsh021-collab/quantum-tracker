@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-10T05:09:34.373Z",
+  "lastRun": "2026-11-11T03:42:25.919Z",
   "feedStats": {
     "total": 77,
     "success": 23,
@@ -27,7 +27,7 @@
       },
       {
         "name": "Canada NRC Feed",
-        "error": "Status code 404"
+        "error": "Status code 403"
       },
       {
         "name": "IBM Quantum Blog Feed",
@@ -87,7 +87,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO C05CF6CAFA770000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO C02C0C68A3700000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -151,7 +151,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C05CF6CAFA770000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C02C0C68A3700000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -222,7 +222,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 203
+    "duplicatesRemoved": 198
   },
   "dbSize": 10000
 }
