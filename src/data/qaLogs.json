@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-11-19T04:59:19.128Z",
+  "lastRun": "2026-11-20T04:51:18.123Z",
   "feedStats": {
     "total": 77,
-    "success": 22,
-    "failed": 55,
+    "success": 23,
+    "failed": 54,
     "failedFeedsList": [
       {
         "name": "India PIB Feed",
@@ -70,10 +70,6 @@
         "error": "Status code 404"
       },
       {
-        "name": "France CNRS",
-        "error": "Status code 503"
-      },
-      {
         "name": "Japan RIKEN",
         "error": "Status code 404"
       },
@@ -87,11 +83,11 @@
       },
       {
         "name": "Singapore A*STAR",
-        "error": "Unable to parse XML."
+        "error": "Status code 404"
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO C0EC70FADA770000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO C0DC9703A0750000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -135,7 +131,7 @@
       },
       {
         "name": "Alice & Bob",
-        "error": "socket hang up"
+        "error": "Request timed out after 60000ms"
       },
       {
         "name": "Q-CTRL",
@@ -155,7 +151,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C0EC70FADA770000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C0DC9703A0750000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -195,7 +191,7 @@
       },
       {
         "name": "NUS CQT",
-        "error": "Invalid character in entity name\nLine: 154\nColumn: 43\nChar: ="
+        "error": "Unexpected close tag\nLine: 6\nColumn: 14\nChar: >"
       },
       {
         "name": "University of Sydney",
@@ -226,7 +222,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 357
+    "duplicatesRemoved": 245
   },
   "dbSize": 10000
 }
