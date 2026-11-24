@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-23T04:40:31.414Z",
+  "lastRun": "2026-11-24T07:32:49.156Z",
   "feedStats": {
     "total": 77,
     "success": 23,
@@ -67,7 +67,7 @@
       },
       {
         "name": "Germany BMBF",
-        "error": "Status code 404"
+        "error": "read ECONNRESET"
       },
       {
         "name": "Japan RIKEN",
@@ -79,7 +79,7 @@
       },
       {
         "name": "Australia CSIRO",
-        "error": "Status code 404"
+        "error": "Status code 503"
       },
       {
         "name": "Singapore A*STAR",
@@ -87,7 +87,7 @@
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO C0EC6BB217740000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO C09C4B6068740000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -151,7 +151,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C0EC6BB217740000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C09C4B6068740000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -219,10 +219,10 @@
       },
       {
         "name": "Quantum Computing News",
-        "error": "read ECONNRESET"
+        "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 243
+    "duplicatesRemoved": 225
   },
   "dbSize": 10000
 }
