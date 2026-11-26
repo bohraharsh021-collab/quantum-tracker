@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-25T06:01:08.876Z",
+  "lastRun": "2026-11-26T05:55:24.562Z",
   "feedStats": {
     "total": 77,
     "success": 23,
@@ -83,11 +83,11 @@
       },
       {
         "name": "Singapore A*STAR",
-        "error": "Unable to parse XML."
+        "error": "Status code 404"
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO C07C71747A7C0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO C0CC0E0276720000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -151,7 +151,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C07C71747A7C0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C0CC0E0276720000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -191,7 +191,7 @@
       },
       {
         "name": "NUS CQT",
-        "error": "Invalid character in entity name\nLine: 154\nColumn: 43\nChar: ="
+        "error": "Unexpected close tag\nLine: 6\nColumn: 14\nChar: >"
       },
       {
         "name": "University of Sydney",
@@ -222,7 +222,7 @@
         "error": "read ECONNRESET"
       }
     ],
-    "duplicatesRemoved": 218
+    "duplicatesRemoved": 243
   },
   "dbSize": 10000
 }
