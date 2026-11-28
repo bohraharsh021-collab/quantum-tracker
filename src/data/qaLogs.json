@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-27T05:47:50.549Z",
+  "lastRun": "2026-11-28T05:28:24.851Z",
   "feedStats": {
     "total": 77,
     "success": 23,
@@ -83,11 +83,11 @@
       },
       {
         "name": "Singapore A*STAR",
-        "error": "Status code 404"
+        "error": "Unable to parse XML."
       },
       {
         "name": "Netherlands Quantum Delta",
-        "error": "write EPROTO C0EC6DE8AD720000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
+        "error": "write EPROTO C0FC0AABFA7A0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 112\n"
       },
       {
         "name": "Israel Innovation Authority",
@@ -131,7 +131,7 @@
       },
       {
         "name": "Alice & Bob",
-        "error": "Invalid character in entity name\nLine: 0\nColumn: 120\nChar: ="
+        "error": "socket hang up"
       },
       {
         "name": "Q-CTRL",
@@ -151,7 +151,7 @@
       },
       {
         "name": "Zapata AI",
-        "error": "write EPROTO C0EC6DE8AD720000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
+        "error": "write EPROTO C0FC0AABFA7A0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1601:SSL alert number 40\n"
       },
       {
         "name": "Anyon Systems",
@@ -191,7 +191,7 @@
       },
       {
         "name": "NUS CQT",
-        "error": "Unexpected close tag\nLine: 6\nColumn: 14\nChar: >"
+        "error": "Invalid character in entity name\nLine: 154\nColumn: 43\nChar: ="
       },
       {
         "name": "University of Sydney",
@@ -222,7 +222,7 @@
         "error": "Client network socket disconnected before secure TLS connection was established"
       }
     ],
-    "duplicatesRemoved": 230
+    "duplicatesRemoved": 220
   },
   "dbSize": 10000
 }
